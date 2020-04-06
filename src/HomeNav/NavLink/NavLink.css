@@ -1,0 +1,46 @@
+#navgation {
+    height: 45vh;
+    width: 45vh;
+    margin-left: 2vh;
+    
+}
+
+
+
+.container:hover #overlay{
+    width:43.5vh
+
+}
+
+
+#overlay{
+    
+    width:0vh;
+    height:43.5vh;
+    background-color: black;
+    overflow:hidden;
+    transition: .25s ;
+
+}
+
+#overlay:hover{
+    background-color: black;
+    cursor:pointer;
+
+}
+
+
+#navimg {
+    height:100%;
+    
+}
+
+
+
+
+
+
+
+
+
+

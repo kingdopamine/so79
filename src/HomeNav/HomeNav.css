@@ -1,0 +1,15 @@
+#nav-link-container {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    padding-left: 3vh;
+    height: 95vh;
+    width: 99vh;
+    margin-left: 50%;
+    margin-top: 4vh;
+    transform: translateX(-50%);
+    z-index: 0;
+    top:0px;    
+    opacity:1;
+    overflow: hidden;
+  }
