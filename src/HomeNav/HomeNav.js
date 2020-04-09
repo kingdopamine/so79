@@ -2,7 +2,9 @@ import React from 'react';
 import './HomeNav.css';
 import NavLink from './NavLink/NavLink';
 import img1 from '../../src/cardholderyellow.jpg';
-import img2 from '../../src/Tee Black.jpg'
+import img2 from '../../src/Tee Black.jpg';
+import img3 from '../../src/DirtyCheeks.jpg';
+import img4 from '../../src/so79logo.jpg';
 
 class HomeNav extends React.Component{
     constructor(props){
@@ -11,8 +13,8 @@ class HomeNav extends React.Component{
             navimages : {
                 img1:img1,
                 img2:img2,
-                img3:"",
-                img4:""
+                img3:img3,
+                img4:img4
             },
             animation:{
                 anim1:"anim1",

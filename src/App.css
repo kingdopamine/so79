@@ -1,15 +1,32 @@
 #background {
   position: relative;
   overflow: hidden;
-  z-index: -10;
+  
 }
 
 #background-image {
-  height: 100vh;
-  display: block;
-  margin-left: 51%;
-  transform: translateX(-50%);
-  z-index: -9;
- 
+  height:62.5vh;
+  margin-top:50vh;
+  margin-left: 50vw;
+  transform: translate(-50%, -50%);
+  cursor:pointer;
+  
 }
+/*
+#background-image:hover{
+  display:none;
+  
+} 
+
+
+#foreground-image {
+  
+  height:62.5vh;
+  margin-top:50vh;
+  margin-left: 50vw;
+  transform: translate(-50%, -50%);
+  cursor:pointer;
+  
+ 
+}*/
 

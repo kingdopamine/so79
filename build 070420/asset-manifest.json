@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.18c2a098.chunk.css",
+    "main.js": "/static/js/main.f24b830b.chunk.js",
+    "main.js.map": "/static/js/main.f24b830b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.349fee59.js",
+    "runtime-main.js.map": "/static/js/runtime-main.349fee59.js.map",
+    "static/js/2.b72214f5.chunk.js": "/static/js/2.b72214f5.chunk.js",
+    "static/js/2.b72214f5.chunk.js.map": "/static/js/2.b72214f5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.62b7f86205b0bdcd0d1da93ff3b49ede.js": "/precache-manifest.62b7f86205b0bdcd0d1da93ff3b49ede.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.18c2a098.chunk.css.map": "/static/css/main.18c2a098.chunk.css.map",
+    "static/js/2.b72214f5.chunk.js.LICENSE.txt": "/static/js/2.b72214f5.chunk.js.LICENSE.txt",
+    "static/media/DirtyCheeks.jpg": "/static/media/DirtyCheeks.ee877a78.jpg",
+    "static/media/Tee Black.jpg": "/static/media/Tee Black.1ada824d.jpg",
+    "static/media/cardholderyellow.jpg": "/static/media/cardholderyellow.a505af5a.jpg",
+    "static/media/fulllogoinvert.jpg": "/static/media/fulllogoinvert.7f83e9a0.jpg",
+    "static/media/so79logo.jpg": "/static/media/so79logo.604f7a00.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.349fee59.js",
+    "static/js/2.b72214f5.chunk.js",
+    "static/css/main.18c2a098.chunk.css",
+    "static/js/main.f24b830b.chunk.js"
+  ]
+}

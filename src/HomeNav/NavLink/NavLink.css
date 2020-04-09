@@ -1,14 +1,14 @@
 #navgation {
-    height: 45vh;
-    width: 45vh;
-    margin-left: 2vh;
+    height: 23.5vh;
+    width: 23.5vh;
+    margin-left: 1.4vh;
     
 }
 
 
 
 .container:hover #overlay{
-    width:43.5vh
+    width:23.5vh
 
 }
 
@@ -16,15 +16,15 @@
 #overlay{
     
     width:0vh;
-    height:43.5vh;
-    background-color: black;
+    height:23.5vh;
+    background-color: white;
     overflow:hidden;
     transition: .25s ;
 
 }
 
 #overlay:hover{
-    background-color: black;
+    background-color: white;
     cursor:pointer;
 
 }
@@ -32,7 +32,7 @@
 
 #navimg {
     height:100%;
-    
+    border-radius: 25px;
 }
 
 
