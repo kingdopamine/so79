@@ -1,29 +1,36 @@
 import React from 'react';
-import background from '../src/LOGOwhite.jpg'
-import foreground from '../src/LOGOblack.jpg'
+
 import './App.css';
 
+import {
+  BrowserRouter as Router, 
+  Route, 
+  Switch, 
+  Link, 
+  Redirect 
+} from 'react-router-dom';
 
-
+import Homepage from './pages/Homepage/Homepage';
+import Design from './pages/Design/design'
 
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state={logo:background}
+    
     }
-  
+
 
   render(){
-
+    
     
     return (
-      <div className="Homepage">
-       <div id="background">
-         <img src={this.state.logo} id="background-image" alt="background" onMouseEnter={()=>{this.setState({logo:foreground})}} onMouseLeave={()=>{this.setState({logo:background})}}></img>
-         
-       </div>
-      </div>
+      <Router>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/design" component={Design} />
+      </Router>
+      
+      
     );
   } 
   
