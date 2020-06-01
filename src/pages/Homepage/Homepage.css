@@ -1,32 +1,84 @@
-#background {
-  position: relative;
-  overflow: hidden;
-  
-}
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
+
+
 
 #background-image {
-  height:62.5vh;
-  margin-top:50vh;
-  margin-left: 50vw;
-  transform: translate(-50%, -50%);
-  cursor:pointer;
-  
+height: 62.5vh;
+transform: translate(-50%,-50%);
+margin-top: 50vh;
+margin-left: 50vw;
+cursor:pointer;
 }
-/*
-#background-image:hover{
-  display:none;
-  
-} 
+
+#taglineHome p{
+  position: absolute;
+  margin-top: 90vh;
+  margin-left:50vw;
+  transform: translate(-50%,-50%);
+  font-size:20px;
+  font-family: 'Courier Prime', monospace; 
+  color: black
+}
 
 
-#foreground-image {
+@media (max-width:100vh){
+  #background{
+    
+    height:100vh;
+    widows: 100vw;
+  }
   
-  height:62.5vh;
-  margin-top:50vh;
-  margin-left: 50vw;
-  transform: translate(-50%, -50%);
-  cursor:pointer;
   
+  
+  #background-image {
+    
+    height: 62.5vw;
+    transform: translate(-50%,-50%);
+    margin-top: 35vh;
+    margin-left: 50vw;
+    cursor:pointer;
+    animation-name:fade;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    
+  }
+  
+  #taglineHome p{
+    position: absolute;
+    margin-top: 68.5vh;
+    margin-left:50vw;
+    transform: translate(-50%,-50%);
+    font-size:20px;
+    text-align: center;
+    font-family: 'Courier Prime', monospace; 
+    animation-name:fade;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    width:100vw;
+    
+  
+  } 
+
  
-}*/
+
+
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    50%{
+      opacity:0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+
+ 
 

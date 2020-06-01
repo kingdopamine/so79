@@ -1,61 +1,387 @@
-#cardholder1 {
-    height:45vh;
-    margin-top:40vh;
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+*{
+    font-size:13px;
+}
+
+html {
+    overflow:hidden;
+}
+
+#noCarRender{
+    opacity:0;
+}
+
+#homebutton{
+    position: absolute;
+    transform: translate(-50%,0%);
     margin-left: 50vw;
-    transform: translate(-50%, -50%);
-    cursor:pointer;
+    height:75px;
+    padding-top: 10px;
+}
+
+#tagline p{ 
+    position: absolute;
+    margin-top: 85px;
+    margin-left:50vw;
+    transform: translate(-50%,-50%);
+    width:200px;
+    font-family: 'Courier Prime', monospace;
     
+    text-align: center;
   }
 
-  #options {
-    position:relative;  
-    margin: -10vh auto;
-    transform: translate(-2%, -50%);
-    display:flex;
-    justify-content: center;
+#createYourOwn {  
+    position: absolute;
+    margin-left: 230px;
+    padding-left: 50vw;
+    margin-top: 22.5vh;
+    z-index: 1;
+}
+
+#menu {
+    
+    padding:0;
+    background-color: rgba(0,0,0,0);
+    border:none;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    animation-name:fader;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    outline: none;
+}
+
+#menu:hover {
+    animation-name:none;
+    cursor: pointer;
+}
+
+#fadeOff{
+    animation-name:none;
+    cursor: pointer;
+    padding:0;
+    background-color: rgba(0,0,0,0);
+    border:none;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+}
+
+.menuItems {
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    text-align: left;
+    cursor: pointer;
+    animation-name:faderv;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+
+.menuItems:hover {
+    animation-name:none;
+    cursor: pointer;
+}
+
+.menuItems li{
+    font-weight: 300;
+}
+
+.menuItems li:hover{
+    text-decoration: underline;
+}
+
+.classMenu {
+    font-weight: 300;
+}
+
+.menuOff {
+    display:none;
+}
+
+.boldMenuItems {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#frontOn{
+    padding:0;
+    margin:0;
+}
+
+#frontOff{
+    display:none;
+}
+
+#backOn{
+    padding:0;
+    margin:0;
+}
+
+#backOff{
+    display:none;
+}
+
+#zipOn{
+    padding:0;
+    margin:0;
+}
+
+#zipOff{
+    display:none;
+}
+
+#logoOn{
+    padding:0;
+    margin:0; 
+}
+
+#logoOff{
+    display:none; 
+}
+
+#productOn{
+    padding:0;
+    margin:0; 
+}
+
+#productOff{
+    display:none
+}
+
+#designFOn{
+    padding:0;
+    margin:0; 
+}
+
+#designFOff{
+    display:none
+}
+
+#designBOn{
+    padding:0;
+    margin:0; 
+}
+
+#designBOff{
+    display:none
+}
+
+li{
     list-style-type:none;
-    width:45vh;
+}
+
+
+
+#designRenderHidden{
+    display:none
+}
+
+
+
+#cardholderFront{
+    position: absolute;
+    height:200px;
+    transform: translate(-50%, -100%);
+    margin-top: 50vh;
+    margin-left: 50vw;
+    animation-name: topslide;
+    animation-duration: 400ms;
+}
+
+@keyframes topslide{
+    0% {
+        margin-left: 150vw;
+        opacity:1
+    }
+    100%{
+        margin-left: 50vw;
+        opacity:1;
+    }
+   
+}
+
+#cardholderBack{
+    position: absolute;
+    height:200px;
+    transform: translate(-50%, 0%);
+    margin-top: 50vh;
+    margin-left: 50vw;
+    animation-name: bottomslide;
+    animation-duration: 400ms;
+}
+
+@keyframes bottomslide{
+    0% {
+        margin-left: -150vw;
+        opacity:1
+    }
+    100%{
+        margin-left: 50vw;
+        opacity:1;
+    }
+   
+}
+
+.deconstruct {
+    position: absolute;
+    height:250px;
+    transform: translate(-50%, -50%);
+    margin-top: 50vh;
+    margin-left: 150vw;
+    opacity:0
+}
+
+#dGone{
+    opacity: 0;
+}
+
+#dZip{
+    animation-name:openAnimZip;
+    animation-duration:4s;
+}
+
+
+@keyframes openAnimZip{
+    0% {
+        margin-left: 151vw;
+        opacity:1
+    }
+    10%{
+        margin-left: 51vw;
+        opacity:1;
+    }
+    90%{
+        margin-left:51vw;
+        opacity:1;
+    }
+    100%{
+        margin-left:-50vw;
+        opacity:1;
+    }
+}
+
+#dPurse{
+    animation-name:openAnimPurse;
+    animation-duration:4s;
+}
+
+@keyframes openAnimPurse{
+    0% {
+        margin-left: -51vw;
+        opacity:1;
+    }
+    10%{
+        margin-left: 51vw;
+        opacity:1;
+    }
+    90%{
+        margin-left:51vw;
+        opacity:1;
+    }
+    100%{
+        margin-left:-50vw;
+        opacity:1;
+    }
+}
+
+#dLogo{
+    animation-name:openAnimLogo;
+    animation-duration:4s;
+    margin-left: -50.5vw;
+}
+
+@keyframes openAnimLogo{
+    0% {
+        margin-left: -51vw;
+        opacity:1;
+    }
+    15%{
+        margin-left: 50.5vw;
+        opacity:1;
+    }
+    90%{
+        margin-left:50.5vw;
+        opacity:1;
+    }
+    100%{
+        margin-left:-50vw;
+        opacity:1;
+    }
+}
+
+
+#copywrite {
+    position: absolute;
     
-  }
-
-  
-  
-
-.unselected {
-    background-color: white;
-    border:none;
-    color:black;
+    font-family: 'Courier Prime', monospace;
     text-align: center;
-    width:15vh;
-    height:5vh;
-    font-family:candara;
-    font-size:17px;
+    margin-top: 85vh;
+    width:410px;
+    margin-left: 50vw;
+    transform: translate(-50%, 0%);
+    line-height: 0px;
     
-    transition-duration: 0.4s;
-    cursor:pointer;
-    outline: none;
-}
-
-.selected {
-    background-color: black;
-    opacity:0.7;
-    border:none;
-    color:white;
-    text-align: center;
-    width:15vh;
-    height:5vh;
-    font-family:candara;
-    font-size:17px;
     
-    transition-duration: 0.4s;
-    cursor:pointer;
-    outline: none;
+    
+}
+
+#copywrite p {
+    font-size: 11px; 
+    margin-bottom: 0;
+    
+    
 }
 
 
-.unselected:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.selected:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:100vh){
+    *{
+        font-size:10px;
+    }
+
+    #homebutton{
+        height:30px
+    }
+
+    .deconstruct {
+        max-height:30vh;
+        margin-top:40vh;
+    }
+
+    #createYourOwn{
+        transform: translate(-50%,0%);
+        margin-left: 50vw;
+        padding:0;
+        margin-top: 60vh;
+    }
+
+    #copywrite{
+        margin-top: 82vh;
+        width:95vw;
+     
+        
+    }
+
+    #MIL{
+        margin-top: 17.5vh;
+       
+        
+    }
+
+   
 }

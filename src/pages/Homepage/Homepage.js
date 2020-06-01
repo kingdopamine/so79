@@ -21,19 +21,23 @@ class Homepage extends React.Component {
     return (
       
       
-      <div className="Homepage">
+      <div id="homepage">
        <div id="background">
-         
+       <div id="taglineHome"><a href="/design"><p><b>Re-Crafted Goods</b></p></a></div>  
          <a href="/design">
+           
            <img src={this.state.logo} 
                 id="background-image" 
                 alt="background" 
                 onMouseEnter={()=>{this.setState({logo:foreground})}} 
                 onMouseLeave={()=>{this.setState({logo:background})}}>
             </img>
+            
           </a>
-         
+          
+          
        </div>
+            
       </div>
     );
   } 
