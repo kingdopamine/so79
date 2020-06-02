@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
 *{
-    font-size:13px;
+    font-size:15px;
 }
 
 html {
@@ -19,31 +19,110 @@ html {
     padding-top: 10px;
 }
 
-#tagline p{ 
+#left-arrow{
+    font-size: 30px;
     position: absolute;
-    margin-top: 85px;
-    margin-left:50vw;
-    transform: translate(-50%,-50%);
-    width:200px;
-    font-family: 'Courier Prime', monospace;
-    
-    text-align: center;
-  }
+    margin-left: 50vw;
+    transform: translate(-50%,0%);
+    margin-left: 35vw;
+    margin-top: 80vh;
+}
+
+#right-arrow{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 50vw;
+    transform: translate(-50%,0%);
+    margin-left: 65vw;
+    margin-top: 80vh;
+}
+
+#arrow-hidden{
+    display: none;
+}
 
 #createYourOwn {  
     position: absolute;
-    margin-left: 230px;
-    padding-left: 50vw;
-    margin-top: 22.5vh;
-    z-index: 1;
+    
+    z-index: 15;
 }
 
+#sizemenu{
+    position: absolute;
+}
+
+#fabricmenu{
+    position: absolute;
+    width: 100vw;
+    margin-top:77vh;
+    margin-left: -100px;
+    transform: translate(50%,-50%);
+}
+
+#fabricmenuback{
+    position: absolute;
+    width: 100vw;
+    margin-top:77vh;
+    margin-left: 60px;
+    transform: translate(50%,-50%);
+}
+
+#zipmenu{
+    position: absolute;
+    width: 100vw;
+    margin-top:26vh;
+    margin-left: -300px;
+    transform: translate(50%,-50%);
+}
+
+#zipmenuback{
+    position: absolute;
+    width: 100vw;
+    margin-top:26vh;
+    margin-left: 250px;
+    transform: translate(50%,-50%);
+}
+
+#zipOn{
+    position: absolute;
+    width: 100vw;
+    margin-top:26vh;
+    margin-left: -360px;
+    transform: translate(50%,10%);
+}
+
+
+
+#frontmenusection{
+    position: absolute;
+    width: 100vw;
+    margin-top:65vh;
+    margin-left: -400px;
+    transform: translate(50%,-50%);
+}
+
+#backmenusection{
+    position: absolute;
+    width: 100vw;
+    margin-top:65vh;
+    margin-left: 250px;
+    transform: translate(50%,-50%);
+}
+
+#menusectionhidden{
+    display: none;
+}
+
+
+
+
 #menu {
-    
-    padding:0;
+    transform: translate(-50%,0%);
+    margin-left: 50vw;
+    margin-top: 80vh;
     background-color: rgba(0,0,0,0);
     border:none;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
     animation-name:fader;
@@ -52,18 +131,32 @@ html {
     outline: none;
 }
 
+@keyframes fader {
+    0%{
+        color:rgba(0,0,0,1);
+    }
+    50%{
+        color: rgba(0,0,0,0);
+    }
+    100%{
+        color: rgba(0,0,0,1);
+    }
+}
+
 #menu:hover {
+    
     animation-name:none;
     cursor: pointer;
 }
 
 #fadeOff{
+    display: none;
     animation-name:none;
     cursor: pointer;
     padding:0;
     background-color: rgba(0,0,0,0);
     border:none;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     outline: none;
@@ -97,18 +190,20 @@ html {
     font-weight: 300;
 }
 
+
+
+
 .menuOff {
     display:none;
 }
 
 .boldMenuItems {
-    font-size: 12px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 #frontOn{
-    padding:0;
-    margin:0;
+    
 }
 
 #frontOff{
@@ -124,10 +219,7 @@ html {
     display:none;
 }
 
-#zipOn{
-    padding:0;
-    margin:0;
-}
+
 
 #zipOff{
     display:none;
@@ -180,46 +272,85 @@ li{
 }
 
 
-
-#cardholderFront{
+#designRenderfront{
     position: absolute;
-    height:200px;
-    transform: translate(-50%, -100%);
     margin-top: 50vh;
     margin-left: 50vw;
-    animation-name: topslide;
+    animation-name: slidetofront;
     animation-duration: 400ms;
 }
 
-@keyframes topslide{
-    0% {
-        margin-left: 150vw;
-        opacity:1
+#designRenderback{
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 6.5vw;
+    animation-name: slidetoback;
+    animation-duration: 400ms;
+}
+
+@keyframes slidetofront{
+    0%{
+        margin-left: 6.5vw;
     }
     100%{
         margin-left: 50vw;
-        opacity:1;
     }
-   
 }
 
-#cardholderBack{
-    position: absolute;
-    height:200px;
-    transform: translate(-50%, 0%);
-    margin-top: 50vh;
-    margin-left: 50vw;
-    animation-name: bottomslide;
+@keyframes slidetoback{
+    0%{
+        margin-left: 50vw;
+    }
+    100%{
+        margin-left: 6.5vw;
+    }
+}
+
+
+#cardholderFront{
+    height:350px;
+    transform: translate(-50%,-50%);
+    margin-right: 50px;
+    
+    animation-name: topslideoff;
     animation-duration: 400ms;
 }
 
-@keyframes bottomslide{
+
+
+
+@keyframes topslide{
     0% {
         margin-left: -150vw;
         opacity:1
     }
     100%{
-        margin-left: 50vw;
+        margin-left: 33.3vw;
+        opacity:1;
+    }
+   
+}
+
+
+
+#cardholderBack{
+    position:absolute;
+    transform: translate(-50%,-50%);
+    height:350px;
+    
+    
+    
+    animation-name: bottomslideoff;
+    animation-duration: 400ms;
+}
+
+@keyframes bottomslide{
+    0% {
+        margin-left: 150vw;
+        opacity:1
+    }
+    100%{
+        margin-left: 66.6vw;
         opacity:1;
     }
    
@@ -313,27 +444,7 @@ li{
 }
 
 
-#copywrite {
-    position: absolute;
-    
-    font-family: 'Courier Prime', monospace;
-    text-align: center;
-    margin-top: 85vh;
-    width:410px;
-    margin-left: 50vw;
-    transform: translate(-50%, 0%);
-    line-height: 0px;
-    
-    
-    
-}
 
-#copywrite p {
-    font-size: 11px; 
-    margin-bottom: 0;
-    
-    
-}
 
 
 
@@ -370,12 +481,7 @@ li{
         margin-top: 60vh;
     }
 
-    #copywrite{
-        margin-top: 82vh;
-        width:95vw;
-     
-        
-    }
+  
 
     #MIL{
         margin-top: 17.5vh;

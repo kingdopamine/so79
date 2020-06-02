@@ -40,16 +40,13 @@ class Design extends React.Component{
                 zip:'zipOff'
             },
             frontDisplay:{
-                front:'frontOff'
+                front:'frontOn'
             },
             backDisplay:{
-                back:'backOff'
+                back:'backOn'
             },
             logoDisplay:{
                 logo:'logoOff'
-            },
-            productDisplay:{
-                product:'productOff'
             },
             designFDisplay:{
                 designF:'designFOff'
@@ -60,7 +57,13 @@ class Design extends React.Component{
             menuItems:'menuOff',
             menuFade:'menu',
             carRender:'',
-            designRender:'designRenderHidden'
+            designRender:'designRenderHidden',
+            leftarrow:'arrow-hidden',
+            rightarrow:'right-arrow',
+            frontmenusection:'frontmenusection',
+            backmenusection:'menusectionhidden',
+            zipmenu:'zipmenu',
+            fabricmenu:'fabricmenu'
             
         }
         this.zipToggle=this.zipToggle.bind(this)
@@ -68,9 +71,9 @@ class Design extends React.Component{
         this.frontToggle=this.frontToggle.bind(this)
         this.backToggle=this.backToggle.bind(this)
         this.logoToggle=this.logoToggle.bind(this)
-        this.productToggle=this.productToggle.bind(this)
         this.designFToggle=this.designFToggle.bind(this)
         this.designBToggle=this.designBToggle.bind(this)
+        this.arrowToggle=this.arrowToggle.bind(this)
         
         
     }
@@ -84,7 +87,6 @@ class Design extends React.Component{
             this.setState({frontDisplay:{front:'frontOff'}})
             this.setState({backDisplay:{back:'backOff'}})
             this.setState({logoDisplay:{logo:'logoOff'}})
-            this.setState({productDisplay:{product:'productOff'}})
             this.setState({designFDisplay:{designF:'designFOff'}})
             this.setState({designBDisplay:{designB:'designBOff'}})
             this.setState({cardholder:goldOutlineLogo})
@@ -96,7 +98,7 @@ class Design extends React.Component{
             this.setState({menuFade:'fadeOff'})
             this.setState({cardholder:goldOutlineLogo})
             this.setState({carRender:'noCarRender'})
-            this.setState({designRender:'designRender'})
+            this.setState({designRender:'designRenderfront'})
             this.setState({dZip:'dGone', dLogo:'dGone', dPurse:'dGone'})
         }
     }
@@ -137,14 +139,6 @@ class Design extends React.Component{
         }
     }
 
-    productToggle(){
-        if(this.state.productDisplay.product==='productOn'){
-            this.setState({productDisplay:{product:'productOff'}})
-            this.setState({cardholder:goldOutlineLogo})
-        } else {
-            this.setState({productDisplay:{product:'productOn'}})
-        }
-    }
 
     designFToggle(){
         if(this.state.designFDisplay.designF==='designFOn'){
@@ -164,6 +158,14 @@ class Design extends React.Component{
         }
     }
 
+    arrowToggle(){
+        if(this.state.leftarrow==="arrow-hidden"){
+            this.setState({leftarrow:"left-arrow", rightarrow:"arrow-hidden", frontmenusection:'menusectionhidden', backmenusection:'backmenusection', zipmenu:"zipmenuback", fabricmenu:"fabricmenuback"})
+        } else {
+            this.setState({leftarrow:"arrow-hidden", rightarrow:"right-arrow", frontmenusection:'frontmenusection', backmenusection:'menusectionhidden', zipmenu:"zipmenu", fabricmenu:"fabricmenu"})
+        }
+    }
+
 
    
 
@@ -178,10 +180,13 @@ class Design extends React.Component{
             
             <button id={this.state.menuFade} onClick={this.menuToggle}>CREATE YOUR OWN</button>
                 <div className={this.state.menuItems} >
-                    <div className="classMenu">Size</div>
-                    <div className="classMenu">Fabric Choice</div>
-                    <div onClick={this.zipToggle} className="classMenu">Zip Colour</div>
+                    <i class="fas fa-arrow-right" id={this.state.rightarrow} onClick={()=>{this.setState({designRender:"designRenderback"}); this.arrowToggle()}}></i>
+                    <i class="fas fa-arrow-left" id={this.state.leftarrow} onClick={()=>{this.setState({designRender:"designRenderfront"}); this.arrowToggle()}}></i>
+                    {/*<div className="classMenu" id="sizemenu">Size</div>*/}
+                    <div className="classMenu" id={this.state.fabricmenu}>Fabric Choice</div>
+                    <div onClick={this.zipToggle} className="classMenu" id={this.state.zipmenu}>Zip Colour</div>
                     <ul id={this.state.zipDisplay.zip}>
+                        
                         <li onClick={()=>{this.setState({cardholder:redZip})}}>- Red</li>
                         <li onClick={()=>{this.setState({cardholder:orangeZip})}}>- Orange</li>
                         <li onClick={()=>{this.setState({cardholder:yellowZip})}}>- Yellow</li>
@@ -191,49 +196,51 @@ class Design extends React.Component{
                         <li>- Grey</li>
                     </ul>
                     <ul></ul>
-                    <div onClick={this.frontToggle} className="boldMenuItems">FRONT</div>
-                    <ul id={this.state.frontDisplay.front}>
-                        <li onClick={this.logoToggle}>Logo Style</li>
-                            <ul id={this.state.logoDisplay.logo}>
-                                <li onClick={()=>{this.setState({cardholderFront:goldOutlineLogo})}}>- Gold Outline</li>
-                                <li onClick={()=>{this.setState({cardholderFront:solidGoldLogo})}}>- Solid Gold</li>
-                                <li onClick={()=>{this.setState({cardholderFront:ecruLogo})}}>- Ecru</li>
-                                <li onClick={()=>{this.setState({cardholderFront:solidRedLogo})}}>- Solid Red</li>
+
+                    <div id={this.state.frontmenusection}>
+                        {/*<div onClick={this.frontToggle} className="boldMenuItems">FRONT</div>*/}
+                        <ul id={this.state.frontDisplay.front}>
+                            <li onClick={this.logoToggle}>Logo Style</li>
+                                <ul id={this.state.logoDisplay.logo}>
+                                    <li onClick={()=>{this.setState({cardholderFront:goldOutlineLogo})}}>- Gold Outline</li>
+                                    <li onClick={()=>{this.setState({cardholderFront:solidGoldLogo})}}>- Solid Gold</li>
+                                    <li onClick={()=>{this.setState({cardholderFront:ecruLogo})}}>- Ecru</li>
+                                    <li onClick={()=>{this.setState({cardholderFront:solidRedLogo})}}>- Solid Red</li>
+                                </ul>
+                            <li onClick={this.designFToggle}>Design Style</li>
+                                <ul id={this.state.designFDisplay.designF}>
+                                    <li>- Waves</li>
+                                    <li>- Animals</li>
+                                    <li>- Drip</li>
+                                    <li>- Bespoke/Custom</li>
+                                </ul>
                             </ul>
-                        <li onClick={this.designFToggle}>Design Style</li>
-                            <ul id={this.state.designFDisplay.designF}>
-                                <li>- Waves</li>
-                                <li>- Animals</li>
-                                <li>- Drip</li>
-                                <li>- Bespoke/Custom</li>
-                            </ul>
-                        </ul>
+                        </div>
                         <ul></ul>
-                    <div onClick={this.backToggle} className="boldMenuItems">BACK</div>
-                    <ul id={this.state.backDisplay.back}>
-                        <li onClick={this.logoToggle}>Logo Style</li>
-                            <ul id={this.state.logoDisplay.logo}>
-                                <li onClick={()=>{this.setState({cardholder:goldOutlineLogo})}}>- Gold Outline</li>
-                                <li onClick={()=>{this.setState({cardholder:solidGoldLogo})}}>- Solid Gold</li>
-                                <li onClick={()=>{this.setState({cardholder:ecruLogo})}}>- Ecru</li>
-                                <li onClick={()=>{this.setState({cardholder:solidRedLogo})}}>- Solid Red</li>
+
+                        <div id={this.state.backmenusection}>
+                            {/*<div onClick={this.backToggle} className="boldMenuItems">BACK</div>*/}
+                            <ul id={this.state.backDisplay.back}>
+                                <li onClick={this.logoToggle}>Logo Style</li>
+                                <ul id={this.state.logoDisplay.logo}>
+                                    <li onClick={()=>{this.setState({cardholder:goldOutlineLogo})}}>- Gold Outline</li>
+                                    <li onClick={()=>{this.setState({cardholder:solidGoldLogo})}}>- Solid Gold</li>
+                                    <li onClick={()=>{this.setState({cardholder:ecruLogo})}}>- Ecru</li>
+                                    <li onClick={()=>{this.setState({cardholder:solidRedLogo})}}>- Solid Red</li>
+                                </ul>
+                                <li onClick={this.designBToggle}>Design Style</li>
+                                <ul id={this.state.designBDisplay.designB}>
+                                    <li>- Waves</li>
+                                    <li>- Animals</li>
+                                    <li>- Drip</li>
+                                    <li>- Bespoke/Custom</li>
+                                </ul>
                             </ul>
-                        <li onClick={this.designBToggle}>Design Style</li>
-                            <ul id={this.state.designBDisplay.designB}>
-                                <li>- Waves</li>
-                                <li>- Animals</li>
-                                <li>- Drip</li>
-                                <li>- Bespoke/Custom</li>
-                            </ul>
-                        </ul>    
+                        </div>
+                        
                     
                     <ul></ul>
-                    <div onClick={this.productToggle} className="boldMenuItems">OTHER PRODUCTS</div>
-                    <ul id={this.state.productDisplay.product}>
-                        <li>T-shirts</li>
-                        <li>Bags</li>
-                        <li>Aprons</li>
-                    </ul>
+                    
                 </div>
             </div> 
 
@@ -259,10 +266,7 @@ class Design extends React.Component{
         <Carousel/>
         </div>
         
-        <div id="copywrite"><p>Tailored with rare denim, organic hemp, bamboo & YKK zips.</p><br/>
-        <p>Hand painted and personalised in London</p><br/>
-        <a href="/"><p>more</p></a>
-        </div>
+
         
             
             
