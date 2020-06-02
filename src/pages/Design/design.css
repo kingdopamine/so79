@@ -19,27 +19,7 @@ html {
     padding-top: 10px;
 }
 
-#left-arrow{
-    font-size: 30px;
-    position: absolute;
-    margin-left: 50vw;
-    transform: translate(-50%,0%);
-    margin-left: 35vw;
-    margin-top: 350px;
-}
 
-#right-arrow{
-    font-size: 30px;
-    position: absolute;
-    margin-left: 50vw;
-    transform: translate(-50%,0%);
-    margin-left: 65vw;
-    margin-top: 350px;
-}
-
-#arrow-hidden{
-    display: none;
-}
 
 #createYourOwn {  
     position: absolute;
@@ -49,11 +29,11 @@ html {
 
 #sizemenu{
     margin-top: 30vh;
-    margin-left: 15vw;
+    margin-left: 18vw;
 }
 
 #sizeOn{
-    margin-left: 15vw;
+    margin-left: 18vw;
     margin-top: 0;
     margin-bottom: 0;
     padding:0;
@@ -61,19 +41,12 @@ html {
 }
 
 #fabricmenu{
-    margin-left: 15vw;
+    margin-left: 18vw;
 }
 
-#fabricmenuback{
-    position: absolute;
-    width: 100vw;
-    margin-top:77vh;
-    margin-left: 60px;
-    transform: translate(50%,-50%);
-}
 
 #fabricOn{
-    margin-left: 15vw;
+    margin-left: 18vw;
     margin-top: 0;
     margin-bottom: 0;
     padding:0;
@@ -81,19 +54,13 @@ html {
 }
 
 #zipmenu{
-    margin-left: 15vw;
+    margin-left: 18vw;
 }
 
-#zipmenuback{
-    position: absolute;
-    width: 100vw;
-    margin-top:26vh;
-    margin-left: 250px;
-    transform: translate(50%,-50%);
-}
 
-#zipOn{
-    margin-left: 15vw;
+
+#zipmenuexpanded{
+    margin-left: 18vw;
     margin-top: 0;
     margin-bottom: 0;
     padding:0;
@@ -104,22 +71,57 @@ html {
 
 #frontmenusection{
     position:absolute;
-    margin-top: -8vh;
-    margin-left: 75vw;
+    margin-top: -9vh;
+    margin-left: 72vw;
   
 }
 
 #backmenusection{
-    position: absolute;
-    width: 100vw;
-    margin-top:65vh;
-    margin-left: 250px;
-    transform: translate(50%,-50%);
+    position:absolute;
+    margin-top: -11.15vh;
+    margin-left: 72vw;
+
 }
 
 #menusectionhidden{
     display: none;
 }
+
+#frontmenutoggle{
+    position: absolute;
+    margin-left: 55vw;
+    margin-top: 80vh;
+    transform: translate(-50%,0%);
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+
+
+#backmenutoggle{
+    position: absolute;
+    margin-left: 55vw;
+    margin-top: 80vh;
+    transform: translate(-50%,0%);
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+
+#menutogglehidden{
+    display: none;
+}
+
+
+#showboth{
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: 80vh;
+    transform: translate(-50%,0%);
+    font-size: 17px;
+    cursor: pointer;
+}
+
 
 
 
@@ -210,14 +212,16 @@ html {
     font-weight: 600;
 }
 
-#frontOn{
+#frontmenuexpanded{
     padding:0;
     margin:0;
     width:50vw
 }
 
-#frontOff{
-    display:none;
+#backmenuexpanded{
+    padding:0;
+    margin:0;
+    width:50vw
 }
 
 #backOn{
@@ -225,24 +229,16 @@ html {
     margin:0;
 }
 
-#backOff{
-    display:none;
-}
 
 
 
-#zipOff{
-    display:none;
-}
 
-#logoOn{
+
+#logomenuexpanded{
     padding:0;
     margin:0; 
 }
 
-#logoOff{
-    display:none; 
-}
 
 #productOn{
     padding:0;
@@ -253,23 +249,19 @@ html {
     display:none
 }
 
-#designFOn{
+#designmenuexpanded{
     padding:0;
     margin:0; 
 }
 
-#designFOff{
-    display:none
-}
 
-#designBOn{
+
+#designBmenuexpand{
     padding:0;
     margin:0; 
 }
 
-#designBOff{
-    display:none
-}
+
 
 li{
     list-style-type:none;
@@ -321,49 +313,38 @@ li{
     height:350px;
     transform: translate(-50%,-50%);
     margin-right: 50px;
-    
-    animation-name: topslideoff;
-    animation-duration: 400ms;
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 50vw;
 }
-
-
-
-
-@keyframes topslide{
-    0% {
-        margin-left: -150vw;
-        opacity:1
-    }
-    100%{
-        margin-left: 33.3vw;
-        opacity:1;
-    }
-   
-}
-
 
 
 #cardholderBack{
-    position:absolute;
-    transform: translate(-50%,-50%);
     height:350px;
-    
-    
-    
-    animation-name: bottomslideoff;
-    animation-duration: 400ms;
+    transform: translate(-50%,-50%);
+    margin-right: 50px;
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 50vw;
 }
 
-@keyframes bottomslide{
-    0% {
-        margin-left: 150vw;
-        opacity:1
-    }
-    100%{
-        margin-left: 66.6vw;
-        opacity:1;
-    }
-   
+
+#cardholderFrontSBS{
+    height:350px;
+    transform: translate(-50%,-50%);
+    margin-right: 50px;
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 30vw;
+}
+
+#cardholderBackSBS{
+    height:350px;
+    transform: translate(-50%,-50%);
+    margin-right: 50px;
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 70vw;
 }
 
 .deconstruct {
