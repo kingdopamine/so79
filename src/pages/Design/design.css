@@ -139,6 +139,7 @@ html {
     animation-duration:4s;
     animation-iteration-count: infinite;
     outline: none;
+    cursor: pointer;
 }
 
 @keyframes fader {
@@ -153,11 +154,7 @@ html {
     }
 }
 
-#menu:hover {
-    
-    animation-name:none;
-    cursor: pointer;
-}
+
 
 #fadeOff{
     display: none;
@@ -183,10 +180,7 @@ html {
     animation-iteration-count: infinite;
 }
 
-.menuItems:hover {
-    animation-name:none;
-    cursor: pointer;
-}
+
 
 .menuItems li{
     font-weight: 300;
