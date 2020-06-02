@@ -184,7 +184,7 @@ class Design extends React.Component{
                 cardholderBackDisplay:'menuOff',
                 cardholderfrontid:'cardholderFront',
                 cardholderbackid:'cardholderBack',
-                menuItems:'menuOff',
+                menuItems:'menuItems',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'backmenutoggle',
             })
