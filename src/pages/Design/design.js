@@ -180,13 +180,11 @@ class Design extends React.Component{
             
             <button id={this.state.menuFade} onClick={this.menuToggle}>CREATE YOUR OWN</button>
                 <div className={this.state.menuItems} >
-                    <i class="fas fa-arrow-right" id={this.state.rightarrow} onClick={()=>{this.setState({designRender:"designRenderback"}); this.arrowToggle()}}></i>
-                    <i class="fas fa-arrow-left" id={this.state.leftarrow} onClick={()=>{this.setState({designRender:"designRenderfront"}); this.arrowToggle()}}></i>
-                    {/*<div className="classMenu" id="sizemenu">Size</div>*/}
+                    
+                    <div className="classMenu" id="sizemenu">Size</div>
                     <div className="classMenu" id={this.state.fabricmenu}>Fabric Choice</div>
                     <div onClick={this.zipToggle} className="classMenu" id={this.state.zipmenu}>Zip Colour</div>
                     <ul id={this.state.zipDisplay.zip}>
-                        
                         <li onClick={()=>{this.setState({cardholder:redZip})}}>- Red</li>
                         <li onClick={()=>{this.setState({cardholder:orangeZip})}}>- Orange</li>
                         <li onClick={()=>{this.setState({cardholder:yellowZip})}}>- Yellow</li>
@@ -195,10 +193,10 @@ class Design extends React.Component{
                         <li>- Purple</li>
                         <li>- Grey</li>
                     </ul>
-                    <ul></ul>
+                    
 
                     <div id={this.state.frontmenusection}>
-                        {/*<div onClick={this.frontToggle} className="boldMenuItems">FRONT</div>*/}
+                        <div onClick={this.frontToggle} className="boldMenuItems">FRONT</div>
                         <ul id={this.state.frontDisplay.front}>
                             <li onClick={this.logoToggle}>Logo Style</li>
                                 <ul id={this.state.logoDisplay.logo}>
@@ -237,9 +235,10 @@ class Design extends React.Component{
                                 </ul>
                             </ul>
                         </div>
-                        
+                        BACK<i class="fas fa-arrow-right" id={this.state.rightarrow} onClick={()=>{this.setState({designRender:"designRenderback"}); this.arrowToggle()}}></i>
+                        <i class="fas fa-arrow-left" id={this.state.leftarrow} onClick={()=>{this.setState({designRender:"designRenderfront"}); this.arrowToggle()}}></i>
                     
-                    <ul></ul>
+                    
                     
                 </div>
             </div> 
@@ -260,7 +259,7 @@ class Design extends React.Component{
             </div>
         <div id={this.state.designRender}>
             <img src={this.state.cardholderFront} id="cardholderFront" alt="cardholder"></img>
-            <img src={this.state.cardholderBack} id="cardholderBack" alt="cardholder"></img>
+            {/*<img src={this.state.cardholderBack} id="cardholderBack" alt="cardholder"></img>*/}
         </div>
         <div id={this.state.carRender}>
         <Carousel/>

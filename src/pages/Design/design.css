@@ -25,7 +25,7 @@ html {
     margin-left: 50vw;
     transform: translate(-50%,0%);
     margin-left: 35vw;
-    margin-top: 80vh;
+    margin-top: 350px;
 }
 
 #right-arrow{
@@ -34,7 +34,7 @@ html {
     margin-left: 50vw;
     transform: translate(-50%,0%);
     margin-left: 65vw;
-    margin-top: 80vh;
+    margin-top: 350px;
 }
 
 #arrow-hidden{
@@ -48,15 +48,20 @@ html {
 }
 
 #sizemenu{
-    position: absolute;
+    margin-top: 30vh;
+    margin-left: 15vw;
+}
+
+#sizeOn{
+    margin-left: 15vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:0;
+    position:absolute;
 }
 
 #fabricmenu{
-    position: absolute;
-    width: 100vw;
-    margin-top:77vh;
-    margin-left: -100px;
-    transform: translate(50%,-50%);
+    margin-left: 15vw;
 }
 
 #fabricmenuback{
@@ -67,12 +72,16 @@ html {
     transform: translate(50%,-50%);
 }
 
+#fabricOn{
+    margin-left: 15vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:0;
+    position:absolute;
+}
+
 #zipmenu{
-    position: absolute;
-    width: 100vw;
-    margin-top:26vh;
-    margin-left: -300px;
-    transform: translate(50%,-50%);
+    margin-left: 15vw;
 }
 
 #zipmenuback{
@@ -84,21 +93,20 @@ html {
 }
 
 #zipOn{
-    position: absolute;
-    width: 100vw;
-    margin-top:26vh;
-    margin-left: -360px;
-    transform: translate(50%,10%);
+    margin-left: 15vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:0;
+    position:absolute;
 }
 
 
 
 #frontmenusection{
-    position: absolute;
-    width: 100vw;
-    margin-top:65vh;
-    margin-left: -400px;
-    transform: translate(50%,-50%);
+    position:absolute;
+    margin-top: -8vh;
+    margin-left: 75vw;
+  
 }
 
 #backmenusection{
@@ -198,12 +206,14 @@ html {
 }
 
 .boldMenuItems {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
 }
 
 #frontOn{
-    
+    padding:0;
+    margin:0;
+    width:50vw
 }
 
 #frontOff{
