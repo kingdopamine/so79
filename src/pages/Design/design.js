@@ -61,6 +61,8 @@ class Design extends React.Component{
             mainmenustyle:'menuOff',
             showbothtoggle1:'boldMenuItems',
             showbothtoggle2:'boldMenuItems',
+            menu2:'menusectionhidden',
+            menu21:'menusectionhidden'
 
             
         }
@@ -95,6 +97,8 @@ class Design extends React.Component{
             this.setState({cardholder:screen})
             this.setState({carRender:''})  
             this.setState({designRender:'designRenderHidden'})
+            this.setState({menu2:'menusectionhidden'})
+            this.setState({menu21:'menusectionhidden'})
             
                  
         } else {
@@ -106,6 +110,8 @@ class Design extends React.Component{
             this.setState({dZip:'dGone', dLogo:'dGone', dPurse:'dGone'})
             this.setState({cardholderFrontDisplay:''})
             this.setState({mainmenustyle:'main-menu-style'})
+            this.setState({menu2:'menu2'})
+            this.setState({menu21:'menu21'})
         }
     }
 
@@ -277,7 +283,10 @@ class Design extends React.Component{
                     <li id="completebespoke">Complete Bespoke Contact Us</li>
                 </ul>
             </div>
-            
+            <div >
+                <i class="fas fa-shopping-basket" id={this.state.menu2}></i>
+                <i class="fab fa-instagram" id={this.state.menu21}></i>
+            </div>
             <button id={this.state.menuFade} onClick={this.menuToggle}>CREATE YOUR OWN</button>
             <p className={this.state.showbothtoggle1} id="showboth" onClick={this.showBothToggle1}><i class="fas fa-align-justify"></i></p>
             <p className={this.state.showbothtoggle2} id="showboth2" onClick={this.showBothToggle2}><i class="fas fa-align-justify"></i></p>

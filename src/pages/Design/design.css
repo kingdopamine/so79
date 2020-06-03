@@ -45,6 +45,8 @@ html {
     animation-iteration-count: infinite;
     
 }
+
+
 #main-menu-so79{
     position: absolute;
     font-weight: 600;
@@ -56,6 +58,22 @@ html {
     animation-iteration-count: infinite;
     font-family:'Courier New', Courier, monospace;
     width:200px
+}
+
+#menu2{
+    position: absolute;
+    margin-left: 92.5vw;
+    padding-top:10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#menu21{
+    position: absolute;
+    font-size: 20px;   
+    cursor: pointer;
+    margin-left: 95.5vw;
+    padding-top:10px;
 }
 
 
