@@ -284,7 +284,7 @@ class Design extends React.Component{
                 </ul>
             </div>
             <div >
-                <i class="fas fa-shopping-basket" id={this.state.menu2}></i>
+                <i class="fas fa-shopping-bag" id={this.state.menu2}></i>
                 <i class="fab fa-instagram" id={this.state.menu21}></i>
             </div>
             <button id={this.state.menuFade} onClick={this.menuToggle}>CREATE YOUR OWN</button>
