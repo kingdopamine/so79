@@ -266,7 +266,7 @@ class Design extends React.Component{
                 </p>
                 <ul className={this.state.mainmenu}>
                     <li>About Us</li>
-                    <li>ITSO79 Collection</li>
+                    <li>SO79 Collection</li>
                     <li>Other Products
                         <ul id="main-menu-submenu">
                             <li>- Bags</li>
