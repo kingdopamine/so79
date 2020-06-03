@@ -17,6 +17,7 @@ html {
     margin-left: 50vw;
     height:75px;
     padding-top: 10px;
+    cursor: pointer;
 }
 
 
@@ -27,13 +28,43 @@ html {
     z-index: 15;
 }
 
+.main-menu-style{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+}
+
+#main-menu{
+    position: absolute;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    animation-name:fader;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+
+.main-menu-list{
+position: absolute;
+padding: 15px;
+margin-top:25px;
+cursor: pointer;
+line-height: 25px;
+}
+
+#main-menu-submenu {
+    
+    padding-left: 0px
+}
+
 #sizemenu{
+    text-align: right;
     margin-top: 30vh;
-    margin-left: 18vw;
+    margin-left: 24vw;
 }
 
 #sizeOn{
-    margin-left: 18vw;
+    margin-left: 24vw;
     margin-top: 0;
     margin-bottom: 0;
     padding:0;
@@ -41,12 +72,13 @@ html {
 }
 
 #fabricmenu{
-    margin-left: 18vw;
+    text-align: right;
+  
 }
 
 
 #fabricOn{
-    margin-left: 18vw;
+    margin-left: 24vw;
     margin-top: 0;
     margin-bottom: 0;
     padding:0;
@@ -54,19 +86,26 @@ html {
 }
 
 #zipmenu{
-    margin-left: 18vw;
+    text-align: right;
+    
 }
 
 
 
 #zipmenuexpanded{
-    margin-left: 18vw;
+    position: absolute;
+    text-align: right;
     margin-top: 0;
     margin-bottom: 0;
     padding:0;
-    position:absolute;
+    margin-left: 24vw;
+    transform: translate(-35%,0%);
+    
 }
 
+#frontdisplaytoggle{
+    position: absolute;
+}
 
 
 #frontmenusection{
@@ -202,7 +241,8 @@ html {
 }
 
 .boldMenuItems {
-    font-size: 15px;
+    padding-bottom: 2px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -304,7 +344,7 @@ li{
 
 
 #cardholderFront{
-    height:350px;
+    height:325px;
     transform: translate(-50%,-50%);
     margin-right: 50px;
     position: absolute;
@@ -314,7 +354,7 @@ li{
 
 
 #cardholderBack{
-    height:350px;
+    height:325px;
     transform: translate(-50%,-50%);
     margin-right: 50px;
     position: absolute;
