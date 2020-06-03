@@ -58,7 +58,9 @@ class Design extends React.Component{
             backmenutoggle:'backmenutoggle',
             showbothtoggle:false,
             mainmenu:'menuOff',
-            mainmenustyle:'menuOff'
+            mainmenustyle:'menuOff',
+            showbothtoggle1:'boldMenuItems',
+            showbothtoggle2:'boldMenuItems',
 
             
         }
@@ -70,7 +72,8 @@ class Design extends React.Component{
         this.designFToggle=this.designFToggle.bind(this)
         this.designBToggle=this.designBToggle.bind(this)
         this.mainDisplayToggle=this.mainDisplayToggle.bind(this)
-        this.showBothToggle=this.showBothToggle.bind(this)
+        this.showBothToggle1=this.showBothToggle1.bind(this)
+        this.showBothToggle2=this.showBothToggle2.bind(this)
         this.mainMenuToggle=this.mainMenuToggle.bind(this)
         
         
@@ -171,8 +174,9 @@ class Design extends React.Component{
         };
     }
 
-    showBothToggle(){
+    showBothToggle1(){
         if(this.state.showbothtoggle===false){
+            
             this.setState({
                 showbothtoggle:true,cardholderFrontDisplay:'',
                 cardholderBackDisplay:'',
@@ -181,9 +185,16 @@ class Design extends React.Component{
                 menuItems:'menuOff',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'menutogglehidden',
+                showbothtoggle2:'menuOff'
             })
         };
         if(this.state.showbothtoggle===true){
+            if(this.state.showboth1===true){
+                this.setState({show1:'boldMenuItems',showboth1:false})
+            };
+            if(this.state.showboth1===true){
+                this.setState({show2:'boldMenuItems',showboth2:false})
+            };
             this.setState({
                 showbothtoggle:false,cardholderFrontDisplay:'',
                 cardholderBackDisplay:'menuOff',
@@ -192,6 +203,41 @@ class Design extends React.Component{
                 menuItems:'menuItems',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'backmenutoggle',
+                showbothtoggle2:'boldMenuItems'
+            })
+        }
+    }
+
+    showBothToggle2(){
+        if(this.state.showbothtoggle===false){
+            
+            this.setState({
+                showbothtoggle:true,cardholderFrontDisplay:'',
+                cardholderBackDisplay:'',
+                cardholderfrontid:'cardholderFrontSBS',
+                cardholderbackid:'cardholderBackSBS',
+                menuItems:'menuOff',
+                frontmenutoggle:'menutogglehidden',
+                backmenutoggle:'menutogglehidden',
+                showbothtoggle1:'menuOff'
+            })
+        };
+        if(this.state.showbothtoggle===true){
+            if(this.state.showboth1===true){
+                this.setState({show1:'boldMenuItems',showboth1:false})
+            };
+            if(this.state.showboth1===true){
+                this.setState({show2:'boldMenuItems',showboth2:false})
+            };
+            this.setState({
+                showbothtoggle:false,cardholderFrontDisplay:'',
+                cardholderBackDisplay:'menuOff',
+                cardholderfrontid:'cardholderFront',
+                cardholderbackid:'cardholderBack',
+                menuItems:'menuItems',
+                frontmenutoggle:'menutogglehidden',
+                backmenutoggle:'backmenutoggle',
+                showbothtoggle1:'boldMenuItems'
             })
         }
     }
@@ -215,8 +261,8 @@ class Design extends React.Component{
 
         <div id="createYourOwn" >
             <div className={this.state.mainmenustyle}>
-                <p id="main-menu-so79" onClick={()=>{this.mainMenuToggle()}}>
-                    <i class="fas fa-bars" id="main-menu" ></i >Source Of '79
+                <p id="main-menu-so79" onClick={this.mainMenuToggle}>
+                    <i class="fas fa-bars" id="main-menu" ></i >SOURCE OF 79
                 </p>
                 <ul className={this.state.mainmenu}>
                     <li>About Us</li>
@@ -228,13 +274,13 @@ class Design extends React.Component{
                             <li>- Aprons</li>
                         </ul>
                     </li>
-                    <li>Complete Bespoke & Contact Us</li>
+                    <li id="completebespoke">Complete Bespoke & Contact Us</li>
                 </ul>
             </div>
             
             <button id={this.state.menuFade} onClick={this.menuToggle}>CREATE YOUR OWN</button>
-            <p className="boldMenuItems" id="showboth" onClick={this.showBothToggle}><i class="fas fa-align-justify"></i></p>
-            <p className="boldMenuItems" id="showboth2" onClick={this.showBothToggle}><i class="fas fa-align-justify"></i></p>
+            <p className={this.state.showbothtoggle1} id="showboth" onClick={this.showBothToggle1}><i class="fas fa-align-justify"></i></p>
+            <p className={this.state.showbothtoggle2} id="showboth2" onClick={this.showBothToggle2}><i class="fas fa-align-justify"></i></p>
             <p className="boldMenuItems" id={this.state.frontmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-retweet"></i></p>
             <p className="boldMenuItems" id={this.state.backmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-retweet"></i></p>
                 <div className={this.state.menuItems} >
