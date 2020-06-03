@@ -215,8 +215,8 @@ class Design extends React.Component{
 
         <div id="createYourOwn" >
             <div className={this.state.mainmenustyle}>
-                <p id="main-menu">
-                    <i class="fas fa-bars" id="main-menu" onClick={()=>{this.mainMenuToggle()}}></i >
+                <p id="main-menu-so79" onClick={()=>{this.mainMenuToggle()}}>
+                    <i class="fas fa-bars" id="main-menu" ></i >Source Of '79
                 </p>
                 <ul className={this.state.mainmenu}>
                     <li>About Us</li>
@@ -234,6 +234,7 @@ class Design extends React.Component{
             
             <button id={this.state.menuFade} onClick={this.menuToggle}>CREATE YOUR OWN</button>
             <p className="boldMenuItems" id="showboth" onClick={this.showBothToggle}><i class="fas fa-align-justify"></i></p>
+            <p className="boldMenuItems" id="showboth2" onClick={this.showBothToggle}><i class="fas fa-align-justify"></i></p>
             <p className="boldMenuItems" id={this.state.frontmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-retweet"></i></p>
             <p className="boldMenuItems" id={this.state.backmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-retweet"></i></p>
                 <div className={this.state.menuItems} >
@@ -267,7 +268,7 @@ class Design extends React.Component{
                                     <li>- Waves</li>
                                     <li>- Animals</li>
                                     <li>- Drip</li>
-                                    <li>- Bespoke/Custom</li>
+                                    <li>- Monogram</li>
                                 </ul>
                             </ul>
                         </div>
@@ -288,7 +289,7 @@ class Design extends React.Component{
                                     <li>- Waves</li>
                                     <li>- Animals</li>
                                     <li>- Drip</li>
-                                    <li>- Bespoke/Custom</li>
+                                    <li>- Mongram</li>
                                 </ul>
                             </ul>
                         </div>
