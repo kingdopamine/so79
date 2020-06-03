@@ -234,8 +234,8 @@ class Design extends React.Component{
             
             <button id={this.state.menuFade} onClick={this.menuToggle}>CREATE YOUR OWN</button>
             <p className="boldMenuItems" id="showboth" onClick={this.showBothToggle}><i class="fas fa-align-justify"></i></p>
-            <p className="boldMenuItems" id={this.state.frontmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-sync"></i></p>
-            <p className="boldMenuItems" id={this.state.backmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-sync"></i></p>
+            <p className="boldMenuItems" id={this.state.frontmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-retweet"></i></p>
+            <p className="boldMenuItems" id={this.state.backmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-retweet"></i></p>
                 <div className={this.state.menuItems} >
                     
                     <div className="boldMenuItems" id="sizemenu">SIZE</div>
