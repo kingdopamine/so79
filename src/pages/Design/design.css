@@ -486,33 +486,71 @@ li{
 
 
 @media (max-width:100vh){
-    *{
-        font-size:10px;
-    }
-
-    #homebutton{
-        height:30px
-    }
-
-    .deconstruct {
-        max-height:30vh;
-        margin-top:40vh;
-    }
-
-    #createYourOwn{
+    #cardholderFront{
+        height:225px;
+        margin-top: 150px;
         transform: translate(-50%,0%);
-        margin-left: 50vw;
-        padding:0;
-        margin-top: 60vh;
+    }
+    
+    
+    #cardholderBack{
+        height:225px;
+        margin-top: 150px;
+        transform: translate(-50%,0%);
     }
 
-  
-
-    #MIL{
-        margin-top: 17.5vh;
-       
-        
+    #frontmenusection{
+        position:absolute;
+        margin-top: -56px;
+        margin-left: 65vw;
+      
+    }
+    
+    #backmenusection{
+        position:absolute;
+        margin-top: -71px;
+        margin-left: 65vw;
+    
     }
 
+    #sizemenu{
+        text-align: right;
+        margin-top: 400px;
+        margin-left: 24vw;
+    }
+
+    #cardholderFrontSBS{
+        height:225px;
+        transform: translate(-0%,0%);
+        margin-right: 50px;
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 25px;
+    }
+    
+    #cardholderBackSBS{
+        height:225px;
+        transform: translate(0%,0%);
+        margin-right: 50px;
+        position: absolute;
+        margin-top: 425px;
+        margin-left: 25px;
+    }
+
+    #frontmenutoggle{
+        margin-top: 400px;
+    }
+    
+    
+    #backmenutoggle{
+        margin-top: 400px;
+    }
+    
+    
+    
+    #showboth{
+        margin-top: 400px;
+    }
+    
    
 }
