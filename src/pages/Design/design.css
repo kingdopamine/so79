@@ -63,7 +63,7 @@ html {
 #menu2{
     position: absolute;
     margin-left: 92.5vw;
-    padding-top:10px;
+    padding-top:9px;
     font-size: 20px;
     cursor: pointer;
 }
@@ -612,5 +612,11 @@ li{
         margin-left: 40vw;
     }
     
-   
+    #menu2{
+        
+        margin-left: 87.5vw;
+       
+    }
+    
+  
 }
