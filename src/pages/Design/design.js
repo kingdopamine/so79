@@ -172,15 +172,40 @@ class Design extends React.Component{
 
     mainDisplayToggle(){
         if(this.state.frontmenusection==='frontmenusection'){
-            this.setState({frontmenusection:'menusectionhidden',backmenusection:'backmenusection',cardholderFrontDisplay:'menuOff',cardholderBackDisplay:'',frontmenutoggle:'frontmenutoggle',backmenutoggle:'menutogglehidden'})
+            this.setState({
+                frontmenusection:'menusectionhidden',
+                backmenusection:'backmenusection',
+                cardholderFrontDisplay:'menuOff',
+                cardholderBackDisplay:'',
+                frontmenutoggle:'frontmenutoggle',
+                backmenutoggle:'menutogglehidden'
+            })
         };
         
         if(this.state.frontmenusection==='menusectionhidden'){
-            this.setState({frontmenusection:'frontmenusection',backmenusection:'menusectionhidden',cardholderFrontDisplay:'',cardholderBackDisplay:'menuOff',frontmenutoggle:'menutogglehidden',backmenutoggle:'backmenutoggle'})
+            this.setState({
+                frontmenusection:'frontmenusection',
+                backmenusection:'menusectionhidden',
+                cardholderFrontDisplay:'',
+                cardholderBackDisplay:'menuOff',
+                frontmenutoggle:'menutogglehidden',
+                backmenutoggle:'backmenutoggle'
+            })
         };
     }
 
     showBothToggle1(){
+        if(this.state.frontmenusection==='menusectionhidden'){
+            this.setState({
+                frontmenusection:'frontmenusection',
+                backmenusection:'menusectionhidden',
+                cardholderFrontDisplay:'',
+                cardholderBackDisplay:'menuOff',
+                frontmenutoggle:'menutogglehidden',
+                backmenutoggle:'backmenutoggle'
+            })
+        };
+        
         if(this.state.showbothtoggle===false){
             
             this.setState({
@@ -195,6 +220,7 @@ class Design extends React.Component{
             })
         };
         if(this.state.showbothtoggle===true){
+            
             if(this.state.showboth1===true){
                 this.setState({show1:'boldMenuItems',showboth1:false})
             };
@@ -215,7 +241,19 @@ class Design extends React.Component{
     }
 
     showBothToggle2(){
+        if(this.state.frontmenusection==='menusectionhidden'){
+            this.setState({
+                frontmenusection:'frontmenusection',
+                backmenusection:'menusectionhidden',
+                cardholderFrontDisplay:'',
+                cardholderBackDisplay:'menuOff',
+                frontmenutoggle:'menutogglehidden',
+                backmenutoggle:'backmenutoggle'
+            })
+        };
+        
         if(this.state.showbothtoggle===false){
+            
             
             this.setState({
                 showbothtoggle:true,cardholderFrontDisplay:'',
@@ -284,8 +322,8 @@ class Design extends React.Component{
                 </ul>
             </div>
             <div >
-                <i class="fas fa-shopping-bag" id={this.state.menu2}></i>
                 <i class="fab fa-instagram" id={this.state.menu21}></i>
+                <i class="fas fa-shopping-bag" id={this.state.menu2}></i>
             </div>
             <button id={this.state.menuFade} onClick={this.menuToggle}>CREATE YOUR OWN</button>
             <p className={this.state.showbothtoggle1} id="showboth" onClick={this.showBothToggle1}><i class="fas fa-align-justify"></i></p>
