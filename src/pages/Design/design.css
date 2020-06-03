@@ -344,7 +344,8 @@ li{
 
 
 #cardholderFront{
-    height:325px;
+    height:35vw;
+    max-height: 325px;
     transform: translate(-50%,-50%);
     margin-right: 50px;
     position: absolute;
@@ -354,7 +355,8 @@ li{
 
 
 #cardholderBack{
-    height:325px;
+    height:35vw;
+    max-height: 325px;
     transform: translate(-50%,-50%);
     margin-right: 50px;
     position: absolute;
@@ -364,16 +366,18 @@ li{
 
 
 #cardholderFrontSBS{
-    height:350px;
+    height:35vw;
+    max-height: 325px;
     transform: translate(-50%,-50%);
     margin-right: 50px;
     position: absolute;
     margin-top: 50vh;
-    margin-left: 30vw;
+    margin-left: 25vw;
 }
 
 #cardholderBackSBS{
-    height:350px;
+    height:35vw;
+    max-height: 325px;
     transform: translate(-50%,-50%);
     margin-right: 50px;
     position: absolute;
