@@ -220,7 +220,7 @@ class Design extends React.Component{
                 </p>
                 <ul className={this.state.mainmenu}>
                     <li>About Us</li>
-                    <li>Collection/Gallery</li>
+                    <li>Collection / Gallery</li>
                     <li>Other Products
                         <ul id="main-menu-submenu">
                             <li>- Bags</li>
@@ -228,7 +228,7 @@ class Design extends React.Component{
                             <li>- Aprons</li>
                         </ul>
                     </li>
-                    <li>Complete Bespoke / Contact Us</li>
+                    <li>Complete Bespoke & Contact Us</li>
                 </ul>
             </div>
             

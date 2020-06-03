@@ -31,6 +31,7 @@ html {
 .main-menu-style{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
+    
 }
 
 #main-menu{
@@ -50,7 +51,11 @@ padding: 15px;
 margin-top:25px;
 cursor: pointer;
 line-height: 25px;
+background-color: rgba(255,255,255,0.75);
+width:130px; 
 }
+
+
 
 #main-menu-submenu {
     
@@ -372,7 +377,7 @@ li{
     margin-right: 50px;
     position: absolute;
     margin-top: 50vh;
-    margin-left: 25vw;
+    margin-left: 27vw;
 }
 
 #cardholderBackSBS{
@@ -382,7 +387,7 @@ li{
     margin-right: 50px;
     position: absolute;
     margin-top: 50vh;
-    margin-left: 70vw;
+    margin-left: 72vw;
 }
 
 .deconstruct {
