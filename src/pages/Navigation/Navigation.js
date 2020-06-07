@@ -32,6 +32,7 @@ class Navigation extends React.Component{
                         <i class="fas fa-bars" id="main-menu" ></i >SOURCE OF 79
                     </p>
                     <ul className={this.state.mainmenu}>
+                    <li><a href="/">Create Your Own</a></li>
                         <li><a href="/about-us">About Us</a></li>
                         <li><a href="/so79-collection">SO79 Collection</a></li>
                         <li>Other Products
