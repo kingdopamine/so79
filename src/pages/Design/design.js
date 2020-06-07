@@ -4,7 +4,7 @@ import './design.css';
 import Carousel from '../Carousel/Carousel'
 import Navigation from '../Navigation/Navigation'
 
-import foreground from './Recrafted with Logo.png'
+
 
 import cardholderFront from './DCfront.jpg';
 
@@ -291,7 +291,7 @@ class Design extends React.Component{
         
         return (
        <div id="design-page">
-        <a href='/'><img src={foreground} id='homebutton' alt='homebutton'/></a> 
+        
         
 
         <div id="createYourOwn" >

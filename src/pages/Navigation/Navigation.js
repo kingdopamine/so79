@@ -2,6 +2,8 @@ import React from 'react'
 
 import './Navigation.css'
 
+import foreground from './Recrafted with Logo.png'
+
 class Navigation extends React.Component{
     constructor(props){
         super(props)
@@ -24,6 +26,7 @@ class Navigation extends React.Component{
     render(){
         return(
             <div>
+                <a href='/'><img src={foreground} id='homebutton' alt='homebutton'/></a> 
                 <div className={this.props.menuShow}>
                     <p id="main-menu-so79" onClick={this.mainMenuToggle}>
                         <i class="fas fa-bars" id="main-menu" ></i >SOURCE OF 79
