@@ -2,6 +2,7 @@ import React from 'react';
 import './design.css';
 
 import Carousel from '../Carousel/Carousel'
+import Navigation from '../Navigation/Navigation'
 
 import foreground from './Recrafted with Logo.png'
 
@@ -49,7 +50,6 @@ class Design extends React.Component{
             menuItems:'menuOff',
             menuFade:'menu',
             carRender:'',
-            designRender:'designRenderHidden',
             frontmenusection:'frontmenusection',
             backmenusection:'menusectionhidden',
             zipmenu:'zipmenu',
@@ -57,7 +57,6 @@ class Design extends React.Component{
             frontmenutoggle:'menutogglehidden',
             backmenutoggle:'backmenutoggle',
             showbothtoggle:false,
-            mainmenu:'menuOff',
             mainmenustyle:'menuOff',
             showbothtoggle1:'boldMenuItems',
             showbothtoggle2:'boldMenuItems',
@@ -76,7 +75,7 @@ class Design extends React.Component{
         this.mainDisplayToggle=this.mainDisplayToggle.bind(this)
         this.showBothToggle1=this.showBothToggle1.bind(this)
         this.showBothToggle2=this.showBothToggle2.bind(this)
-        this.mainMenuToggle=this.mainMenuToggle.bind(this)
+        
         
         
         
@@ -96,7 +95,6 @@ class Design extends React.Component{
             this.setState({cardholder:goldOutlineLogo})
             this.setState({cardholder:screen})
             this.setState({carRender:''})  
-            this.setState({designRender:'designRenderHidden'})
             this.setState({menu2:'menusectionhidden'})
             this.setState({menu21:'menusectionhidden'})
             
@@ -106,7 +104,6 @@ class Design extends React.Component{
             this.setState({menuFade:'fadeOff'})
             this.setState({cardholder:goldOutlineLogo})
             this.setState({carRender:'noCarRender'})
-            this.setState({designRender:'designRenderfront'})
             this.setState({dZip:'dGone', dLogo:'dGone', dPurse:'dGone'})
             this.setState({cardholderFrontDisplay:''})
             this.setState({mainmenustyle:'main-menu-style'})
@@ -286,13 +283,7 @@ class Design extends React.Component{
         }
     }
 
-    mainMenuToggle(){
-        if(this.state.mainmenu==="menuOff"){
-            this.setState({mainmenu:"main-menu-list"})
-        } else {
-            this.setState({mainmenu:"menuOff"})
-        }
-    }
+    
 
    
 
@@ -304,48 +295,33 @@ class Design extends React.Component{
         
 
         <div id="createYourOwn" >
-            <div className={this.state.mainmenustyle}>
-                <p id="main-menu-so79" onClick={this.mainMenuToggle}>
-                    <i class="fas fa-bars" id="main-menu" ></i >SOURCE OF 79
-                </p>
-                <ul className={this.state.mainmenu}>
-                    <li>About Us</li>
-                    <li>SO79 Collection</li>
-                    <li>Other Products
-                        <ul id="main-menu-submenu">
-                            <li>- Bags</li>
-                            <li>- T-shirts</li>
-                            <li>- Aprons</li>
-                        </ul>
-                    </li>
-                    <li id="completebespoke">Complete Bespoke Contact Us</li>
-                </ul>
-            </div>
-            <div >
-                <i class="fab fa-instagram" id={this.state.menu21}></i>
-                <i class="fas fa-shopping-bag" id={this.state.menu2}></i>
-            </div>
+            <Navigation menuShow={this.state.mainmenustyle} igicon={this.state.menu2} bagicon={this.state.menu21}/>
+            
             <button id={this.state.menuFade} onClick={this.menuToggle}>CREATE YOUR OWN</button>
-            <p className={this.state.showbothtoggle1} id="showboth" onClick={this.showBothToggle1}><i class="fas fa-align-justify"></i></p>
-            <p className={this.state.showbothtoggle2} id="showboth2" onClick={this.showBothToggle2}><i class="fas fa-align-justify"></i></p>
-            <p className="boldMenuItems" id={this.state.frontmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-retweet"></i></p>
-            <p className="boldMenuItems" id={this.state.backmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-retweet"></i></p>
-                <div className={this.state.menuItems} >
-                    
-                    <div className="boldMenuItems" id="sizemenu">SIZE</div>
-                    <div className="boldMenuItems" id={this.state.fabricmenu}>FABRIC CHOICE</div>
-                    <div onClick={this.zipToggle} className="boldMenuItems" id={this.state.zipmenu}>ZIP COLOUR</div>
-                    <ul className={this.state.zipDisplay} id="zipmenuexpanded">
-                        <li onClick={()=>{this.setState({cardholder:redZip})}}>Red</li>
-                        <li onClick={()=>{this.setState({cardholder:orangeZip})}}>Orange</li>
-                        <li onClick={()=>{this.setState({cardholder:yellowZip})}}>Yellow</li>
-                        <li>Green</li>
-                        <li onClick={()=>{this.setState({cardholder:blueZip})}}>Blue</li>
-                        <li>Purple</li>
-                        <li>Grey</li>
-                    </ul>
-                    
 
+            <div id="toggles">
+                <p className={this.state.showbothtoggle1} id="showboth" onClick={this.showBothToggle1}><i class="fas fa-align-justify"></i></p>
+                <p className={this.state.showbothtoggle2} id="showboth2" onClick={this.showBothToggle2}><i class="fas fa-align-justify"></i></p>
+                <p className="boldMenuItems" id={this.state.frontmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-retweet"></i></p>
+                <p className="boldMenuItems" id={this.state.backmenutoggle} onClick={()=>{this.mainDisplayToggle()}}><i class="fas fa-retweet"></i></p>
+            </div>
+            
+                <div className={this.state.menuItems} >
+                    <div id="leftMenu">
+                        <div className="boldMenuItems" id="sizemenu">SIZE</div>
+                        <div className="boldMenuItems" id={this.state.fabricmenu}>FABRIC CHOICE</div>
+                        <div onClick={this.zipToggle} className="boldMenuItems" id={this.state.zipmenu}>ZIP COLOUR</div>
+                        <ul className={this.state.zipDisplay} id="zipmenuexpanded">
+                            <li onClick={()=>{this.setState({cardholder:redZip})}}>Red</li>
+                            <li onClick={()=>{this.setState({cardholder:orangeZip})}}>Orange</li>
+                            <li onClick={()=>{this.setState({cardholder:yellowZip})}}>Yellow</li>
+                            <li>Green</li>
+                            <li onClick={()=>{this.setState({cardholder:blueZip})}}>Blue</li>
+                            <li>Purple</li>
+                            <li>Grey</li>
+                        </ul>
+                    </div>
+                    <div id="rightMenu">
                     <div id={this.state.frontmenusection}>
                         <div onClick={this.frontToggle} className="boldMenuItems" >FRONT</div>
                         <ul className={this.state.frontDisplay} id="frontmenuexpanded">
@@ -386,6 +362,10 @@ class Design extends React.Component{
                                 </ul>
                             </ul>
                         </div>
+                    </div>
+                    
+
+                    
                     
                     
                     

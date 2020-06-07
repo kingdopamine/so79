@@ -28,11 +28,7 @@ html {
     z-index: 15;
 }
 
-.main-menu-style{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 200;
-    
-}
+
 
 #main-menu{
     position: absolute;
@@ -40,9 +36,7 @@ html {
     font-size: 16px;
     margin-left: -17.5px;
     cursor: pointer;
-    animation-name:fader;
-    animation-duration:4s;
-    animation-iteration-count: infinite;
+    
     
 }
 
@@ -53,55 +47,26 @@ html {
     font-size: 16px;
     margin-left: 25px;
     cursor: pointer;
-    animation-name:fader;
-    animation-duration:4s;
-    animation-iteration-count: infinite;
     font-family:'Courier New', Courier, monospace;
     width:200px
 }
 
-#menu2{
-    position: absolute;
-    margin-left: 95.5vw;
-    padding-top:9px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-#menu21{
-    position: absolute;
-    font-size: 20px;   
-    cursor: pointer;
-    margin-left: 92.5vw;
-    padding-top:10px;
-}
 
 
-.main-menu-list{
-position: absolute;
-padding: 15px;
-margin-top:35px;
-cursor: pointer;
-line-height: 25px;
-background-color: rgba(255,255,255,0.75);
-width:120px; 
-}
-
-#completebespoke{
-    margin-top: 5px;
-    line-height: 14px;
-}
 
 
-#main-menu-submenu {
-    
-    padding-left: 0px
-}
+
+
+
+
+
+
+
 
 #sizemenu{
     text-align: right;
-    margin-top: 30vh;
-    margin-left: 24vw;
+    margin-top: 0vh;
+    margin-left: 0vw;
 }
 
 #sizeOn{
@@ -134,13 +99,13 @@ width:120px;
 
 
 #zipmenuexpanded{
-    position: absolute;
+   
     text-align: right;
     margin-top: 0;
     margin-bottom: 0;
     padding:0;
-    margin-left: 24vw;
-    transform: translate(-35%,0%);
+    
+    
     
 }
 
@@ -150,16 +115,14 @@ width:120px;
 
 
 #frontmenusection{
-    position:absolute;
-    margin-top: -9vh;
-    margin-left: 72vw;
+   
   
 }
 
 #backmenusection{
-    position:absolute;
-    margin-top: -11.15vh;
-    margin-left: 72vw;
+    
+    margin-top: -15px;
+    
 
 }
 
@@ -192,11 +155,20 @@ width:120px;
     display: none;
 }
 
+#toggles{
+    
+    height: 550px;
+    width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-left: 50vw;
+    margin-top: 50vh;
+}
 
 #showboth{
     position: absolute;
-    margin-left: 45vw;
-    margin-top: 80vh;
+    margin-left: 185px;
+    margin-top: 515px;
     transform: translate(-50%,0%);
     font-size: 17px;
     cursor: pointer;
@@ -204,13 +176,34 @@ width:120px;
 
 #showboth2{
     position: absolute;
-    margin-left: 43vw;
-    margin-top: 80vh;
+    margin-left: 160px;
+    margin-top: 515px;
     transform: translate(-50%,0%);
     font-size: 17px;
     cursor: pointer;
+    
 }
 
+#frontmenutoggle{
+    position: absolute;
+    margin-left: 315px;
+    margin-top: 515px;
+    transform: translate(-50%,0%);
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+
+
+#backmenutoggle{
+    position: absolute;
+    margin-left: 315px;
+    margin-top: 515px;
+    transform: translate(-50%,0%);
+    font-size: 17px;
+    cursor: pointer;
+    
+}
 
 
 
@@ -260,14 +253,17 @@ width:120px;
 }
 
 .menuItems {
-    
+    position: absolute;
+    height:30vw;
+    max-height: 275px;
+    width:85vw;
+    max-width:800px;
+    transform: translate(-50%,-50%);
+    margin-top: 50vh;
+    margin-left: 50vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    text-align: left;
     cursor: pointer;
-    animation-name:faderv;
-    animation-duration:4s;
-    animation-iteration-count: infinite;
+    z-index:-1
 }
 
 
@@ -279,6 +275,20 @@ width:120px;
 .menuItems li:hover{
     text-decoration: underline;
 }
+
+#leftMenu{
+    display: inline-block;
+    
+    width:125px
+}
+
+#rightMenu{
+    float: right;
+    margin-top: -3px;
+    width:125px
+}
+
+
 
 .classMenu {
     font-weight: 300;
@@ -354,44 +364,6 @@ li{
 
 
 
-#designRenderHidden{
-    display:none
-}
-
-
-#designRenderfront{
-    position: absolute;
-    margin-top: 50vh;
-    margin-left: 50vw;
-    animation-name: slidetofront;
-    animation-duration: 400ms;
-}
-
-#designRenderback{
-    position: absolute;
-    margin-top: 50vh;
-    margin-left: 6.5vw;
-    animation-name: slidetoback;
-    animation-duration: 400ms;
-}
-
-@keyframes slidetofront{
-    0%{
-        margin-left: 6.5vw;
-    }
-    100%{
-        margin-left: 50vw;
-    }
-}
-
-@keyframes slidetoback{
-    0%{
-        margin-left: 50vw;
-    }
-    100%{
-        margin-left: 6.5vw;
-    }
-}
 
 
 #cardholderFront{
@@ -540,7 +512,59 @@ li{
 
 
 
-@media (max-width:100vh){
+@media (max-width:600px){
+    .menuItems {
+        margin-top: 400px;
+        
+        height: 100px;
+        width:370px;
+        transform: translate(-50%,0%);
+        
+        
+    }
+
+    #toggles{
+        margin-top: 285px;
+        height: 400px;
+        width: 400px;
+        
+    }
+
+    #showboth{
+        
+        margin-left: 185px;
+        margin-top: 315px;
+     
+    }
+    
+    #showboth2{
+        
+        margin-left: 165px;
+        margin-top: 315px;
+        
+    }
+    
+    #frontmenutoggle{
+        position: absolute;
+        margin-left: 220px;
+        margin-top: 315px;
+  
+        
+    }
+    
+    
+    #backmenutoggle{
+        position: absolute;
+        margin-left: 220px;
+        margin-top: 315px;
+        
+        
+    }
+
+    #rightMenu{
+        width:140px
+    }
+
     #cardholderFront{
         height:225px;
         margin-top: 150px;
@@ -554,68 +578,35 @@ li{
         transform: translate(-50%,0%);
     }
 
-    #frontmenusection{
-        position:absolute;
-        margin-top: -56px;
-        margin-left: 65vw;
-      
-    }
-    
-    #backmenusection{
-        position:absolute;
-        margin-top: -71px;
-        margin-left: 65vw;
-    
-    }
+   
 
-    #sizemenu{
-        text-align: right;
-        margin-top: 400px;
-        margin-left: 24vw;
-    }
+   
 
     #cardholderFrontSBS{
         height:225px;
-        transform: translate(-0%,0%);
+        transform: translate(-50%,0%);
         margin-right: 50px;
         position: absolute;
         margin-top: 150px;
-        margin-left: 25px;
+        margin-left: 50vw;
     }
     
     #cardholderBackSBS{
         height:225px;
-        transform: translate(0%,0%);
+        transform: translate(-50%,0%);
         margin-right: 50px;
         position: absolute;
         margin-top: 425px;
-        margin-left: 25px;
+        margin-left: 50vw;
     }
 
-    #frontmenutoggle{
-        margin-top: 400px;
-    }
     
     
-    #backmenutoggle{
-        margin-top: 400px;
-    }
-    
-    
-    
-    #showboth{
-        margin-top: 400px;
-    }
+   
 
-    #showboth2{
-        margin-top: 400px;
-        margin-left: 40vw;
-    }
-    
-    #menu21{
-        
-        margin-left: 87.5vw;
-       
+    .deconstruct {
+        max-height:30vh;
+        margin-top:40vh;
     }
     
   
