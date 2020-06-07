@@ -10,7 +10,7 @@ import {
   Redirect 
 } from 'react-router-dom';
 
-
+import Homepage from './pages/Homepage/Homepage'
 import Design from './pages/Design/design'
 import AboutUs from './pages/AboutUs/AboutUs'
 import Aprons from './pages/Aprons/Aprons'
@@ -32,7 +32,8 @@ class App extends React.Component {
     
     return (
       <Router>
-        {<Route exact path="/" component={Design} />}
+        {<Route exact path="/" component={Homepage} />}
+        {<Route exact path="/create-your-own" component={Design} />}
         {<Route exact path="/about-us" component={AboutUs} />}
         {<Route exact path="/aprons" component={Aprons} />}
         {<Route exact path="/bags" component={Bags} />}

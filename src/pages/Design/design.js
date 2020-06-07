@@ -1,12 +1,10 @@
 import React from 'react';
 import './design.css';
 
-import Carousel from '../Carousel/Carousel'
+
 import Navigation from '../Navigation/Navigation'
 
 
-
-import cardholderFront from './DCfront.jpg';
 
 
 import redZip from './RedZipPlain.jpg';
@@ -20,12 +18,10 @@ import solidGoldLogo from './SolidGoldLogo.png';
 import ecruLogo from './EcruLogo.png';
 import solidRedLogo from './SolidRedLogo.png';
 
-import deconstructedZip from './YellowZip Only.png';
-import deconstructedPurse from './Denim purse Only.png';
-import deconstructedLogo from './Just logo only.png'
 
 
-import screen from './screen.jpg';
+
+
 
 class Design extends React.Component{
     constructor(props){
@@ -37,19 +33,17 @@ class Design extends React.Component{
             dZip:'dZip',
             dPurse:'dPurse',
             dLogo:'dLogo',
-            zipDisplay:'menuOff',
+            zipDisplay:"menuOff",
             frontDisplay:'',
             backDisplay:'',
             logoDisplay:'menuOff',
             designFDisplay:'menuOff',
             designBDisplay:'menuOff',
-            cardholderFrontDisplay:'menuOff',
+            cardholderFrontDisplay:'',
             cardholderBackDisplay:'menuOff',
             cardholderfrontid:'cardholderFront',
             cardholderbackid:'cardholderBack',
-            menuItems:'menuOff',
-            menuFade:'menu',
-            carRender:'',
+            menuItems:'menuItems',
             frontmenusection:'frontmenusection',
             backmenusection:'menusectionhidden',
             zipmenu:'zipmenu',
@@ -57,16 +51,12 @@ class Design extends React.Component{
             frontmenutoggle:'menutogglehidden',
             backmenutoggle:'backmenutoggle',
             showbothtoggle:false,
-            mainmenustyle:'menuOff',
             showbothtoggle1:'boldMenuItems',
             showbothtoggle2:'boldMenuItems',
-            menu2:'menusectionhidden',
-            menu21:'menusectionhidden'
-
             
         }
+        
         this.zipToggle=this.zipToggle.bind(this)
-        this.menuToggle=this.menuToggle.bind(this)
         this.frontToggle=this.frontToggle.bind(this)
         this.backToggle=this.backToggle.bind(this)
         this.logoToggle=this.logoToggle.bind(this)
@@ -79,37 +69,6 @@ class Design extends React.Component{
         
         
         
-    }
-
-    menuToggle(){
-        
-        if(this.state.menuItems==='menuItems'){
-            this.setState({menuItems:'menuOff'})
-            this.setState({menuFade:'menu'})
-            this.setState({zipDisplay:"menuOff"})
-            this.setState({frontDisplay:"menuOff"})
-            this.setState({backDisplay:'menuOff'})
-            this.setState({logoDisplay:{logo:'menuOff'}})
-            this.setState({designFDisplay:"menuOff"})
-            this.setState({designBDisplay:"menuOff"})
-            this.setState({cardholder:goldOutlineLogo})
-            this.setState({cardholder:screen})
-            this.setState({carRender:''})  
-            this.setState({menu2:'menusectionhidden'})
-            this.setState({menu21:'menusectionhidden'})
-            
-                 
-        } else {
-            this.setState({menuItems:'menuItems'});
-            this.setState({menuFade:'fadeOff'})
-            this.setState({cardholder:goldOutlineLogo})
-            this.setState({carRender:'noCarRender'})
-            this.setState({dZip:'dGone', dLogo:'dGone', dPurse:'dGone'})
-            this.setState({cardholderFrontDisplay:''})
-            this.setState({mainmenustyle:'main-menu-style'})
-            this.setState({menu2:'menu2'})
-            this.setState({menu21:'menu21'})
-        }
     }
 
     zipToggle(){
@@ -295,10 +254,9 @@ class Design extends React.Component{
         
 
         <div id="createYourOwn" >
-            <Navigation menuShow={this.state.mainmenustyle} igicon={this.state.menu2} bagicon={this.state.menu21}/>
-            
-            <button id={this.state.menuFade} onClick={this.menuToggle}>CREATE YOUR OWN</button>
 
+            <Navigation menuShow="main-menu-style" igicon="menu2" bagicon="menu21"/>
+            
             <div id="toggles">
                 <p className={this.state.showbothtoggle1} id="showboth" onClick={this.showBothToggle1}><i class="fas fa-align-justify"></i></p>
                 <p className={this.state.showbothtoggle2} id="showboth2" onClick={this.showBothToggle2}><i class="fas fa-align-justify"></i></p>
@@ -373,26 +331,12 @@ class Design extends React.Component{
             </div> 
 
 
-
-        {/*<div id="design-render">
-            <img 
-                src={this.state.cardholder} blank cardholder
-                id="cardholder1" 
-                alt="cardholder" 
-                ></img>
-        </div>*/}
-            <div id={this.state.openAnimation}>
-                <img src={deconstructedZip} className="deconstruct" id={this.state.dZip} alt="yellow zip"></img>
-                <img src={deconstructedPurse} className="deconstruct" id={this.state.dPurse} alt="denim purse"></img>
-                <img src={deconstructedLogo} className="deconstruct" id={this.state.dLogo} alt="so79 logo"></img>
-            </div>
+            
         
             <img src={this.state.cardholderFront} className={this.state.cardholderFrontDisplay} id={this.state.cardholderfrontid} alt="cardholder"></img>
             <img src={this.state.cardholderBack} className={this.state.cardholderBackDisplay}  id={this.state.cardholderbackid} alt="cardholder"></img>
         
-        <div id={this.state.carRender}>
-        <Carousel/>
-        </div>
+        
         
 
         
