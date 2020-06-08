@@ -1,0 +1,90 @@
+#walletFocus img{
+    height:35vw;
+    max-height: 325px;
+    transform: translate(-50%,-50%);
+    margin-right: 50px;
+    margin-top: 45vh;
+    margin-left: 50vw;
+    
+    
+    
+}
+
+#walletFocus {
+    
+    max-height: 75vh;
+}
+
+#walletSelection {
+    
+    transform: translate(-50%,0%);
+    margin-left: 51vw;
+    width: 100vw;
+    max-width: 750px;
+    height: 450px;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#walletSelection img {
+    width: 22.5vw;
+    max-width:210px;
+    padding:13px;
+    cursor: pointer;
+}
+
+#walletScroll{
+    
+    width:84vw;
+    max-width: 750px;
+}
+
+#aboutWalletContainer{
+    position: absolute;
+    width: 900px;
+    height: 400px;
+    margin-left: 50vw;
+    margin-top: 50vh;
+    transform: translate(-50%,-50%);
+    
+}
+
+
+#aboutWallet{
+    
+    text-align: right;
+    float: right;
+    width: 200px;
+    position: relative;
+    z-index: 5;
+
+}
+
+#addToBasketButton{
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+@media(max-width:499px){
+    #walletSelection img {
+        width: 17vw;
+        
+    }
+
+    #walletSelection {
+        height: 250px;
+    }
+
+    #aboutWalletContainer {
+        width: 300px;
+        height: 250px;
+    }
+
+    #addToBasketButton{
+        font-size: 20px;
+        
+    }
+}

@@ -8,6 +8,7 @@ import deconstructedZip from './YellowZip Only.png';
 import deconstructedPurse from './Denim purse Only.png';
 import deconstructedLogo from './Just logo only.png'
 
+import foreground from '../Navigation/Recrafted with Logo.png'
 
 
 
@@ -23,6 +24,7 @@ class Homepage extends React.Component {
       
       
         <div id="scroll">
+          <a href='/'><img src={foreground} id='homebutton' alt='homebutton'/></a>
           <div id="homepage">
             <button id="CYOButton"><a href="/create-your-own">CREATE YOUR OWN</a></button>
           </div>

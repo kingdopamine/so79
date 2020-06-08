@@ -8,7 +8,7 @@
 #homepage {  
   position: absolute;
   
-  z-index: 15;
+ 
 }
 
 #dZip{
@@ -127,6 +127,7 @@
       color: rgba(0,0,0,1);
   }
 }
+
 
 
 @media (max-width:600px){

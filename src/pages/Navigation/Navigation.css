@@ -19,6 +19,16 @@
     z-index: 1;
 }
 
+#main-menu-so79{
+    position: absolute;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-family:'Courier New', Courier, monospace;
+    width:200px
+}
+
 #main-menu-submenu {
     
     padding-left: 0px
@@ -27,6 +37,16 @@
 #completebespoke{
     margin-top: 5px;
     line-height: 14px;
+}
+
+#homebutton{
+    position: absolute;
+    transform: translate(-50%,0%);
+    margin-left: 50vw;
+    height:87.5px;
+    padding-top: 10px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 #menu2{
@@ -50,6 +70,19 @@
         
         margin-left: 87.5vw;
        
+    }
+
+    #main-menu-so79{
+        
+        font-size: 12px;
+        
+    }
+
+    .main-menu-list a{
+        font-size: 12px;
+    }
+    .main-menu-list li{
+        font-size: 12px;
     }
 }
     

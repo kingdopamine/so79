@@ -9,14 +9,7 @@
     opacity:0;
 }
 
-#homebutton{
-    position: absolute;
-    transform: translate(-50%,0%);
-    margin-left: 50vw;
-    height:87.5px;
-    padding-top: 10px;
-    cursor: pointer;
-}
+
 
 
 
@@ -39,15 +32,7 @@
 }
 
 
-#main-menu-so79{
-    position: absolute;
-    font-weight: 600;
-    font-size: 16px;
-    margin-left: 25px;
-    cursor: pointer;
-    font-family:'Courier New', Courier, monospace;
-    width:200px
-}
+
 
 
 
