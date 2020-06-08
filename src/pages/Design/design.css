@@ -23,7 +23,7 @@
 #createYourOwn {  
     position: absolute;
     
-    z-index: 15;
+    
 }
 
 
@@ -235,7 +235,8 @@
     margin-left: 50vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     cursor: pointer;
-    z-index:-1
+    z-index: 1;
+    
 }
 
 
@@ -420,34 +421,35 @@ li{
         height: 100px;
         width:370px;
         transform: translate(-50%,0%);
-        
+        z-index: -1;
         
     }
 
     #toggles{
         margin-top: 285px;
         height: 400px;
-        width: 400px;
+        width: 100px;
+        
         
     }
 
     #showboth{
         
-        margin-left: 185px;
+        margin-left: 32.5px;
         margin-top: 315px;
      
     }
     
     #showboth2{
         
-        margin-left: 165px;
+        margin-left: 12.5px;
         margin-top: 315px;
         
     }
     
     #frontmenutoggle{
         position: absolute;
-        margin-left: 220px;
+        margin-left: 70px;
         margin-top: 315px;
   
         
@@ -456,7 +458,7 @@ li{
     
     #backmenutoggle{
         position: absolute;
-        margin-left: 220px;
+        margin-left: 70px;
         margin-top: 315px;
         
         
