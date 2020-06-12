@@ -919,16 +919,6 @@ class Design extends React.Component{
                                         <li onClick={()=>{this.setState({logoChoice:"solidRed",designStyle:"logo"}); this.displayer()}}>- Solid Red</li>
                                     </ul>    
                                 </ul>
-
-                                <ul className={this.state.designFDisplay} >
-                                    <ul onClick={this.lWavesToggle}>Large Waves</ul>
-                                    <ul id={this.state.lWaves}> 
-                                        <li onClick={()=>{this.setState({lWavesChoice:"gold",designStyle:"largeWaves"}); this.displayer()}}>- Gold</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"silver",designStyle:"largeWaves"}); this.displayer()}}>- Silver</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"green",designStyle:"largeWaves"}); this.displayer()}}>- Green</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"white",designStyle:"largeWaves"}); this.displayer()}}>- White</li>
-                                    </ul>    
-                                </ul>
                                 <ul className={this.state.designFDisplay} >
                                     <ul onClick={this.sWavesToggle}>Small Waves</ul>
                                     <ul id={this.state.sWaves}> 
@@ -936,6 +926,15 @@ class Design extends React.Component{
                                         <li onClick={()=>{this.setState({sWavesChoice:"silver",designStyle:"smallWaves"}); this.displayer()}}>- Silver</li>
                                         <li onClick={()=>{this.setState({sWavesChoice:"green",designStyle:"smallWaves"}); this.displayer()}}>- Green</li>
                                         <li onClick={()=>{this.setState({sWavesChoice:"white",designStyle:"smallWaves"}); this.displayer()}}>- White</li>
+                                    </ul>    
+                                </ul>
+                                <ul className={this.state.designFDisplay} >
+                                    <ul onClick={this.lWavesToggle}>Large Waves</ul>
+                                    <ul id={this.state.lWaves}> 
+                                        <li onClick={()=>{this.setState({lWavesChoice:"gold",designStyle:"largeWaves"}); this.displayer()}}>- Gold</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice:"silver",designStyle:"largeWaves"}); this.displayer()}}>- Silver</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice:"green",designStyle:"largeWaves"}); this.displayer()}}>- Green</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice:"white",designStyle:"largeWaves"}); this.displayer()}}>- White</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
@@ -970,16 +969,6 @@ class Design extends React.Component{
                                         <li onClick={()=>{this.setState({logoChoice:"solidRed",designStyle:"logo"}); this.displayerBack()}}>- Solid Red</li>
                                     </ul>    
                                 </ul>
-
-                                <ul className={this.state.designBDisplay} >
-                                    <ul onClick={this.lWavesToggle}>Large Waves</ul>
-                                    <ul id={this.state.lWaves}> 
-                                        <li onClick={()=>{this.setState({lWavesChoice:"gold",designStyle:"largeWaves"}); this.displayerBack()}}>- Gold</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"silver",designStyle:"largeWaves"}); this.displayerBack()}}>- Silver</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"green",designStyle:"largeWaves"}); this.displayerBack()}}>- Green</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"white",designStyle:"largeWaves"}); this.displayerBack()}}>- White</li>
-                                    </ul>    
-                                </ul>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={this.sWavesToggle}>Small Waves</ul>
                                     <ul id={this.state.sWaves}> 
@@ -987,6 +976,15 @@ class Design extends React.Component{
                                         <li onClick={()=>{this.setState({sWavesChoice:"silver",designStyle:"smallWaves"}); this.displayerBack()}}>- Silver</li>
                                         <li onClick={()=>{this.setState({sWavesChoice:"green",designStyle:"smallWaves"}); this.displayerBack()}}>- Green</li>
                                         <li onClick={()=>{this.setState({sWavesChoice:"white",designStyle:"smallWaves"}); this.displayerBack()}}>- White</li>
+                                    </ul>    
+                                </ul>
+                                <ul className={this.state.designBDisplay} >
+                                    <ul onClick={this.lWavesToggle}>Large Waves</ul>
+                                    <ul id={this.state.lWaves}> 
+                                        <li onClick={()=>{this.setState({lWavesChoice:"gold",designStyle:"largeWaves"}); this.displayerBack()}}>- Gold</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice:"silver",designStyle:"largeWaves"}); this.displayerBack()}}>- Silver</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice:"green",designStyle:"largeWaves"}); this.displayerBack()}}>- Green</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice:"white",designStyle:"largeWaves"}); this.displayerBack()}}>- White</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
