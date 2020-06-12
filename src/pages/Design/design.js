@@ -280,23 +280,14 @@ class Design extends React.Component{
     showBothToggle1(){
         if(this.state.frontmenusection==='menusectionhidden'){
             this.setState({
-                frontmenusection:'frontmenusection',
-                backmenusection:'menusectionhidden',
+                
                 cardholderFrontDisplay:'',
                 cardholderBackDisplay:'menuOff',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'backmenutoggle'
             })
 
-            if(this.state.logo===""){
-                this.logoToggle();
-            };
-            if(this.state.lWaves===""){
-                this.lWavesToggle();
-            };
-            if(this.state.sWaves===""){
-                this.sWavesToggle();
-            }
+            
         };
         
         if(this.state.showbothtoggle===false){
@@ -320,9 +311,16 @@ class Design extends React.Component{
             if(this.state.showboth1===true){
                 this.setState({show2:'boldMenuItems',showboth2:false})
             };
+
+            if(this.state.cardholderDisplay==='front'){
+                this.setState({cardholderFrontDisplay:'',cardholderBackDisplay:'menuOff'})
+            } else {
+                this.setState({cardholderFrontDisplay:'menuOff',cardholderBackDisplay:''})
+            };
+       
+
             this.setState({
-                showbothtoggle:false,cardholderFrontDisplay:'',
-                cardholderBackDisplay:'menuOff',
+                showbothtoggle:false,
                 cardholderfrontid:'cardholderFront',
                 cardholderbackid:'cardholderBack',
                 menuItems:'menuItems',
@@ -336,23 +334,14 @@ class Design extends React.Component{
     showBothToggle2(){
         if(this.state.frontmenusection==='menusectionhidden'){
             this.setState({
-                frontmenusection:'frontmenusection',
-                backmenusection:'menusectionhidden',
+                
                 cardholderFrontDisplay:'',
                 cardholderBackDisplay:'menuOff',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'backmenutoggle'
             })
 
-            if(this.state.logo===""){
-                this.logoToggle();
-            };
-            if(this.state.lWaves===""){
-                this.lWavesToggle();
-            };
-            if(this.state.sWaves===""){
-                this.sWavesToggle();
-            }
+            
         };
         
         if(this.state.showbothtoggle===false){
@@ -376,9 +365,15 @@ class Design extends React.Component{
             if(this.state.showboth1===true){
                 this.setState({show2:'boldMenuItems',showboth2:false})
             };
+
+            if(this.state.cardholderDisplay==='front'){
+                this.setState({cardholderFrontDisplay:'',cardholderBackDisplay:'menuOff'})
+            } else {
+                this.setState({cardholderFrontDisplay:'menuOff',cardholderBackDisplay:''})
+            };
+
             this.setState({
-                showbothtoggle:false,cardholderFrontDisplay:'',
-                cardholderBackDisplay:'menuOff',
+                showbothtoggle:false,
                 cardholderfrontid:'cardholderFront',
                 cardholderbackid:'cardholderBack',
                 menuItems:'menuItems',
