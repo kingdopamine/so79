@@ -196,7 +196,10 @@ class Design extends React.Component{
             this.setState({frontDisplay:"menuOff"})
         } else {
             this.setState({frontDisplay:""})
-        }
+        };
+        this.logoToggle()
+        this.lWavesToggle()
+        this.sWavesToggle()
     }
 
     backToggle(){
@@ -204,7 +207,11 @@ class Design extends React.Component{
             this.setState({backDisplay:"menuOff"})
         } else {
             this.setState({backDisplay:""})
-        }
+        };
+        this.logoToggle()
+        this.lWavesToggle()
+        this.sWavesToggle()
+        
     }
 
     
@@ -235,8 +242,17 @@ class Design extends React.Component{
                 cardholderBackDisplay:'',
                 frontmenutoggle:'frontmenutoggle',
                 backmenutoggle:'menutogglehidden',
-                cardholderDisplay:'back'
+                cardholderDisplay:'back',
             })
+            if(this.state.logo===""){
+                this.logoToggle();
+            };
+            if(this.state.lWaves===""){
+                this.lWavesToggle();
+            };
+            if(this.state.sWaves===""){
+                this.sWavesToggle();
+            }
         };
         
         if(this.state.frontmenusection==='menusectionhidden'){
@@ -249,6 +265,15 @@ class Design extends React.Component{
                 backmenutoggle:'backmenutoggle',
                 cardholderDisplay:'front'
             })
+            if(this.state.logo===""){
+                this.logoToggle();
+            };
+            if(this.state.lWaves===""){
+                this.lWavesToggle();
+            };
+            if(this.state.sWaves===""){
+                this.sWavesToggle();
+            }
         };
     }
 
@@ -262,6 +287,16 @@ class Design extends React.Component{
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'backmenutoggle'
             })
+
+            if(this.state.logo===""){
+                this.logoToggle();
+            };
+            if(this.state.lWaves===""){
+                this.lWavesToggle();
+            };
+            if(this.state.sWaves===""){
+                this.sWavesToggle();
+            }
         };
         
         if(this.state.showbothtoggle===false){
@@ -308,6 +343,16 @@ class Design extends React.Component{
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'backmenutoggle'
             })
+
+            if(this.state.logo===""){
+                this.logoToggle();
+            };
+            if(this.state.lWaves===""){
+                this.lWavesToggle();
+            };
+            if(this.state.sWaves===""){
+                this.sWavesToggle();
+            }
         };
         
         if(this.state.showbothtoggle===false){
@@ -869,7 +914,7 @@ class Design extends React.Component{
                         <div onClick={this.frontToggle} className="boldMenuItems" >FRONT</div>
                         <ul className={this.state.frontDisplay} id="frontmenuexpanded">
                             
-                            <li onClick={this.designFToggle} id="designStyle">DESIGN STYLE</li>
+                            <li onClick={()=>{this.designFToggle(); this.designBToggle()}} id="designStyle">DESIGN STYLE</li>
                                 <ul className={this.state.designFDisplay} >
                                     <ul onClick={this.logoToggle}>Logo Style</ul>
                                     <ul id={this.state.logo}> 
@@ -920,7 +965,7 @@ class Design extends React.Component{
                         <div onClick={this.backToggle} className="boldMenuItems" >BACK</div>
                         <ul className={this.state.frontDisplay} id="backmenuexpanded">
                             
-                            <li onClick={this.designBToggle} id="designStyle">DESIGN STYLE</li>
+                            <li onClick={()=>{this.designFToggle(); this.designBToggle()}} id="designStyle">DESIGN STYLE</li>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={this.logoToggle}>Logo Style</ul>
                                     <ul id={this.state.logo}> 
