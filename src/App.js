@@ -4,10 +4,7 @@ import './App.css';
 
 import {
   BrowserRouter as Router, 
-  Route, 
-  Switch, 
-  Link, 
-  Redirect 
+  Route,  
 } from 'react-router-dom';
 
 import Homepage from './pages/Homepage/Homepage'
@@ -18,6 +15,7 @@ import Bags from './pages/Bags/Bags'
 import Contact from './pages/Contact/Contact'
 import SO79Collection from './pages/SO79Collection/SO79Collection'
 import TShirts from './pages/TShirts/TShirts'
+import Checkout from './pages/Checkout/Checkout'
 
 
 class App extends React.Component {
@@ -40,6 +38,7 @@ class App extends React.Component {
         {<Route exact path="/contact-complete-bespoke" component={Contact} />}
         {<Route exact path="/so79-collection" component={SO79Collection} />}
         {<Route exact path="/tshirts" component={TShirts} />}
+        {<Route exact path="/checkout" component={Checkout} />}
       </Router>
       
       

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
+
+
 *{
     font-size:15px;
 }
@@ -87,9 +90,11 @@
     margin-top: 0;
     margin-bottom: 0;
     padding:0;
-    
-    
-    
+    font-style: italic; 
+}
+
+#zipmenuexpanded li{
+    font-weight: 600;
 }
 
 #frontdisplaytoggle{
@@ -97,10 +102,7 @@
 }
 
 
-#frontmenusection{
-   
-  
-}
+
 
 #backmenusection{
     
@@ -230,9 +232,7 @@
     font-weight: 300;
 }
 
-.menuItems li:hover{
-    text-decoration: underline;
-}
+
 
 #leftMenu{
     display: inline-block;
@@ -287,10 +287,7 @@
 
 
 
-#logomenuexpanded{
-    padding:0;
-    margin:0; 
-}
+
 
 
 #productOn{
@@ -302,10 +299,54 @@
     display:none
 }
 
-#designmenuexpanded{
+
+
+.designMenuSubmenuCollapsed {
+    padding:0;
+    margin:0;
+}
+
+.designMenuSubmenuCollapsed ul{
+    font-style: italic;
+    font-weight: 600;
+    padding:0;
+    margin:0;
+}
+
+
+
+
+
+.designMenuCategories {
     padding:0;
     margin:0; 
+    font-weight: 200;
 }
+
+.designMenuCategoriesCollapsed{
+    padding:0;
+    margin:0; 
+    font-weight: 200;
+}
+
+#designStyle{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#lWavesCollapsed li{
+    display:none;
+}
+
+#sWavesCollapsed li{
+    display:none;
+}
+
+#logoCollapsed li{
+    display:none;
+}
+
+
 
 
 
@@ -347,7 +388,7 @@ li{
 
 
 #cardholderFrontSBS{
-    height:35vw;
+    height:34vw;
     max-height: 325px;
     transform: translate(-50%,-50%);
     margin-right: 50px;
@@ -357,7 +398,7 @@ li{
 }
 
 #cardholderBackSBS{
-    height:35vw;
+    height:34vw;
     max-height: 325px;
     transform: translate(-50%,-50%);
     margin-right: 50px;
