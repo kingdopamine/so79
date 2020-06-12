@@ -155,13 +155,17 @@ class Design extends React.Component{
             showbothtoggle2:'boldMenuItems',
             zipColour:'red',
             designStyle:'plain',
+            designStyle2:'plain',
             cardholderDisplay:'front',
             logo:'logoCollapsed',
             logoChoice:'',
+            logoChoice2:'',
             lWaves:'lWavesCollapsed',
             lWavesChoice:'',
+            lWavesChoice2:'',
             sWaves:'sWavesCollapsed',
-            sWavesChoice:''
+            sWavesChoice:'',
+            sWavesChoice2:''
                 
             
         }
@@ -386,7 +390,7 @@ class Design extends React.Component{
 
     logoToggle(){
         if(this.state.logo==='logoCollapsed'){
-            this.setState({logo:'',designStyle:'logo'});
+            this.setState({logo:''});
         };
 
         if(this.state.logo===''){
@@ -397,7 +401,7 @@ class Design extends React.Component{
 
     lWavesToggle(){
         if(this.state.lWaves==='lWavesCollapsed'){
-            this.setState({lWaves:'',designStyle:"largeWaves"})
+            this.setState({lWaves:''})
         };
 
         if(this.state.lWaves===''){
@@ -407,7 +411,7 @@ class Design extends React.Component{
 
     sWavesToggle(){
         if(this.state.sWaves==='sWavesCollapsed'){
-            this.setState({sWaves:'',designStyle:"smallWaves"})
+            this.setState({sWaves:''})
         };
 
         if(this.state.sWaves===''){
@@ -646,55 +650,55 @@ class Design extends React.Component{
         setTimeout(()=>{
             
             if(this.state.zipColour==='red'){
-                if(this.state.designStyle==='plain'){
+                if(this.state.designStyle2==='plain'){
                     this.setState({cardholderBack:plainBackRed})
                 }
 
-                if(this.state.designStyle==='logo'){
-                    if(this.state.logoChoice==='goldOutline'){
+                if(this.state.designStyle2==='logo'){
+                    if(this.state.logoChoice2==='goldOutline'){
                         this.setState({cardholderBack:goldOutlineLogoBackRed})
                     };
 
-                    if(this.state.logoChoice==='solidGold'){
+                    if(this.state.logoChoice2==='solidGold'){
                         this.setState({cardholderBack:solidGoldLogoBackRed})
                     };
 
-                    if(this.state.logoChoice==='ecru'){
+                    if(this.state.logoChoice2==='ecru'){
                         this.setState({cardholderBack:ecruLogoBackRed})
                     };
 
-                    if(this.state.logoChoice==='solidRed'){
+                    if(this.state.logoChoice2==='solidRed'){
                         this.setState({cardholderBack:solidRedLogoBackRed})
                     };
                 }
 
 
-                if(this.state.designStyle==='largeWaves'){
-                    if(this.state.lWavesChoice==="gold"){
+                if(this.state.designStyle2==='largeWaves'){
+                    if(this.state.lWavesChoice2==="gold"){
                         this.setState({cardholderBack:largeWavesGoldBackRed})
                     };
-                    if(this.state.lWavesChoice==="silver"){
+                    if(this.state.lWavesChoice2==="silver"){
                         this.setState({cardholderBack:largeWavesSilverBackRed})
                     };
-                    if(this.state.lWavesChoice==="green"){
+                    if(this.state.lWavesChoice2==="green"){
                         this.setState({cardholderBack:largeWavesGreenBackRed})
                     };
-                    if(this.state.lWavesChoice==="white"){
+                    if(this.state.lWavesChoice2==="white"){
                         this.setState({cardholderBack:largeWavesWhiteBackRed})
                     };
                 };
     
-                if(this.state.designStyle==='smallWaves'){
-                    if(this.state.sWavesChoice==="gold"){
+                if(this.state.designStyle2==='smallWaves'){
+                    if(this.state.sWavesChoice2==="gold"){
                         this.setState({cardholderBack:smallWavesGoldBackRed})
                     };
-                    if(this.state.sWavesChoice==="silver"){
+                    if(this.state.sWavesChoice2==="silver"){
                         this.setState({cardholderBack:smallWavesSilverBackRed})
                     };
-                    /*if(this.state.sWavesChoice==="green"){
+                    /*if(this.state.sWavesChoice2==="green"){
                         this.setState({cardholderBack:smallWavesGreenBackRed})
                     };
-                    if(this.state.sWavesChoice==="white"){
+                    if(this.state.sWavesChoice2==="white"){
                         this.setState({cardholderBack:smallWavesWhiteBackRed})
                     };*/
                 };
@@ -702,54 +706,54 @@ class Design extends React.Component{
     
     
             if(this.state.zipColour==='orange'){
-                if(this.state.designStyle==='plain'){
+                if(this.state.designStyle2==='plain'){
                     this.setState({cardholderBack:plainBackOrange})
                 }
 
-                if(this.state.designStyle==='logo'){
-                    if(this.state.logoChoice==='goldOutline'){
+                if(this.state.designStyle2==='logo'){
+                    if(this.state.logoChoice2==='goldOutline'){
                         this.setState({cardholderBack:goldOutlineLogoBackOrange})
                     };
 
-                    if(this.state.logoChoice==='solidGold'){
+                    if(this.state.logoChoice2==='solidGold'){
                         this.setState({cardholderBack:solidGoldLogoBackOrange})
                     };
 
-                    if(this.state.logoChoice==='ecru'){
+                    if(this.state.logoChoice2==='ecru'){
                         this.setState({cardholderBack:ecruLogoBackOrange})
                     };
 
-                    if(this.state.logoChoice==='solidRed'){
+                    if(this.state.logoChoice2==='solidRed'){
                         this.setState({cardholderBack:solidRedLogoBackOrange})
                     };
                 }
 
-                if(this.state.designStyle==='largeWaves'){
-                    if(this.state.lWavesChoice==="gold"){
+                if(this.state.designStyle2==='largeWaves'){
+                    if(this.state.lWavesChoice2==="gold"){
                         this.setState({cardholderBack:largeWavesGoldBackOrange})
                     };
-                    if(this.state.lWavesChoice==="silver"){
+                    if(this.state.lWavesChoice2==="silver"){
                         this.setState({cardholderBack:largeWavesSilverBackOrange})
                     };
-                    if(this.state.lWavesChoice==="green"){
+                    if(this.state.lWavesChoice2==="green"){
                         this.setState({cardholderBack:largeWavesGreenBackOrange})
                     };
-                    if(this.state.lWavesChoice==="white"){
+                    if(this.state.lWavesChoice2==="white"){
                         this.setState({cardholderBack:largeWavesWhiteBackOrange})
                     };
                 };
     
-                if(this.state.designStyle==='smallWaves'){
-                    if(this.state.sWavesChoice==="gold"){
+                if(this.state.designStyle2==='smallWaves'){
+                    if(this.state.sWavesChoice2==="gold"){
                         this.setState({cardholderBack:smallWavesGoldBackOrange})
                     };
-                    if(this.state.sWavesChoice==="silver"){
+                    if(this.state.sWavesChoice2==="silver"){
                         this.setState({cardholderBack:smallWavesSilverBackOrange})
                     };
-                    /*if(this.state.sWavesChoice==="green"){
+                    /*if(this.state.sWavesChoice2==="green"){
                         this.setState({cardholderBack:smallWavesGreenBackOrange})
                     };
-                    if(this.state.sWavesChoice==="white"){
+                    if(this.state.sWavesChoice2==="white"){
                         this.setState({cardholderBack:smallWavesWhiteBackOrange})
                     };*/
                 };
@@ -757,54 +761,54 @@ class Design extends React.Component{
     
     
             if(this.state.zipColour==='yellow'){
-                if(this.state.designStyle==='plain'){
+                if(this.state.designStyle2==='plain'){
                     this.setState({cardholderBack:plainBackYellow})
                 }
 
-                if(this.state.designStyle==='logo'){
-                    if(this.state.logoChoice==='goldOutline'){
+                if(this.state.designStyle2==='logo'){
+                    if(this.state.logoChoice2==='goldOutline'){
                         this.setState({cardholderBack:goldOutlineLogoBackYellow})
                     };
 
-                    if(this.state.logoChoice==='solidGold'){
+                    if(this.state.logoChoice2==='solidGold'){
                         this.setState({cardholderBack:solidGoldLogoBackYellow})
                     };
 
-                    if(this.state.logoChoice==='ecru'){
+                    if(this.state.logoChoice2==='ecru'){
                         this.setState({cardholderBack:ecruLogoBackYellow})
                     };
 
-                    if(this.state.logoChoice==='solidRed'){
+                    if(this.state.logoChoice2==='solidRed'){
                         this.setState({cardholderBack:solidRedLogoBackYellow})
                     };
                 }
 
-                if(this.state.designStyle==='largeWaves'){
-                    if(this.state.lWavesChoice==="gold"){
+                if(this.state.designStyle2==='largeWaves'){
+                    if(this.state.lWavesChoice2==="gold"){
                         this.setState({cardholderBack:largeWavesGoldBackYellow})
                     };
-                    if(this.state.lWavesChoice==="silver"){
+                    if(this.state.lWavesChoice2==="silver"){
                         this.setState({cardholderBack:largeWavesSilverBackYellow})
                     };
-                    if(this.state.lWavesChoice==="green"){
+                    if(this.state.lWavesChoice2==="green"){
                         this.setState({cardholderBack:largeWavesGreenBackYellow})
                     };
-                    if(this.state.lWavesChoice==="white"){
+                    if(this.state.lWavesChoice2==="white"){
                         this.setState({cardholderBack:largeWavesWhiteBackYellow})
                     };
                 };
     
-                if(this.state.designStyle==='smallWaves'){
-                    if(this.state.sWavesChoice==="gold"){
+                if(this.state.designStyle2==='smallWaves'){
+                    if(this.state.sWavesChoice2==="gold"){
                         this.setState({cardholderBack:smallWavesGoldBackYellow})
                     };
-                    if(this.state.sWavesChoice==="silver"){
+                    if(this.state.sWavesChoice2==="silver"){
                         this.setState({cardholderBack:smallWavesSilverBackYellow})
                     };
-                    /*if(this.state.sWavesChoice==="green"){
+                    /*if(this.state.sWavesChoice2==="green"){
                         this.setState({cardholderBack:smallWavesGreenBackYellow})
                     };
-                    if(this.state.sWavesChoice==="white"){
+                    if(this.state.sWavesChoice2==="white"){
                         this.setState({cardholderBack:smallWavesWhiteBackYellow})
                     };*/
                 };
@@ -812,54 +816,55 @@ class Design extends React.Component{
     
     
             if(this.state.zipColour==='blue'){
-                if(this.state.designStyle==='plain'){
+                if(this.state.designStyle2==='plain'){
+                    console.log('blue');
                     this.setState({cardholderBack:plainBackBlue})
                 }
 
-                if(this.state.designStyle==='logo'){
-                    if(this.state.logoChoice==='goldOutline'){
+                if(this.state.designStyle2==='logo'){
+                    if(this.state.logoChoice2==='goldOutline'){
                         this.setState({cardholderBack:goldOutlineLogoBackBlue})
                     };
 
-                    if(this.state.logoChoice==='solidGold'){
+                    if(this.state.logoChoice2==='solidGold'){
                         this.setState({cardholderBack:solidGoldLogoBackBlue})
                     };
 
-                    if(this.state.logoChoice==='ecru'){
+                    if(this.state.logoChoice2==='ecru'){
                         this.setState({cardholderBack:ecruLogoBackBlue})
                     };
 
-                    if(this.state.logoChoice==='solidRed'){
+                    if(this.state.logoChoice2==='solidRed'){
                         this.setState({cardholderBack:solidRedLogoBackBlue})
                     };
                 }
 
-                if(this.state.designStyle==='largeWaves'){
-                    if(this.state.lWavesChoice==="gold"){
+                if(this.state.designStyle2==='largeWaves'){
+                    if(this.state.lWavesChoice2==="gold"){
                         this.setState({cardholderBack:largeWavesGoldBackBlue})
                     };
-                    if(this.state.lWavesChoice==="silver"){
+                    if(this.state.lWavesChoice2==="silver"){
                         this.setState({cardholderBack:largeWavesSilverBackBlue})
                     };
-                    if(this.state.lWavesChoice==="green"){
+                    if(this.state.lWavesChoice2==="green"){
                         this.setState({cardholderBack:largeWavesGreenBackBlue})
                     };
-                    if(this.state.lWavesChoice==="white"){
+                    if(this.state.lWavesChoice2==="white"){
                         this.setState({cardholderBack:largeWavesWhiteBackBlue})
                     };
                 };
     
-                if(this.state.designStyle==='smallWaves'){
-                    if(this.state.sWavesChoice==="gold"){
+                if(this.state.designStyle2==='smallWaves'){
+                    if(this.state.sWavesChoice2==="gold"){
                         this.setState({cardholderBack:smallWavesGoldBackBlue})
                     };
-                    if(this.state.sWavesChoice==="silver"){
+                    if(this.state.sWavesChoice2==="silver"){
                         this.setState({cardholderBack:smallWavesSilverBackBlue})
                     };
-                    /*if(this.state.sWavesChoice==="green"){
+                    /*if(this.state.sWavesChoice2==="green"){
                         this.setState({cardholderBack:smallWavesGreenBackBlue})
                     };
-                    if(this.state.sWavesChoice==="white"){
+                    if(this.state.sWavesChoice2==="white"){
                         this.setState({cardholderBack:smallWavesWhiteBackBlue})
                     };*/
                 };
@@ -895,18 +900,18 @@ class Design extends React.Component{
                         <div className="boldMenuItems" id={this.state.fabricmenu}>FABRIC CHOICE</div>
                         <div onClick={this.zipToggle} className="boldMenuItems" id={this.state.zipmenu}>ZIP COLOUR</div>
                         <ul className={this.state.zipDisplay} id="zipmenuexpanded">
-                            <li onClick={()=>{this.setState({zipColour:'red'}); this.displayer()}}>Red</li>
-                            <li onClick={()=>{this.setState({zipColour:'orange'}); this.displayer()}}>Orange</li>
-                            <li onClick={()=>{this.setState({zipColour:'yellow'}); this.displayer()}}>Yellow</li>
+                            <li onClick={()=>{this.setState({zipColour:'red'}); this.displayer();this.displayerBack()}}>Red</li>
+                            <li onClick={()=>{this.setState({zipColour:'orange'}); this.displayer();this.displayerBack()}}>Orange</li>
+                            <li onClick={()=>{this.setState({zipColour:'yellow'}); this.displayer();this.displayerBack()}}>Yellow</li>
                             <li>Green</li>
-                            <li onClick={()=>{this.setState({zipColour:'blue'}); this.displayer()}}>Blue</li>
+                            <li onClick={()=>{this.setState({zipColour:'blue'}); this.displayer();this.displayerBack()}}>Blue</li>
                             <li>Purple</li>
                             <li>Grey</li>
                         </ul>
                     </div>
                     <div id="rightMenu">
                     <div id={this.state.frontmenusection}>
-                        <div onClick={this.frontToggle} className="boldMenuItems" >FRONT</div>
+                        <div onClick={()=>{this.mainDisplayToggle()}} className="boldMenuItems" ><p id="frontText">FRONT</p><p id="backText">/BACK</p></div>
                         <ul className={this.state.frontDisplay} id="frontmenuexpanded">
                             
                             <li onClick={()=>{this.designFToggle(); this.designBToggle()}} id="designStyle">DESIGN STYLE</li>
@@ -956,35 +961,35 @@ class Design extends React.Component{
                         <ul></ul>
 
                         <div id={this.state.backmenusection}>
-                        <div onClick={this.backToggle} className="boldMenuItems" >BACK</div>
+                        <div onClick={()=>{this.mainDisplayToggle()}} className="boldMenuItems" ><p id="backText">FRONT/</p><p id="frontText">BACK</p></div>
                         <ul className={this.state.frontDisplay} id="backmenuexpanded">
                             
                             <li onClick={()=>{this.designFToggle(); this.designBToggle()}} id="designStyle">DESIGN STYLE</li>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={this.logoToggle}>Logo Style</ul>
                                     <ul id={this.state.logo}> 
-                                        <li onClick={()=>{this.setState({logoChoice:"goldOutline",designStyle:"logo"}); this.displayerBack()}}>- Gold Outline</li>
-                                        <li onClick={()=>{this.setState({logoChoice:"solidGold",designStyle:"logo"}); this.displayerBack()}}>- Solid Gold</li>
-                                        <li onClick={()=>{this.setState({logoChoice:"ecru",designStyle:"logo"}); this.displayerBack()}}>- Ecru</li>
-                                        <li onClick={()=>{this.setState({logoChoice:"solidRed",designStyle:"logo"}); this.displayerBack()}}>- Solid Red</li>
+                                        <li onClick={()=>{this.setState({logoChoice2:"goldOutline",designStyle2:"logo"}); this.displayerBack()}}>- Gold Outline</li>
+                                        <li onClick={()=>{this.setState({logoChoice2:"solidGold",designStyle2:"logo"}); this.displayerBack()}}>- Solid Gold</li>
+                                        <li onClick={()=>{this.setState({logoChoice2:"ecru",designStyle2:"logo"}); this.displayerBack()}}>- Ecru</li>
+                                        <li onClick={()=>{this.setState({logoChoice2:"solidRed",designStyle2:"logo"}); this.displayerBack()}}>- Solid Red</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={this.sWavesToggle}>Small Waves</ul>
                                     <ul id={this.state.sWaves}> 
-                                        <li onClick={()=>{this.setState({sWavesChoice:"gold",designStyle:"smallWaves"}); this.displayerBack()}}>- Gold</li>
-                                        <li onClick={()=>{this.setState({sWavesChoice:"silver",designStyle:"smallWaves"}); this.displayerBack()}}>- Silver</li>
-                                        <li onClick={()=>{this.setState({sWavesChoice:"green",designStyle:"smallWaves"}); this.displayerBack()}}>- Green</li>
-                                        <li onClick={()=>{this.setState({sWavesChoice:"white",designStyle:"smallWaves"}); this.displayerBack()}}>- White</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice2:"gold",designStyle2:"smallWaves"}); this.displayerBack()}}>- Gold</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice2:"silver",designStyle2:"smallWaves"}); this.displayerBack()}}>- Silver</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice2:"green",designStyle2:"smallWaves"}); this.displayerBack()}}>- Green</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice2:"white",designStyle2:"smallWaves"}); this.displayerBack()}}>- White</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={this.lWavesToggle}>Large Waves</ul>
                                     <ul id={this.state.lWaves}> 
-                                        <li onClick={()=>{this.setState({lWavesChoice:"gold",designStyle:"largeWaves"}); this.displayerBack()}}>- Gold</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"silver",designStyle:"largeWaves"}); this.displayerBack()}}>- Silver</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"green",designStyle:"largeWaves"}); this.displayerBack()}}>- Green</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"white",designStyle:"largeWaves"}); this.displayerBack()}}>- White</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice2:"gold",designStyle2:"largeWaves"}); this.displayerBack()}}>- Gold</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice2:"silver",designStyle2:"largeWaves"}); this.displayerBack()}}>- Silver</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice2:"green",designStyle2:"largeWaves"}); this.displayerBack()}}>- Green</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice2:"white",designStyle2:"largeWaves"}); this.displayerBack()}}>- White</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
@@ -997,7 +1002,7 @@ class Design extends React.Component{
                                     <ul onClick={this.sWavesToggle}>Monogram</ul>
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
-                                    <ul onClick={()=>{this.setState({designStyle:"plain"}); this.displayerBack()}}>Plain</ul>
+                                    <ul onClick={()=>{this.setState({designStyle2:"plain"}); this.displayerBack()}}>Plain</ul>
                                 </ul>
                                     
                                 

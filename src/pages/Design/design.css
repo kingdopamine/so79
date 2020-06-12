@@ -400,6 +400,20 @@ li{
     margin-left: 72vw;
 }
 
+#frontText{
+display: inline;
+}
+
+#backText{
+    display: inline;
+    color: rgba(0,0,0,0.25);
+}
+
+#backText:hover{
+    display: inline;
+    color: rgba(0,0,0,0.5);
+}
+
 
 
 
