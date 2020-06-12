@@ -903,10 +903,10 @@ class Design extends React.Component{
                             <li onClick={()=>{this.setState({zipColour:'red'}); this.displayer();this.displayerBack()}}>Red</li>
                             <li onClick={()=>{this.setState({zipColour:'orange'}); this.displayer();this.displayerBack()}}>Orange</li>
                             <li onClick={()=>{this.setState({zipColour:'yellow'}); this.displayer();this.displayerBack()}}>Yellow</li>
-                            <li>Green</li>
+                            <li id="backText">Green</li>
                             <li onClick={()=>{this.setState({zipColour:'blue'}); this.displayer();this.displayerBack()}}>Blue</li>
-                            <li>Purple</li>
-                            <li>Grey</li>
+                            <li id="backText">Purple</li>
+                            <li id="backText">Grey</li>
                         </ul>
                     </div>
                     <div id="rightMenu">
@@ -943,13 +943,13 @@ class Design extends React.Component{
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
-                                    <ul onClick={this.animals}>Animals</ul>
+                                    <ul onClick={this.animals} id="backText">Animals</ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
-                                    <ul onClick={this.drip}>Drip</ul>
+                                    <ul onClick={this.drip} id="backText">Drip</ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
-                                    <ul onClick={this.sWavesToggle}>Monogram</ul>
+                                    <ul onClick={this.sWavesToggle} id="backText">Monogram</ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
                                     <ul onClick={()=>{this.setState({designStyle:"plain"}); this.displayer()}}>Plain</ul>
@@ -993,13 +993,13 @@ class Design extends React.Component{
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
-                                    <ul onClick={this.animals}>Animals</ul>
+                                    <ul onClick={this.animals} id="backText">Animals</ul>
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
-                                    <ul onClick={this.drip}>Drip</ul>
+                                    <ul onClick={this.drip} id="backText">Drip</ul>
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
-                                    <ul onClick={this.sWavesToggle}>Monogram</ul>
+                                    <ul onClick={this.sWavesToggle} id="backText">Monogram</ul>
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={()=>{this.setState({designStyle2:"plain"}); this.displayerBack()}}>Plain</ul>
