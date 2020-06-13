@@ -88,35 +88,35 @@ import smallWavesGoldFrontRed from './designs/Small waves/Gold/small Fan Red ZL 
 import smallWavesGoldFrontOrange from './designs/Small waves/Gold/small Fan Orange ZL Gold.png';
 import smallWavesGoldFrontYellow from './designs/Small waves/Gold/small Fan Yel ZL Gold.png';
 import smallWavesGoldFrontBlue from './designs/Small waves/Gold/small Fan Blu ZL Gold.png';
-//import smallWavesGreenFrontRed from './designs/Small waves/Green/';
-//import smallWavesGreenFrontOrange from './designs/Small waves/Green/';
-//import smallWavesGreenFrontYellow from './designs/Small waves/Green/';
-//import smallWavesGreenFrontBlue from './designs/Small waves/Green/';
+import smallWavesGreenFrontRed from './designs/Small waves/Green/small Fan Red ZL Green2tone.png';
+import smallWavesGreenFrontOrange from './designs/Small waves/Green/small Fan Orange ZL Green2tone.png';
+import smallWavesGreenFrontYellow from './designs/Small waves/Green/small Fan Yel ZL Green2tone.png';
+import smallWavesGreenFrontBlue from './designs/Small waves/Green/small Fan Blu ZL Green.png';
 import smallWavesSilverFrontRed from './designs/Small waves/Silver/small Fan Red ZL Silver.png';
 import smallWavesSilverFrontOrange from './designs/Small waves/Silver/small Fan Orange ZL Silver.png';
 import smallWavesSilverFrontYellow from './designs/Small waves/Silver/small Fan Yel ZL Silver.png';
 import smallWavesSilverFrontBlue from './designs/Small waves/Silver/small Fan Blue ZL Gold.png';
-//import smallWavesWhiteFrontRed from './designs/Small waves/White/';
-//import smallWavesWhiteFrontOrange from './designs/Small waves/White/';
-//import smallWavesWhiteFrontYellow from './designs/Small waves/White/';
-//import smallWavesWhiteFrontBlue from './designs/Small waves/White/';
+import smallWavesWhiteFrontRed from './designs/Small waves/White/small Fan Red ZL White.png';
+import smallWavesWhiteFrontOrange from './designs/Small waves/White/small Fan Orange ZL White.png';
+import smallWavesWhiteFrontYellow from './designs/Small waves/White/small Fan Yel ZL White.png';
+import smallWavesWhiteFrontBlue from './designs/Small waves/White/small Fan Blu ZL White.png';
 
 import smallWavesGoldBackRed from './designs/Small waves/Gold/small Fan Red ZR 2 Gold.png';
 import smallWavesGoldBackOrange from './designs/Small waves/Gold/small Fan Orange ZR Gold.png';
 import smallWavesGoldBackYellow from './designs/Small waves/Gold/small Fan Yel ZR Gold.png';
 import smallWavesGoldBackBlue from './designs/Small waves/Gold/small Fan Blu ZR Gold.png';
-//import smallWavesGreenBackRed from './designs/Small waves/Green/';
-//import smallWavesGreenBackOrange from './designs/Small waves/Green/';
-//import smallWavesGreenBackYellow from './designs/Small waves/Green/';
-//import smallWavesGreenBackBlue from './designs/Small waves/Green/';
+import smallWavesGreenBackRed from './designs/Small waves/Green/small Fan Red ZR Green2tone.png';
+import smallWavesGreenBackOrange from './designs/Small waves/Green/small Fan Orange ZR Green2tone.png';
+import smallWavesGreenBackYellow from './designs/Small waves/Green/small Fan Yel ZR Green2tone.png';
+import smallWavesGreenBackBlue from './designs/Small waves/Green/small Fan Blu ZR Green.png';
 import smallWavesSilverBackRed from './designs/Small waves/Silver/small Fan RedZR Silver.png';
 import smallWavesSilverBackOrange from './designs/Small waves/Silver/small Fan Orange ZR Silver.png';
 import smallWavesSilverBackYellow from './designs/Small waves/Silver/small Fan Yel ZR Silver.png';
 import smallWavesSilverBackBlue from './designs/Small waves/Silver/small Fan Blue ZR Silver.png';
-//import smallWavesWhiteBackRed from './designs/Small waves/White/';
-//import smallWavesWhiteBackOrange from './designs/Small waves/White/';
-//import smallWavesWhiteBackYellow from './designs/Small waves/White/';
-//import smallWavesWhiteBackBlue from './designs/Small waves/White/';
+import smallWavesWhiteBackRed from './designs/Small waves/White/Small Fan Red ZR White.png';
+import smallWavesWhiteBackOrange from './designs/Small waves/White/small Fan Orange ZR White.png';
+import smallWavesWhiteBackYellow from './designs/Small waves/White/small Fan Yel ZR White.png';
+import smallWavesWhiteBackBlue from './designs/Small waves/White/small Fan Blu ZR White.png';
 
 
 
@@ -136,7 +136,6 @@ class Design extends React.Component{
             zipDisplay:"menuOff",
             frontDisplay:'',
             backDisplay:'',
-            //logoDisplay:'menuOff',
             designFDisplay:'menuOff',
             designBDisplay:'menuOff',
             cardholderFrontDisplay:'',
@@ -469,12 +468,12 @@ class Design extends React.Component{
                     if(this.state.sWavesChoice==="silver"){
                         this.setState({cardholderFront:smallWavesSilverFrontRed})
                     };
-                    /*if(this.state.sWavesChoice==="green"){
+                    if(this.state.sWavesChoice==="green"){
                         this.setState({cardholderFront:smallWavesGreenFrontRed})
                     };
                     if(this.state.sWavesChoice==="white"){
                         this.setState({cardholderFront:smallWavesWhiteFrontRed})
-                    };*/
+                    };
                 };
             };
     
@@ -524,12 +523,12 @@ class Design extends React.Component{
                     if(this.state.sWavesChoice==="silver"){
                         this.setState({cardholderFront:smallWavesSilverFrontOrange})
                     };
-                    /*if(this.state.sWavesChoice==="green"){
+                    if(this.state.sWavesChoice==="green"){
                         this.setState({cardholderFront:smallWavesGreenFrontOrange})
                     };
                     if(this.state.sWavesChoice==="white"){
                         this.setState({cardholderFront:smallWavesWhiteFrontOrange})
-                    };*/
+                    };
                 };
             };
     
@@ -579,12 +578,12 @@ class Design extends React.Component{
                     if(this.state.sWavesChoice==="silver"){
                         this.setState({cardholderFront:smallWavesSilverFrontYellow})
                     };
-                    /*if(this.state.sWavesChoice==="green"){
+                    if(this.state.sWavesChoice==="green"){
                         this.setState({cardholderFront:smallWavesGreenFrontYellow})
                     };
                     if(this.state.sWavesChoice==="white"){
                         this.setState({cardholderFront:smallWavesWhiteFrontYellow})
-                    };*/
+                    };
                 };
             };
     
@@ -634,12 +633,12 @@ class Design extends React.Component{
                     if(this.state.sWavesChoice==="silver"){
                         this.setState({cardholderFront:smallWavesSilverFrontBlue})
                     };
-                    /*if(this.state.sWavesChoice==="green"){
+                    if(this.state.sWavesChoice==="green"){
                         this.setState({cardholderFront:smallWavesGreenFrontBlue})
                     };
                     if(this.state.sWavesChoice==="white"){
                         this.setState({cardholderFront:smallWavesWhiteFrontBlue})
-                    };*/
+                    };
                 };
             };
         },50)
@@ -695,12 +694,12 @@ class Design extends React.Component{
                     if(this.state.sWavesChoice2==="silver"){
                         this.setState({cardholderBack:smallWavesSilverBackRed})
                     };
-                    /*if(this.state.sWavesChoice2==="green"){
+                    if(this.state.sWavesChoice2==="green"){
                         this.setState({cardholderBack:smallWavesGreenBackRed})
                     };
                     if(this.state.sWavesChoice2==="white"){
                         this.setState({cardholderBack:smallWavesWhiteBackRed})
-                    };*/
+                    };
                 };
             };
     
@@ -750,12 +749,12 @@ class Design extends React.Component{
                     if(this.state.sWavesChoice2==="silver"){
                         this.setState({cardholderBack:smallWavesSilverBackOrange})
                     };
-                    /*if(this.state.sWavesChoice2==="green"){
+                    if(this.state.sWavesChoice2==="green"){
                         this.setState({cardholderBack:smallWavesGreenBackOrange})
                     };
                     if(this.state.sWavesChoice2==="white"){
                         this.setState({cardholderBack:smallWavesWhiteBackOrange})
-                    };*/
+                    };
                 };
             };
     
@@ -805,12 +804,12 @@ class Design extends React.Component{
                     if(this.state.sWavesChoice2==="silver"){
                         this.setState({cardholderBack:smallWavesSilverBackYellow})
                     };
-                    /*if(this.state.sWavesChoice2==="green"){
+                    if(this.state.sWavesChoice2==="green"){
                         this.setState({cardholderBack:smallWavesGreenBackYellow})
                     };
                     if(this.state.sWavesChoice2==="white"){
                         this.setState({cardholderBack:smallWavesWhiteBackYellow})
-                    };*/
+                    };
                 };
             };
     
@@ -861,12 +860,12 @@ class Design extends React.Component{
                     if(this.state.sWavesChoice2==="silver"){
                         this.setState({cardholderBack:smallWavesSilverBackBlue})
                     };
-                    /*if(this.state.sWavesChoice2==="green"){
+                    if(this.state.sWavesChoice2==="green"){
                         this.setState({cardholderBack:smallWavesGreenBackBlue})
                     };
                     if(this.state.sWavesChoice2==="white"){
                         this.setState({cardholderBack:smallWavesWhiteBackBlue})
-                    };*/
+                    };
                 };
             };
         },50)
@@ -905,7 +904,7 @@ class Design extends React.Component{
                             <li onClick={()=>{this.setState({zipColour:'yellow'}); this.displayer();this.displayerBack()}}>Yellow</li>
                             <li id="backText">Green</li>
                             <li onClick={()=>{this.setState({zipColour:'blue'}); this.displayer();this.displayerBack()}}>Blue</li>
-                            <li id="backText">Purple</li>
+                            <li id="backText">Purple</li><br/>
                             <li id="backText">Grey</li>
                         </ul>
                     </div>
@@ -949,7 +948,7 @@ class Design extends React.Component{
                                     <ul onClick={this.drip} id="backText">Drip</ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
-                                    <ul onClick={this.sWavesToggle} id="backText">Monogram</ul>
+                                    <ul onClick={this.monogram} id="backText">Monogram</ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
                                     <ul onClick={()=>{this.setState({designStyle:"plain"}); this.displayer()}}>Plain</ul>
@@ -999,7 +998,7 @@ class Design extends React.Component{
                                     <ul onClick={this.drip} id="backText">Drip</ul>
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
-                                    <ul onClick={this.sWavesToggle} id="backText">Monogram</ul>
+                                    <ul onClick={this.monogram} id="backText">Monogram</ul>
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={()=>{this.setState({designStyle2:"plain"}); this.displayerBack()}}>Plain</ul>
