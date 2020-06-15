@@ -4,13 +4,19 @@ import './Navigation.css'
 
 import foreground from './Recrafted with Logo.png'
 
+
 class Navigation extends React.Component{
     constructor(props){
         super(props)
         this.state={
             mainmenu:'menuOff',
+            cart:'cartHide',
+            checkoutItems:{
+                SO79Collection:this.props.SO79 
+            }
         }
         this.mainMenuToggle=this.mainMenuToggle.bind(this)
+        this.cartToggle=this.cartToggle.bind(this)
 
         
     }
@@ -23,6 +29,13 @@ class Navigation extends React.Component{
         }
     }
 
+    cartToggle(){
+        if(this.state.cart==="cartHide"){
+            this.setState({cart:"cart"})
+        } else {
+            this.setState({cart:"cartHide"})
+        }
+    }
     render(){
         return(
             <div>
@@ -45,9 +58,17 @@ class Navigation extends React.Component{
                         <li id="completebespoke"><a href="/contact-complete-bespoke">Complete Bespoke Contact Us</a></li>
                     </ul>
                 </div>
-                <div >
+                <div id="basketIG">
                     <i class="fab fa-instagram" id={this.props.igicon}></i>
-                    <i class="fas fa-shopping-bag" id={this.props.bagicon}></i>
+                    <a href="/checkout"><i class="fas fa-shopping-bag" id={this.props.bagicon} onMouseEnter={this.cartToggle}></i></a>
+                    <p id={this.props.basketAmount}>{this.props.totalItems}</p>
+                    <div id={this.state.cart} onMouseLeave={this.cartToggle}>
+                        <tr>
+                            <th>item</th>
+                            <th>quantity</th>
+                            <th>price</th>
+                        </tr>
+                    </div>
                 </div>
             </div>
         )

@@ -2,7 +2,7 @@ import React from 'react'
 
 import './SO79Collection.css'
 
-import Navigation from '../Navigation/Navigation'
+
 
 import img001 from './walletsforgallery/Custom wallet 1.png'
 import img002 from './walletsforgallery/Custom wallet 2.png'
@@ -77,22 +77,44 @@ class SO79Collection extends React.Component{
                 "£400",
                 "£50",
                 "£500",
-                
             ],
             index:0
+
         }
     }
+    
+
+    
     
     render(){
         return(
             <div>
-                <Navigation menuShow="main-menu-style" igicon="menu2" bagicon="menu21"/>
                 <div id="aboutWalletContainer">
                     
                     <div id="aboutWallet">
                         <h1>{this.state.name[this.state.index]}</h1>
                         <p>{this.state.price[this.state.index]}</p>
-                        <p><i class="fas fa-plus-circle" id="addToBasketButton" title="Add to Basket"></i></p>
+                        <p><i class="fas fa-plus-circle" id="addToBasketButton" title="Add to Basket" onClick={()=>{
+                            let collection = this.props.SO79;
+                            let duplicate = collection.filter(repeat => repeat.name === this.state.name[this.state.index]);
+                            if(duplicate.length === 0){
+                                collection.push({
+                                    name:this.state.name[this.state.index],
+                                    price:this.state.price[this.state.index],
+                                    quantity:1
+                                });
+                                this.props.changeSO79(collection)
+                            } else {
+                                let index = collection.findIndex( repeat => repeat.name === this.state.name[this.state.index]);
+                                let price = collection[index].price.slice(1) 
+                                collection[index].quantity = collection[index].quantity+1;
+                                let newPrice = parseInt(price) * collection[index].quantity
+                                let txtNewPrice = `£${newPrice}`
+                                collection[index].price = txtNewPrice
+                                this.props.changeSO79(collection)
+                            }
+                            
+                        }}></i></p>
                     </div>
                 </div>
                 <div id="walletFocus">

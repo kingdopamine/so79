@@ -70,24 +70,71 @@
     z-index: 1;
 }
 
-#menu2{
+#basketIG {
     position: absolute;
-    margin-left: 95.5vw;
-    padding-top:9px;
+    margin-left: 92.5vw;
+    margin-top: 10px;
+}
+
+#basketIG a{
+    color: black;
+}
+
+#menu2{
+    
+    font-size: 20px;   
+    cursor: pointer;
+    transform: translate(0,6%);
+}
+
+
+
+#menu21{
+    
+    margin-left: 1vw;
+    transform: translate(0,-5%);
     font-size: 20px;
     cursor: pointer;
 }
 
-#menu21{
-    position: absolute;
-    font-size: 20px;   
-    cursor: pointer;
-    margin-left: 92.5vw;
-    padding-top:10px;
+#basketAmount{
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    margin-left: 7px;
+    
+
 }
 
-@media(max-width:600px){
-    #menu21{
+#menuHidden{
+    display: none;
+}
+
+#cart{
+    position: absolute;
+    width:200px;
+    background-color: rgba(0,0,0,0.05);
+    margin-left:-120px; 
+}
+
+#cart th{
+    
+    position: relative;
+    border-style: none;
+    font-size: 10px;
+    
+    
+}
+
+#cartHide {
+    display: none;
+}
+
+
+
+@media(max-width:800px){
+    #basketIG{
         
         margin-left: 87.5vw;
        
@@ -97,6 +144,9 @@
         
         font-size: 12px;
         
+    }
+    #main-menu{
+        margin-top: -4px;
     }
 
     .main-menu-list a{

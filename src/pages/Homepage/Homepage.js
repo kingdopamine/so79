@@ -15,7 +15,10 @@ import foreground from '../Navigation/Recrafted with Logo.png'
 class Homepage extends React.Component {
   
     
+  componentDidMount(){
     
+    return this.props.navHide
+  }  
 
   render(){
     
@@ -24,9 +27,9 @@ class Homepage extends React.Component {
       
       
         <div id="scroll">
-          <a href='/'><img src={foreground} id='homebutton' alt='homebutton'/></a>
+          
           <div id="homepage">
-            <button id="CYOButton"><a href="/create-your-own">CREATE YOUR OWN</a></button>
+            <button id="CYOButton" onClick={this.props.navHide}><a href="/create-your-own">CREATE YOUR OWN</a></button>
           </div>
           
 

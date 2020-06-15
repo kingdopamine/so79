@@ -884,7 +884,7 @@ class Design extends React.Component{
 
         <div id="createYourOwn" >
 
-            <Navigation menuShow="main-menu-style" igicon="menu2" bagicon="menu21"/>
+            {/*<Navigation menuShow="main-menu-style" igicon="menu2" bagicon="menu21"/>*/}
             
             <div id="toggles">
                 <p className={this.state.showbothtoggle1} id="showboth" onClick={this.showBothToggle1}><i class="fas fa-align-justify"></i></p>
