@@ -2,9 +2,6 @@ import React from 'react'
 
 import './Contact.css'
 
-import green from './Green denim texture.png'
-
-
 
 class Contact extends React.Component{
     constructor(props){
