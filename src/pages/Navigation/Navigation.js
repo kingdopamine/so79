@@ -68,6 +68,14 @@ class Navigation extends React.Component{
                             <th>quantity</th>
                             <th>price</th>
                         </tr>
+                        {
+                            this.state.checkoutItems.SO79Collection.map((collection)=>{
+                            return <tr>
+                                        <th>{collection.name}</th>
+                                        <th>{collection.quantity}</th>
+                                        <th>{collection.price}</th>
+                                    </tr>    
+                        })}
                     </div>
                 </div>
             </div>

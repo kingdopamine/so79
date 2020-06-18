@@ -114,8 +114,9 @@
 #cart{
     position: absolute;
     width:200px;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgb(242,242,242);
     margin-left:-120px; 
+    z-index: 7;
 }
 
 #cart th{

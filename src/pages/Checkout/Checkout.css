@@ -2,12 +2,14 @@
     position: absolute;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
+        
     margin-top: 150px;
-    margin-left: 150px;
+    margin-left: 50vw;
 }
 
 #checkoutList h1{
     font-size: 24px;
+    transform: translate(-50%);
 }
 
 #checkoutButton {
@@ -18,15 +20,15 @@
 }
 
 #checkoutTable {
-    width:800px;
+    transform: translate(-50%);
+    width:350px;
     
 }
 
 table, th, td {
-    border: 1px solid black;
+    text-align: left;
     border-collapse: collapse;
     padding: 10px;
-    font-weight: 200;
     
   }
 

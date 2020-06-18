@@ -31,6 +31,7 @@ class App extends React.Component {
       basketAmount:"basketAmount",
       SO79Collection:JSON.parse(localStorage.getItem('SO79Collection')) || [],
       SO79CollectionSubtotal:JSON.parse(localStorage.getItem('SO79CollectionSubtotal')) || 0,
+      //totalItems:JSON.parse(localStorage.getItem('totalItems')) || 0,
     }
     this.navHide = this.navHide.bind(this);
     this.pusher = this.pusher.bind(this)
@@ -61,11 +62,10 @@ class App extends React.Component {
         arr.push(quantity.quantity);
       })
       let collectionQuant = arr.reduce((a,b)=>a+b);
-      let totalQuant = this.state.totalItems + collectionQuant;
-      localStorage.setItem('totalItems', JSON.stringify(totalQuant));
-
+      localStorage.setItem('totalItems', JSON.stringify(collectionQuant));
       this.pusher();
       this.forceUpdate();
+      
       
       
     }
