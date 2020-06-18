@@ -14,7 +14,7 @@ function Checkout(props){
 
     useEffect(()=>{
         const script = document.createElement("script");
-        script.src = 'https://www.paypal.com/sdk/js?client-id=AY0utaXPaeCSsq49hSwH_m98xzDJ6NOV622FT6owdF5epOtt3pus4LUwmT5o_Eh_p03JSzlyp1o0qPYh';
+        script.src = 'https://www.paypal.com/sdk/js?client-id=AY0utaXPaeCSsq49hSwH_m98xzDJ6NOV622FT6owdF5epOtt3pus4LUwmT5o_Eh_p03JSzlyp1o0qPYh&currency=GBP';
         script.addEventListener('load', () => setLoaded(true));
         document.body.appendChild(script);
 
