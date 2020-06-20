@@ -2,31 +2,23 @@ import React from 'react'
 
 import './Contact.css'
 
+import redPlain from '../Design/designs/Plain/Red zip Plain L.jpg'
+import orangePlain from '../Design/designs/Plain/Orange zip Plain L.jpg'
+import yellowPlain from '../Design/designs/Plain/Yellow zip Plain L.jpg'
+import bluePlain from '../Design/designs/Plain/Blue zip Plain L.jpg'
+
+import greenTexture from '../Design/designs/Monogram/Green denim texture.png'
+
+
+
 
 class Contact extends React.Component{
-    constructor(props){
-        super(props)
-
-        this.state={
-            monogram:'SO79'
-        }
-    }
-
-    monogram(event){
-        if(event.target.value===''){
-            this.setState({monogram:'SO79'})
-        } else {
-            this.setState({monogram:event.target.value})
-        }
-        
-    }
+    
     
     render(){
         return(
-            <div id="testheading">
-                <h1 id="test1">{this.state.monogram}</h1>
-                <h1 id="test2">{this.state.monogram}</h1>
-                <input type="text" id="monogramText" onChange={(event)=>{this.monogram(event)}}></input>
+            <div>
+                <h1>Contact Us / Bespoke</h1>
             </div>
         )
     }

@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
 
+@font-face{
+    font-family: "Lino Write";
+    src: url("../../linowrite.ttf") ;
+}
+
+@font-face{
+    font-family: "Sign Painter";
+    src: url("../../SignPainter.otf") ;
+}
+
+@font-face{
+    font-family: "Dancing Script Bold";
+    src: url("../../DancingScript-Bold.otf") ;
+}
 
 
 *{
@@ -340,6 +354,10 @@
     display:none;
 }
 
+#monogramCollapse li{
+    display:none;
+}
+
 
 
 
@@ -401,6 +419,16 @@ li{
     margin-left: 72vw;
 }
 
+#monogramFront{
+    height:35vw;
+    max-height: 325px;
+    transform: translate(-50%,-50%);
+    margin-right: 50px;
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 50vw;
+}
+
 #frontText{
 display: inline;
 }
@@ -417,31 +445,63 @@ display: inline;
 
 
 
+#monogramContainer{
+    position: absolute;
+    margin-top: 50vh;
+    transform: translate(-50%,-50%);
+    margin-left: 50vw;
+    height: 35vw;
+    max-height: 325px;
+    width: 50vw;
+    max-width: 464px;
+    background-size: cover;
+    
+    
+}
 
+#monogramText1{
+    
+    height: 35vw;
+    max-height: 325px;
+    width: 50vw;
+    max-width: 464px;
+    background-size: cover;
+    position: absolute;
+    text-align: center;
+    font-size: 120px;
+    
+    color: black;
+    line-height: 325px;
+    background-repeat: no-repeat;
+    mix-blend-mode: screen;
+    transform: translate(0%,-24.5%);
+}
 
+#monogramText2{
+    
+    height: 35vw;
+    max-height: 325px;
+    width: 50vw;
+    max-width: 464px;
+    background-size: cover;
+    position: absolute;
+    text-align: center;
+    font-size: 120px;
+    
+    color: white;
+    line-height: 325px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    mix-blend-mode: darken;
+    transform: translate(0%,-24.5%);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#monogramTextBox{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-left: 50%;
+    margin-top:500px;
+}
 
 
 
@@ -547,4 +607,16 @@ display: inline;
     }
     
   
+}
+
+@media(max-width:924px){
+    #monogramText1{
+        font-size: 13vw;
+        line-height: 35vw;
+    }
+
+    #monogramText2{
+        font-size: 13vw;
+        line-height: 35vw;
+    }
 }
