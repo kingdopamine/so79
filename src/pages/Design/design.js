@@ -970,19 +970,19 @@ class Design extends React.Component{
 
         setTimeout(()=>{
             if(this.state.zipColour==='red'){
-                this.setState({monogramFront:plainBackRed});
+                this.setState({monogramBack:plainBackRed});
             };
     
             if(this.state.zipColour==='orange'){
-                this.setState({monogramFront:plainBackOrange});
+                this.setState({monogramBack:plainBackOrange});
             };
     
             if(this.state.zipColour==='yellow'){
-                this.setState({monogramFront:plainBackYellow});
+                this.setState({monogramBack:plainBackYellow});
             };
     
             if(this.state.zipColour==='blue'){
-                this.setState({monogramFront:plainBackBlue});
+                this.setState({monogramBack:plainBackBlue});
             };
         },)
         
