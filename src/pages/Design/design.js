@@ -119,6 +119,10 @@ import greenTexture from './designs/Monogram/Green denim texture.png'
 import goldTexture from './designs/Monogram/Gold denim texture.png'
 import silverTexture from './designs/Monogram/Silver denim texture.png'
 import whiteTexture from './designs/Monogram/White denim texture.png'
+import greenTextureFront from './designs/Monogram/Green denim texture front.png'
+import goldTextureFront from './designs/Monogram/Gold denim texture front.png'
+import silverTextureFront from './designs/Monogram/Silver denim texture front.png'
+import whiteTextureFront from './designs/Monogram/White denim texture front.png'
 
 
 
@@ -167,7 +171,8 @@ class Design extends React.Component{
             sWavesChoice2:'',
             monogramFront:plainFrontRed,
             monogramBack:plainBackRed,
-            monogramDefaultText:'SO79',
+            monogramDefaultTextFront:'SO79',
+            monogramDefaultTextFront:'SO79',
             monogramVisibleFront:'menusectionhidden',
             monogramVisibleBack:'menusectionhidden',
             monoF:false,
@@ -986,18 +991,18 @@ class Design extends React.Component{
 
     monogramFront(event){
         if(event.target.value==='' || event.target.value.length > 4){
-            this.setState({monogramDefaultText:'SO79'})
+            this.setState({monogramDefaultTextFront:'SO79'})
         } else {
-            this.setState({monogramDefaultText:event.target.value})
+            this.setState({monogramDefaultTextFront:event.target.value})
         }
         
     }
 
     monogramBack(event){
         if(event.target.value==='' || event.target.value.length > 4){
-            this.setState({monogramDefaultText:'SO79'})
+            this.setState({monogramDefaultTextBack:'SO79'})
         } else {
-            this.setState({monogramDefaultText:event.target.value})
+            this.setState({monogramDefaultTextBack:event.target.value})
         }
         
     }
@@ -1082,10 +1087,10 @@ class Design extends React.Component{
                                         <li onClick={()=>{this.setState({monogramFontFront:'Sign Painter', monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>FONT B</li>
                                         <li onClick={()=>{this.setState({monogramFontFront:'Dancing Script Bold', monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>FONT C</li>
                                         <li onClick={()=>{this.setState({monogramFontFront:'Helvetica Neue', monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>FONT D</li>
-                                        <li onClick={()=>{this.setState({monogramColourFront:goldTexture, monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>- Gold</li>
-                                        <li onClick={()=>{this.setState({monogramColourFront:silverTexture, monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>- Silver</li>
-                                        <li onClick={()=>{this.setState({monogramColourFront:greenTexture, monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>- Green</li>
-                                        <li onClick={()=>{this.setState({monogramColourFront:whiteTexture, monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>- White</li>
+                                        <li onClick={()=>{this.setState({monogramColourFront:goldTextureFront, monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>- Gold</li>
+                                        <li onClick={()=>{this.setState({monogramColourFront:silverTextureFront, monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>- Silver</li>
+                                        <li onClick={()=>{this.setState({monogramColourFront:greenTextureFront, monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>- Green</li>
+                                        <li onClick={()=>{this.setState({monogramColourFront:whiteTextureFront, monogramVisibleFront:'monogramContainer', monoF:true, cardholderFrontDisplay:'menuOff'})}}>- White</li>
                                     </ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
@@ -1164,14 +1169,14 @@ class Design extends React.Component{
             <img src={this.state.cardholderFront} className={this.state.cardholderFrontDisplay} id={this.state.cardholderfrontid} alt="cardholder"></img>
             <img src={this.state.cardholderBack} className={this.state.cardholderBackDisplay}  id={this.state.cardholderbackid} alt="cardholder"></img>
             <div id={this.state.monogramVisibleFront} style={{backgroundImage: `url("${this.state.monogramColourFront}")`}}>
-                <h1 id="monogramText1" style={{backgroundImage: `url("${this.state.monogramColourFront}")`, fontFamily:this.state.monogramFontFront}}>{this.state.monogramDefaultText}</h1>
-                <h1 id="monogramText2" style={{backgroundImage: `url("${this.state.monogramFront}")`, fontFamily:this.state.monogramFontFront}}>{this.state.monogramDefaultText}</h1>
-                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramFront(event)}} placeholder="SO79"></input>
+                <h1 id="monogramText1" style={{backgroundImage: `url("${this.state.monogramColourFront}")`, fontFamily:this.state.monogramFontFront}}>{this.state.monogramDefaultTextFront}</h1>
+                <h1 id="monogramText2" style={{backgroundImage: `url("${this.state.monogramFront}")`, fontFamily:this.state.monogramFontFront}}>{this.state.monogramDefaultTextFront}</h1>
+                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramFront(event)}} placeholder="SO79" maxlength="4"></input>
             </div>
             <div id={this.state.monogramVisibleBack} style={{backgroundImage: `url("${this.state.monogramColourBack}")`}}>
-                <h1 id="monogramText1" style={{backgroundImage: `url("${this.state.monogramColourBack}")`, fontFamily:this.state.monogramFontBack}}>{this.state.monogramDefaultText}</h1>
-                <h1 id="monogramText2" style={{backgroundImage: `url("${this.state.monogramBack}")`, fontFamily:this.state.monogramFontBack}}>{this.state.monogramDefaultText}</h1>
-                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramBack(event)}} placeholder="SO79"></input>
+                <h1 id="monogramText1" style={{backgroundImage: `url("${this.state.monogramColourBack}")`, fontFamily:this.state.monogramFontBack}}>{this.state.monogramDefaultTextBack}</h1>
+                <h1 id="monogramText2" style={{backgroundImage: `url("${this.state.monogramBack}")`, fontFamily:this.state.monogramFontBack}}>{this.state.monogramDefaultTextBack}</h1>
+                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramBack(event)}} placeholder="test" maxlength="4"></input>
             </div>         
        </div>
       
