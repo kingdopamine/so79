@@ -176,7 +176,9 @@ class Design extends React.Component{
             monogramColourFront:goldTexture,
             monogramColourBack:goldTexture,
             monogramFontFront:'Lino Write',
-            monogramFontBack:'Lino Write'
+            monogramFontBack:'Lino Write',
+            monogramfrontid:'monogramText1',
+            monogrambackid:'monogramText2'
             
         }
         
@@ -336,12 +338,20 @@ class Design extends React.Component{
         };
         
         if(this.state.showbothtoggle===false){
+            if(this.state.monoF===false){
+                this.setState({cardholderfrontid:'cardholderFrontSBS'});
+            };
+
+            if(this.state.monoB===false){
+                this.setState({cardholderbackid:'cardholderBackSBS'})
+            };
             
+
             this.setState({
                 showbothtoggle:true,cardholderFrontDisplay:'',
                 cardholderBackDisplay:'',
-                cardholderfrontid:'cardholderFrontSBS',
-                cardholderbackid:'cardholderBackSBS',
+                //cardholderfrontid:'cardholderFrontSBS',
+                //cardholderbackid:'cardholderBackSBS',
                 menuItems:'menuOff',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'menutogglehidden',
@@ -390,13 +400,19 @@ class Design extends React.Component{
         };
         
         if(this.state.showbothtoggle===false){
-            
+            if(this.state.monoF===false){
+                this.setState({cardholderfrontid:'cardholderFrontSBS'});
+            };
+
+            if(this.state.monoB===false){
+                this.setState({cardholderbackid:'cardholderBackSBS'})
+            };
             
             this.setState({
                 showbothtoggle:true,cardholderFrontDisplay:'',
                 cardholderBackDisplay:'',
-                cardholderfrontid:'cardholderFrontSBS',
-                cardholderbackid:'cardholderBackSBS',
+                //cardholderfrontid:'cardholderFrontSBS',
+                //cardholderbackid:'cardholderBackSBS',
                 menuItems:'menuOff',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'menutogglehidden',
@@ -969,7 +985,7 @@ class Design extends React.Component{
     }
 
     monogramFront(event){
-        if(event.target.value===''){
+        if(event.target.value==='' || event.target.value.length > 4){
             this.setState({monogramDefaultText:'SO79'})
         } else {
             this.setState({monogramDefaultText:event.target.value})
@@ -978,7 +994,7 @@ class Design extends React.Component{
     }
 
     monogramBack(event){
-        if(event.target.value===''){
+        if(event.target.value==='' || event.target.value.length > 4){
             this.setState({monogramDefaultText:'SO79'})
         } else {
             this.setState({monogramDefaultText:event.target.value})
@@ -1029,28 +1045,28 @@ class Design extends React.Component{
                                 <ul className={this.state.designFDisplay} >
                                     <ul onClick={this.logoToggle}>Logo Style</ul>
                                     <ul id={this.state.logo}> 
-                                        <li onClick={()=>{this.setState({logoChoice:"goldOutline",designStyle:"logo", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- Gold Outline</li>
-                                        <li onClick={()=>{this.setState({logoChoice:"solidGold",designStyle:"logo", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- Solid Gold</li>
-                                        <li onClick={()=>{this.setState({logoChoice:"ecru",designStyle:"logo", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- Ecru</li>
-                                        <li onClick={()=>{this.setState({logoChoice:"solidRed",designStyle:"logo", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- Solid Red</li>
+                                        <li onClick={()=>{this.setState({logoChoice:"goldOutline",designStyle:"logo", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- Gold Outline</li>
+                                        <li onClick={()=>{this.setState({logoChoice:"solidGold",designStyle:"logo", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- Solid Gold</li>
+                                        <li onClick={()=>{this.setState({logoChoice:"ecru",designStyle:"logo", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- Ecru</li>
+                                        <li onClick={()=>{this.setState({logoChoice:"solidRed",designStyle:"logo", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- Solid Red</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
                                     <ul onClick={this.sWavesToggle}>Small Waves</ul>
                                     <ul id={this.state.sWaves}> 
-                                        <li onClick={()=>{this.setState({sWavesChoice:"gold",designStyle:"smallWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- Gold</li>
-                                        <li onClick={()=>{this.setState({sWavesChoice:"silver",designStyle:"smallWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- Silver</li>
-                                        <li onClick={()=>{this.setState({sWavesChoice:"green",designStyle:"smallWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- Green</li>
-                                        <li onClick={()=>{this.setState({sWavesChoice:"white",designStyle:"smallWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- White</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice:"gold",designStyle:"smallWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- Gold</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice:"silver",designStyle:"smallWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- Silver</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice:"green",designStyle:"smallWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- Green</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice:"white",designStyle:"smallWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- White</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
                                     <ul onClick={this.lWavesToggle}>Large Waves</ul>
                                     <ul id={this.state.lWaves}> 
-                                        <li onClick={()=>{this.setState({lWavesChoice:"gold",designStyle:"largeWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- Gold</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"silver",designStyle:"largeWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- Silver</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"green",designStyle:"largeWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- Green</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice:"white",designStyle:"largeWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>- White</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice:"gold",designStyle:"largeWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- Gold</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice:"silver",designStyle:"largeWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- Silver</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice:"green",designStyle:"largeWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- Green</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice:"white",designStyle:"largeWaves", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},)}}>- White</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
@@ -1073,7 +1089,7 @@ class Design extends React.Component{
                                     </ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
-                                    <ul onClick={()=>{this.setState({designStyle:"plain", cardholderFrontDisplay:''}); this.displayer()}}>Plain</ul>
+                                    <ul onClick={()=>{this.setState({designStyle:"plain", cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>Plain</ul>
                                 </ul>
                                     
                                 
@@ -1089,28 +1105,28 @@ class Design extends React.Component{
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={this.logoToggle}>Logo Style</ul>
                                     <ul id={this.state.logo}> 
-                                        <li onClick={()=>{this.setState({logoChoice2:"goldOutline",designStyle2:"logo", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- Gold Outline</li>
-                                        <li onClick={()=>{this.setState({logoChoice2:"solidGold",designStyle2:"logo", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- Solid Gold</li>
-                                        <li onClick={()=>{this.setState({logoChoice2:"ecru",designStyle2:"logo", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- Ecru</li>
-                                        <li onClick={()=>{this.setState({logoChoice2:"solidRed",designStyle2:"logo", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- Solid Red</li>
+                                        <li onClick={()=>{this.setState({logoChoice2:"goldOutline",designStyle2:"logo", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- Gold Outline</li>
+                                        <li onClick={()=>{this.setState({logoChoice2:"solidGold",designStyle2:"logo", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- Solid Gold</li>
+                                        <li onClick={()=>{this.setState({logoChoice2:"ecru",designStyle2:"logo", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- Ecru</li>
+                                        <li onClick={()=>{this.setState({logoChoice2:"solidRed",designStyle2:"logo", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- Solid Red</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={this.sWavesToggle}>Small Waves</ul>
                                     <ul id={this.state.sWaves}> 
-                                        <li onClick={()=>{this.setState({sWavesChoice2:"gold",designStyle2:"smallWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- Gold</li>
-                                        <li onClick={()=>{this.setState({sWavesChoice2:"silver",designStyle2:"smallWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- Silver</li>
-                                        <li onClick={()=>{this.setState({sWavesChoice2:"green",designStyle2:"smallWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- Green</li>
-                                        <li onClick={()=>{this.setState({sWavesChoice2:"white",designStyle2:"smallWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- White</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice2:"gold",designStyle2:"smallWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- Gold</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice2:"silver",designStyle2:"smallWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- Silver</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice2:"green",designStyle2:"smallWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- Green</li>
+                                        <li onClick={()=>{this.setState({sWavesChoice2:"white",designStyle2:"smallWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- White</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={this.lWavesToggle}>Large Waves</ul>
                                     <ul id={this.state.lWaves}> 
-                                        <li onClick={()=>{this.setState({lWavesChoice2:"gold",designStyle2:"largeWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- Gold</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice2:"silver",designStyle2:"largeWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- Silver</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice2:"green",designStyle2:"largeWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- Green</li>
-                                        <li onClick={()=>{this.setState({lWavesChoice2:"white",designStyle2:"largeWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>- White</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice2:"gold",designStyle2:"largeWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- Gold</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice2:"silver",designStyle2:"largeWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- Silver</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice2:"green",designStyle2:"largeWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- Green</li>
+                                        <li onClick={()=>{this.setState({lWavesChoice2:"white",designStyle2:"largeWaves", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},)}}>- White</li>
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
@@ -1133,7 +1149,7 @@ class Design extends React.Component{
                                     </ul>
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
-                                    <ul onClick={()=>{this.setState({designStyle2:"plain", cardholderBackDisplay:''}); this.displayerBack()}}>Plain</ul>
+                                    <ul onClick={()=>{this.setState({designStyle2:"plain", cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>Plain</ul>
                                 </ul>
                                     
                                 
@@ -1141,15 +1157,8 @@ class Design extends React.Component{
                         </div>
                     </div>
                     
-
-                    
-                    
-                    
-                    
                 </div>
             </div> 
-
-
             
         
             <img src={this.state.cardholderFront} className={this.state.cardholderFrontDisplay} id={this.state.cardholderfrontid} alt="cardholder"></img>
@@ -1157,16 +1166,13 @@ class Design extends React.Component{
             <div id={this.state.monogramVisibleFront} style={{backgroundImage: `url("${this.state.monogramColourFront}")`}}>
                 <h1 id="monogramText1" style={{backgroundImage: `url("${this.state.monogramColourFront}")`, fontFamily:this.state.monogramFontFront}}>{this.state.monogramDefaultText}</h1>
                 <h1 id="monogramText2" style={{backgroundImage: `url("${this.state.monogramFront}")`, fontFamily:this.state.monogramFontFront}}>{this.state.monogramDefaultText}</h1>
-                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramFront(event)}}></input>
+                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramFront(event)}} placeholder="SO79"></input>
             </div>
             <div id={this.state.monogramVisibleBack} style={{backgroundImage: `url("${this.state.monogramColourBack}")`}}>
                 <h1 id="monogramText1" style={{backgroundImage: `url("${this.state.monogramColourBack}")`, fontFamily:this.state.monogramFontBack}}>{this.state.monogramDefaultText}</h1>
                 <h1 id="monogramText2" style={{backgroundImage: `url("${this.state.monogramBack}")`, fontFamily:this.state.monogramFontBack}}>{this.state.monogramDefaultText}</h1>
-                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramBack(event)}}></input>
-            </div>
-        
-        
-             
+                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramBack(event)}} placeholder="SO79"></input>
+            </div>         
        </div>
       
         )

@@ -7,12 +7,12 @@
 
 @font-face{
     font-family: "Sign Painter";
-    src: url("../../SignPainter.otf") ;
+    src: url("../../SignPainter.ttf") ;
 }
 
 @font-face{
     font-family: "Dancing Script Bold";
-    src: url("../../DancingScript-Bold.otf") ;
+    src: url("../../DancingScript-Bold.ttf") ;
 }
 
 
@@ -454,9 +454,7 @@ display: inline;
     max-height: 325px;
     width: 50vw;
     max-width: 464px;
-    background-size: cover;
-    
-    
+    background-size: cover;   
 }
 
 #monogramText1{
@@ -468,13 +466,13 @@ display: inline;
     background-size: cover;
     position: absolute;
     text-align: center;
-    font-size: 120px;
+    font-size: 85px;
     
     color: black;
     line-height: 325px;
     background-repeat: no-repeat;
     mix-blend-mode: screen;
-    transform: translate(0%,-24.5%);
+    transform: translate(0%,-17.5%);
 }
 
 #monogramText2{
@@ -486,21 +484,21 @@ display: inline;
     background-size: cover;
     position: absolute;
     text-align: center;
-    font-size: 120px;
+    font-size: 85px;
     
     color: white;
     line-height: 325px;
     overflow: hidden;
     background-repeat: no-repeat;
     mix-blend-mode: darken;
-    transform: translate(0%,-24.5%);
+    transform: translate(0%,-17.5%);
 }
 
 #monogramTextBox{
     position: absolute;
     transform: translate(-50%,-50%);
     margin-left: 50%;
-    margin-top:500px;
+    margin-top:360px;
 }
 
 
@@ -575,6 +573,8 @@ display: inline;
         transform: translate(-50%,0%);
     }
 
+  
+    
    
 
    
@@ -597,26 +597,58 @@ display: inline;
         margin-left: 50vw;
     }
 
-    
-    
-   
 
     .deconstruct {
         max-height:30vh;
         margin-top:40vh;
     }
     
-  
+    #monogramText1{        
+        height: 225px;
+        width: 321px;
+        font-size: 55px;
+        line-height: 225px;
+        
+    }
+
+    #monogramText2{        
+        height: 225px;
+        width: 321px;
+        font-size: 55px;
+        line-height: 225px;
+    }
+
+    #monogramContainer{
+        position: absolute;
+        margin-top: 150px;
+        transform: translate(-50%,0%);
+        margin-left: 50vw;
+        height: 225px;
+        width: 321px;
+
+    }
+    
+    #monogramTextBox{
+        
+        margin-top:230px;
+    }
+
+
 }
 
-@media(max-width:924px){
+@media(max-width:924px) and (min-width:600px){
     #monogramText1{
-        font-size: 13vw;
+        font-size: 9vw;
         line-height: 35vw;
     }
 
     #monogramText2{
-        font-size: 13vw;
+        font-size: 9vw;
         line-height: 35vw;
+    }
+
+    #monogramTextBox{
+        
+        margin-top:39vw;
     }
 }
