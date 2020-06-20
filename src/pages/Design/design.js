@@ -172,7 +172,7 @@ class Design extends React.Component{
             monogramFront:plainFrontRed,
             monogramBack:plainBackRed,
             monogramDefaultTextFront:'SO79',
-            monogramDefaultTextFront:'SO79',
+            monogramDefaultTextBack:'SO79',
             monogramVisibleFront:'menusectionhidden',
             monogramVisibleBack:'menusectionhidden',
             monoF:false,
@@ -1176,7 +1176,7 @@ class Design extends React.Component{
             <div id={this.state.monogramVisibleBack} style={{backgroundImage: `url("${this.state.monogramColourBack}")`}}>
                 <h1 id="monogramText1" style={{backgroundImage: `url("${this.state.monogramColourBack}")`, fontFamily:this.state.monogramFontBack}}>{this.state.monogramDefaultTextBack}</h1>
                 <h1 id="monogramText2" style={{backgroundImage: `url("${this.state.monogramBack}")`, fontFamily:this.state.monogramFontBack}}>{this.state.monogramDefaultTextBack}</h1>
-                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramBack(event)}} placeholder="test" maxlength="4"></input>
+                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramBack(event)}} placeholder="SO79" maxlength="4"></input>
             </div>         
        </div>
       
