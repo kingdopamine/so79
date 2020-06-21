@@ -182,8 +182,7 @@ class Design extends React.Component{
             monogramColourBack:goldTexture,
             monogramFontFront:'Lino Write',
             monogramFontBack:'Lino Write',
-            monogramfrontid:'monogramText1',
-            monogrambackid:'monogramText2'
+            
             
         }
         
@@ -336,32 +335,38 @@ class Design extends React.Component{
                 cardholderFrontDisplay:'',
                 cardholderBackDisplay:'menuOff',
                 frontmenutoggle:'menutogglehidden',
-                backmenutoggle:'backmenutoggle'
+                backmenutoggle:'backmenutoggle',
+
             })
 
             
         };
         
         if(this.state.showbothtoggle===false){
-            if(this.state.monoF===false){
-                this.setState({cardholderfrontid:'cardholderFrontSBS'});
-            };
-
-            if(this.state.monoB===false){
-                this.setState({cardholderbackid:'cardholderBackSBS'})
-            };
-            
-
             this.setState({
-                showbothtoggle:true,cardholderFrontDisplay:'',
+                showbothtoggle:true,
                 cardholderBackDisplay:'',
-                //cardholderfrontid:'cardholderFrontSBS',
-                //cardholderbackid:'cardholderBackSBS',
+                cardholderfrontid:'cardholderFrontSBS',
+                cardholderbackid:'cardholderBackSBS',
                 menuItems:'menuOff',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'menutogglehidden',
-                showbothtoggle2:'menuOff'
+                showbothtoggle2:'menuOff',
+                
+
             })
+
+            if(this.state.monoF===true){
+                this.setState({
+                    monogramVisibleFront:'monogramContainerSBSF',
+                })
+            }
+
+            if(this.state.monoB===true){
+                this.setState({
+                    monogramVisibleBack:'monogramContainerSBSB',
+                })
+            }
         };
         if(this.state.showbothtoggle===true){
             
@@ -386,8 +391,32 @@ class Design extends React.Component{
                 menuItems:'menuItems',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'backmenutoggle',
-                showbothtoggle2:'boldMenuItems'
-            })
+                showbothtoggle2:'boldMenuItems',
+                
+
+            });
+
+            if(this.state.monoF===true){
+                this.setState({
+                    monogramVisibleFront:'monogramContainer',
+                });
+                if(this.state.frontmenusection==="menusectionhidden"){
+                    this.setState({monogramVisibleFront:'menusectionhidden'})
+                } else {
+                    this.setState({monogramVisibleFront:'monogramContainer'})
+                }
+            }
+
+            if(this.state.monoB===true){
+                this.setState({
+                    monogramVisibleBack:'monogramContainer',
+                });
+                if(this.state.backmenusection==="menusectionhidden"){
+                    this.setState({monogramVisibleBack:'menusectionhidden'})
+                } else {
+                    this.setState({monogramVisibleBack:'monogramContainer'})
+                }
+            }
         }
     }
 
@@ -399,30 +428,38 @@ class Design extends React.Component{
                 cardholderBackDisplay:'menuOff',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'backmenutoggle'
+                
             })
 
             
         };
         
         if(this.state.showbothtoggle===false){
-            if(this.state.monoF===false){
-                this.setState({cardholderfrontid:'cardholderFrontSBS'});
-            };
-
-            if(this.state.monoB===false){
-                this.setState({cardholderbackid:'cardholderBackSBS'})
-            };
+        
             
             this.setState({
                 showbothtoggle:true,cardholderFrontDisplay:'',
                 cardholderBackDisplay:'',
-                //cardholderfrontid:'cardholderFrontSBS',
-                //cardholderbackid:'cardholderBackSBS',
+                cardholderfrontid:'cardholderFrontSBS',
+                cardholderbackid:'cardholderBackSBS',
                 menuItems:'menuOff',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'menutogglehidden',
-                showbothtoggle1:'menuOff'
+                showbothtoggle1:'menuOff',
+                
             })
+
+            if(this.state.monoF===true){
+                this.setState({
+                    monogramVisibleFront:'monogramContainerSBSF',
+                })
+            }
+
+            if(this.state.monoB===true){
+                this.setState({
+                    monogramVisibleBack:'monogramContainerSBSB',
+                })
+            }
         };
         if(this.state.showbothtoggle===true){
             if(this.state.showboth1===true){
@@ -445,8 +482,31 @@ class Design extends React.Component{
                 menuItems:'menuItems',
                 frontmenutoggle:'menutogglehidden',
                 backmenutoggle:'backmenutoggle',
-                showbothtoggle1:'boldMenuItems'
+                showbothtoggle1:'boldMenuItems',
+                
             })
+
+            if(this.state.monoF===true){
+                this.setState({
+                    monogramVisibleFront:'monogramContainer',
+                });
+                if(this.state.frontmenusection==="menusectionhidden"){
+                    this.setState({monogramVisibleFront:'menusectionhidden'})
+                } else {
+                    this.setState({monogramVisibleFront:'monogramContainer'})
+                }
+            }
+
+            if(this.state.monoB===true){
+                this.setState({
+                    monogramVisibleBack:'monogramContainer',
+                });
+                if(this.state.backmenusection==="menusectionhidden"){
+                    this.setState({monogramVisibleBack:'menusectionhidden'})
+                } else {
+                    this.setState({monogramVisibleBack:'monogramContainer'})
+                }
+            }
         }
     }
 
@@ -1094,7 +1154,7 @@ class Design extends React.Component{
                                     </ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
-                                    <ul onClick={()=>{this.setState({designStyle:"plain", cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>Plain</ul>
+                                    <ul onClick={()=>{this.setState({designStyle:"plain", monoF:false, cardholderFrontDisplay:''}); this.displayer(); setTimeout(()=>{this.setState({monogramVisibleFront:'menusectionhidden'})},100)}}>Plain</ul>
                                 </ul>
                                     
                                 
@@ -1154,7 +1214,7 @@ class Design extends React.Component{
                                     </ul>
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
-                                    <ul onClick={()=>{this.setState({designStyle2:"plain", cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>Plain</ul>
+                                    <ul onClick={()=>{this.setState({designStyle2:"plain", monoB:false, cardholderBackDisplay:''}); this.displayerBack(); setTimeout(()=>{this.setState({monogramVisibleBack:'menusectionhidden'})},100)}}>Plain</ul>
                                 </ul>
                                     
                                 

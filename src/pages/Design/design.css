@@ -419,15 +419,7 @@ li{
     margin-left: 72vw;
 }
 
-#monogramFront{
-    height:35vw;
-    max-height: 325px;
-    transform: translate(-50%,-50%);
-    margin-right: 50px;
-    position: absolute;
-    margin-top: 50vh;
-    margin-left: 50vw;
-}
+
 
 #frontText{
 display: inline;
@@ -467,12 +459,12 @@ display: inline;
     position: absolute;
     text-align: center;
     font-size: 85px;
-    
     color: black;
     line-height: 325px;
     background-repeat: no-repeat;
     mix-blend-mode: screen;
     transform: translate(0%,-17.5%);
+    
 }
 
 #monogramText2{
@@ -485,13 +477,13 @@ display: inline;
     position: absolute;
     text-align: center;
     font-size: 85px;
-    
     color: white;
     line-height: 325px;
     overflow: hidden;
     background-repeat: no-repeat;
     mix-blend-mode: darken;
     transform: translate(0%,-17.5%);
+    
 }
 
 #monogramTextBox{
@@ -503,6 +495,29 @@ display: inline;
 
 
 
+#monogramContainerSBSF{
+    position: absolute;
+    margin-top: 50vh;
+    transform: translate(-50%,-50%);
+    margin-left: 27vw;
+    height: 35vw;
+    max-height: 325px;
+    width: 50vw;
+    max-width: 464px;
+    background-size: cover;   
+}
+
+#monogramContainerSBSB{
+    position: absolute;
+    margin-top: 50vh;
+    transform: translate(-50%,-50%);
+    margin-left: 72vw;
+    height: 35vw;
+    max-height: 325px;
+    width: 50vw;
+    max-width: 464px;
+    background-size: cover;   
+}
 
 
 
@@ -582,8 +597,6 @@ display: inline;
     #cardholderFrontSBS{
         height:225px;
         transform: translate(-50%,0%);
-        margin-right: 50px;
-        position: absolute;
         margin-top: 150px;
         margin-left: 50vw;
     }
@@ -591,10 +604,27 @@ display: inline;
     #cardholderBackSBS{
         height:225px;
         transform: translate(-50%,0%);
-        margin-right: 50px;
-        position: absolute;
         margin-top: 425px;
         margin-left: 50vw;
+    }
+
+    #monogramContainerSBSF{
+        margin-top: 150px;
+        transform: translate(-50%,-0%);
+        margin-left: 50vw;
+        height: 225px;
+        width: 321px;
+     
+    }
+    
+    #monogramContainerSBSB{
+        margin-top: 425px;
+        transform: translate(-50%,-0%);
+        margin-left: 50vw;
+        height: 225px;
+        width: 321px;
+  
+         
     }
 
 
