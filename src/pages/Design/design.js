@@ -177,7 +177,7 @@ class Design extends React.Component{
             monogramVisibleBack:'menusectionhidden',
             monoF:false,
             monoB:false,
-            monogram:'monogramCollapse',
+            monogram:'monogramCollapsed',
             monogramColourFront:goldTexture,
             monogramColourBack:goldTexture,
             monogramFontFront:'Lino Write',
@@ -512,7 +512,7 @@ class Design extends React.Component{
 
     logoToggle(){
         if(this.state.logo==='logoCollapsed'){
-            this.setState({logo:''});
+            this.setState({logo:'',lWaves:'lWavesCollapsed',sWaves:'sWavesCollapsed',monogram:'monogramCollapsed'});
         };
 
         if(this.state.logo===''){
@@ -523,7 +523,7 @@ class Design extends React.Component{
 
     lWavesToggle(){
         if(this.state.lWaves==='lWavesCollapsed'){
-            this.setState({lWaves:''})
+            this.setState({lWaves:'',logo:'logoCollapsed',sWaves:'sWavesCollapsed',monogram:'monogramCollapsed'})
         };
 
         if(this.state.lWaves===''){
@@ -533,12 +533,20 @@ class Design extends React.Component{
 
     sWavesToggle(){
         if(this.state.sWaves==='sWavesCollapsed'){
-            this.setState({sWaves:''})
+            this.setState({sWaves:'',lWaves:'lWavesCollapsed',logo:'logoCollapsed',monogram:'monogramCollapsed'})
         };
 
         if(this.state.sWaves===''){
-            this.setState({sWaves:'sWavesCollapsed'})
+            this.setState({sWaves:'sWavesCollapsed',})
         };
+    }
+
+    monogramToggle(){
+        if(this.state.monogram==='monogramCollapsed'){
+            this.setState({monogram:'',lWaves:'lWavesCollapsed',sWaves:'sWavesCollapsed',logo:'logoCollapse'})
+        } else {
+            this.setState({monogram:'monogramCollapsed'})
+        }
     }
 
 
@@ -995,13 +1003,7 @@ class Design extends React.Component{
         
     }
 
-    monogramToggle(){
-        if(this.state.monogram==='monogramCollapse'){
-            this.setState({monogram:''})
-        } else {
-            this.setState({monogram:'monogramCollapse'})
-        }
-    }
+    
 
     monogramZipColourFront(){
 
