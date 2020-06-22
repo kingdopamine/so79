@@ -1097,11 +1097,11 @@ class Design extends React.Component{
                         <div className="boldMenuItems" id={this.state.fabricmenu}>FABRIC CHOICE</div>
                         <div onClick={this.zipToggle} className="boldMenuItems" id={this.state.zipmenu}>ZIP COLOUR</div>
                         <ul className={this.state.zipDisplay} id="zipmenuexpanded">
-                            <li onClick={()=>{this.setState({zipColour:'red'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Red</li>
-                            <li onClick={()=>{this.setState({zipColour:'orange'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Orange</li>
-                            <li onClick={()=>{this.setState({zipColour:'yellow'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Yellow</li>
+                            <li onClick={()=>{this.setState({zipColour:'red'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}} id="redzip">Red</li>
+                            <li onClick={()=>{this.setState({zipColour:'orange'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}} id="orangezip">Orange</li>
+                            <li onClick={()=>{this.setState({zipColour:'yellow'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}} id="yellowzip">Yellow</li>
                             <li id="backText">Green</li>
-                            <li onClick={()=>{this.setState({zipColour:'blue'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Blue</li>
+                            <li onClick={()=>{this.setState({zipColour:'blue'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}} id="bluezip">Blue</li>
                             <li id="backText">Purple</li><br/>
                             <li id="backText">Grey</li>
                         </ul>

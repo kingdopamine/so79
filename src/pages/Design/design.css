@@ -519,6 +519,19 @@ display: inline;
     background-size: cover;   
 }
 
+#redzip{
+    color:red
+}
+#orangezip{
+    color:orange
+}
+#yellowzip{
+    color:yellow
+}
+#bluezip{
+    color:blue
+}
+
 
 
 @media (max-width:600px){
