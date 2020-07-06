@@ -13,7 +13,7 @@ class Contact extends React.Component{
     
     render(){
         return(
-            <div>
+            <div id="contactPageWidth">
                 <img id="headerimg" src={headerimg}/>
                 <div id="bespokeText">
                     <p> 

@@ -3,9 +3,12 @@
     src: url("../../linowrite.ttf") ;
 }
 
+
+
 #bespokeText {
     position: absolute;
     margin-top:10px;
+    max-width: 1000px;
     width:80vw;
     text-align:justify;
     transform: translate(-50%);
