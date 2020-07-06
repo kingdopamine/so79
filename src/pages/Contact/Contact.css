@@ -1,4 +1,30 @@
+@font-face{
+    font-family: "Lino Write";
+    src: url("../../linowrite.ttf") ;
+}
 
+#bespokeText {
+    position: absolute;
+    margin-top:10px;
+    width:80vw;
+    text-align:justify;
+    transform: translate(-50%);
+    margin-left: 50vw;
+
+}
+
+#bespokeText h1 {
+    text-align: center;
+    font-family: "Lino Write";
+}
+
+#headerimg {
+    
+    margin-top:150px;
+    width:62.5vw;
+    transform: translate(-50%);
+    margin-left: 50vw;
+}
 
 
 
