@@ -8,8 +8,8 @@
 #bespokeText {
     position: absolute;
     margin-top:10px;
-    max-width: 1000px;
-    width:80vw;
+    max-width: 930px;
+    width:58vw;
     text-align:justify;
     transform: translate(-50%);
     margin-left: 50vw;
@@ -22,11 +22,12 @@
 }
 
 #headerimg {
-    
+    max-width: 1000px;
     margin-top:100px;
     width:62.5vw;
     transform: translate(-50%);
     margin-left: 50vw;
+    
 }
 
 
