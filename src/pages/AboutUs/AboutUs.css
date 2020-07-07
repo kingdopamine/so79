@@ -1,0 +1,22 @@
+#aboutText{
+    position: absolute;
+    margin-top:150px;
+    margin-left: 50vw;
+    transform: translate(-50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80vw;
+    max-width: 1500px;
+    text-align: justify;
+}
+
+#aboutText h1 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+#macca {
+    float: right;
+    width: 40vw;
+    max-width: 500px;
+    padding-left: 10px;
+}
