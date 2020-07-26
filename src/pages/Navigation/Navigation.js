@@ -41,10 +41,10 @@ class Navigation extends React.Component{
             <div>
                 <a href='/'><img src={foreground} id='homebutton' alt='homebutton'/></a> 
                 <div className={this.props.menuShow}>
-                    <p id="main-menu-so79" onMouseEnter={this.mainMenuToggle} >
+                    <p id="main-menu-so79" onMouseEnter={()=>{this.setState({mainmenu:"main-menu-list"})}} onClick={()=>{this.setState({mainmenu:"menuOff"})}}>
                         <i class="fas fa-bars" id="main-menu" ></i >SOURCE OF 79
                     </p>
-                    <ul className={this.state.mainmenu} onMouseLeave={this.mainMenuToggle}>
+                    <ul className={this.state.mainmenu} >
                     <li><a href="/so79-collection">SO79 Collection</a></li>
                     <li><a href="/create-your-own">Create Your Own</a></li>
                         <li><a href="/about-us">About Us</a></li>

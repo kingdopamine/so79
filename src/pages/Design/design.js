@@ -1201,7 +1201,7 @@ class Design extends React.Component{
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
-                                    <ul onClick={()=>{this.setState({designStyle:"japaneseDragon", monoF:false, monogramVisibleFront:'menusectionhidden', }); this.displayer(); setTimeout(()=>{this.setState({cardholderFrontDisplay:''})},125100)}}>Japanese Dragon</ul>
+                                    <ul onClick={()=>{this.setState({designStyle:"japaneseDragon", monoF:false, monogramVisibleFront:'menusectionhidden'}); this.displayer(); setTimeout(()=>{this.setState({cardholderFrontDisplay:''})},125)}}>Japanese Dragon</ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
                                     <ul onClick={this.monogramToggle}>Monogram</ul>
@@ -1217,7 +1217,7 @@ class Design extends React.Component{
                                     </ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
-                                    <ul onClick={()=>{this.setState({designStyle:"plain", monoF:false, monogramVisibleFront:'menusectionhidden', }); this.displayer(); setTimeout(()=>{this.setState({cardholderFrontDisplay:''})},125100)}}>Plain</ul>
+                                    <ul onClick={()=>{this.setState({designStyle:"plain", monoF:false, monogramVisibleFront:'menusectionhidden'}); this.displayer(); setTimeout(()=>{this.setState({cardholderFrontDisplay:''})},125)}}>Plain</ul>
                                 </ul>
                                     
                                 
