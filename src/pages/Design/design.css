@@ -122,7 +122,10 @@
     font-weight: 600;
 }
 
-
+#sizeFont {
+    display: inline;
+    font-size: 10px;
+}
 
 
 #frontdisplaytoggle{

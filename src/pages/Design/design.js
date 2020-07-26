@@ -1107,9 +1107,9 @@ class Design extends React.Component{
                     <div id="leftMenu">
                         <div onClick={this.sizeToggle} className="boldMenuItems" id={this.state.sizemenu}>SIZE</div>
                         <ul className={this.state.sizeDisplay} id="sizemenuexpanded">
-                            <li onClick={()=>{this.setState({zipColour:'small'}); this.displayer(); this.displayerBack(); this.walletSizeFront(); this.walletSizeBack()}}>Small (13x10cm)</li>
-                            <li id="backText">Medium</li><br/>
-                            <li id="backText">Large</li>
+                            <li onClick={()=>{this.setState({zipColour:'small'}); this.displayer(); this.displayerBack(); this.walletSizeFront(); this.walletSizeBack()}}>Sml. <p id="sizeFont">(aprx. 13 x 10cm)</p></li>
+                            <li id="backText">Med. <p id="sizeFont">(aprx. 20 x 15cm)</p></li><br/>
+                            <li id="backText">Lrg. <p id="sizeFont">(aprx. 26 x 20cm)</p></li>
                         </ul>
                         <div className="boldMenuItems" id={this.state.fabricmenu}>FABRIC CHOICE</div>
                         <div onClick={this.zipToggle} className="boldMenuItems" id={this.state.zipmenu}>ZIP COLOUR</div>
