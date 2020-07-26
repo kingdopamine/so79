@@ -13,6 +13,8 @@ import img006 from './walletsforgallery/So09.png'
 import img007 from './walletsforgallery/Source.png'
 import img008 from './walletsforgallery/tiger colours.png'
 import img009 from './walletsforgallery/waves .png'
+import img010 from './walletsforgallery/Drips N Flicks BlueZip LEFT.jpg'
+import img011 from './walletsforgallery/Drips N Flicks RedZip Left.jpg'
 
 class SO79Collection extends React.Component{
     constructor(props){
@@ -23,18 +25,22 @@ class SO79Collection extends React.Component{
                 img002,
                 img003,
                 img004,
+                img010,
                 img005,
                 img006,
                 img007,
+                img011,
                 img008,
                 img009,
                 img001,
                 img002,
                 img003,
                 img004,
+                img010,
                 img005,
                 img006,
                 img007,
+                img011,
                 img008,
                 img009,
             ],
