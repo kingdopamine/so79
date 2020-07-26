@@ -138,6 +138,7 @@ class Design extends React.Component{
             dPurse:'dPurse',
             dLogo:'dLogo',
             zipDisplay:"menuOff",
+            sizeDisplay:"menuOff",
             frontDisplay:'',
             backDisplay:'',
             designFDisplay:'menuOff',
@@ -150,6 +151,7 @@ class Design extends React.Component{
             frontmenusection:'frontmenusection',
             backmenusection:'menusectionhidden',
             zipmenu:'zipmenu',
+            sizemenu:'sizemenu',
             fabricmenu:'fabricmenu',
             frontmenutoggle:'menutogglehidden',
             backmenutoggle:'backmenutoggle',
@@ -182,11 +184,13 @@ class Design extends React.Component{
             monogramColourBack:goldTexture,
             monogramFontFront:'Lino Write',
             monogramFontBack:'Lino Write',
+            sizing:'small'
             
             
         }
         
         this.zipToggle=this.zipToggle.bind(this)
+        this.sizeToggle=this.sizeToggle.bind(this)
         this.frontToggle=this.frontToggle.bind(this)
         this.backToggle=this.backToggle.bind(this)
         this.logoToggle=this.logoToggle.bind(this)
@@ -215,6 +219,14 @@ class Design extends React.Component{
             this.setState({zipDisplay:"menuOff"})
         } else {
             this.setState({zipDisplay:""})
+        }
+    }
+
+    sizeToggle(){
+        if(this.state.sizeDisplay===""){
+            this.setState({sizeDisplay:"menuOff"})
+        } else {
+            this.setState({sizeDisplay:""})
         }
     }
 
@@ -1055,7 +1067,7 @@ class Design extends React.Component{
     }
 
     monogramFront(event){
-        if(event.target.value==='' || event.target.value.length > 4){
+        if(event.target.value==='' || event.target.value.length > 5){
             this.setState({monogramDefaultTextFront:'SO79'})
         } else {
             this.setState({monogramDefaultTextFront:event.target.value})
@@ -1064,7 +1076,7 @@ class Design extends React.Component{
     }
 
     monogramBack(event){
-        if(event.target.value==='' || event.target.value.length > 4){
+        if(event.target.value==='' || event.target.value.length > 5){
             this.setState({monogramDefaultTextBack:'SO79'})
         } else {
             this.setState({monogramDefaultTextBack:event.target.value})
@@ -1093,17 +1105,22 @@ class Design extends React.Component{
             
                 <div className={this.state.menuItems} >
                     <div id="leftMenu">
-                        <div className="boldMenuItems" id="sizemenu">SIZE</div>
+                        <div onClick={this.sizeToggle} className="boldMenuItems" id={this.state.sizemenu}>SIZE</div>
+                        <ul className={this.state.sizeDisplay} id="sizemenuexpanded">
+                            <li onClick={()=>{this.setState({zipColour:'small'}); this.displayer(); this.displayerBack(); this.walletSizeFront(); this.walletSizeBack()}}>Small (13x10cm)</li>
+                            <li id="backText">Medium</li><br/>
+                            <li id="backText">Large</li>
+                        </ul>
                         <div className="boldMenuItems" id={this.state.fabricmenu}>FABRIC CHOICE</div>
                         <div onClick={this.zipToggle} className="boldMenuItems" id={this.state.zipmenu}>ZIP COLOUR</div>
                         <ul className={this.state.zipDisplay} id="zipmenuexpanded">
-                            <li onClick={()=>{this.setState({zipColour:'red'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Red</li>
-                            <li onClick={()=>{this.setState({zipColour:'orange'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Orange</li>
-                            <li onClick={()=>{this.setState({zipColour:'yellow'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Yellow</li>
-                            <li id="backText">Green</li>
-                            <li onClick={()=>{this.setState({zipColour:'blue'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Blue</li>
-                            <li id="backText">Purple</li><br/>
-                            <li id="backText">Grey</li>
+                            <li onClick={()=>{this.setState({zipColour:'red'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Red <p id="swatchColorRed">testte</p></li>
+                            <li onClick={()=>{this.setState({zipColour:'orange'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Orange <p id="swatchColorOrange">testte</p></li>
+                            <li onClick={()=>{this.setState({zipColour:'yellow'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Yellow <p id="swatchColorYellow">testte</p></li>
+                            <li id="backText">Green <p id="swatchColorGreen">testte</p></li>
+                            <li onClick={()=>{this.setState({zipColour:'blue'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Blue <p id="swatchColorBlue">testte</p></li>
+                            <li id="backText">Purple <p id="swatchColorPurple">testte</p></li><br/>
+                            <li id="backText">Grey <p id="swatchColorGrey">testte</p></li>
                         </ul>
                     </div>
                     <div id="rightMenu">
@@ -1236,12 +1253,12 @@ class Design extends React.Component{
             <div id={this.state.monogramVisibleFront} style={{backgroundImage: `url("${this.state.monogramColourFront}")`}}>
                 <h1 id="monogramText1" style={{backgroundImage: `url("${this.state.monogramColourFront}")`, fontFamily:this.state.monogramFontFront}}>{this.state.monogramDefaultTextFront}</h1>
                 <h1 id="monogramText2" style={{backgroundImage: `url("${this.state.monogramFront}")`, fontFamily:this.state.monogramFontFront}}>{this.state.monogramDefaultTextFront}</h1>
-                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramFront(event)}} placeholder="SO79" maxlength="4"></input>
+                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramFront(event)}} placeholder="SO79" maxlength="5"></input>
             </div>
             <div id={this.state.monogramVisibleBack} style={{backgroundImage: `url("${this.state.monogramColourBack}")`}}>
                 <h1 id="monogramText1" style={{backgroundImage: `url("${this.state.monogramColourBack}")`, fontFamily:this.state.monogramFontBack}}>{this.state.monogramDefaultTextBack}</h1>
                 <h1 id="monogramText2" style={{backgroundImage: `url("${this.state.monogramBack}")`, fontFamily:this.state.monogramFontBack}}>{this.state.monogramDefaultTextBack}</h1>
-                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramBack(event)}} placeholder="SO79" maxlength="4"></input>
+                <input type="text" id="monogramTextBox" onChange={(event)=>{this.monogramBack(event)}} placeholder="SO79" maxlength="5"></input>
             </div>         
        </div>
       
