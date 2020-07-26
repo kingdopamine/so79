@@ -6,7 +6,7 @@ import './SO79Collection.css'
 
 import img001 from './walletsforgallery/Custom wallet 1.png'
 import img002 from './walletsforgallery/Custom wallet 2.png'
-import img003 from './walletsforgallery/Custom wallet 3.png'
+import img003 from './walletsforgallery/DirtyCheeks painted.png'
 import img004 from './walletsforgallery/Green tiger.png'
 import img005 from './walletsforgallery/Sharp abstract Blue .png'
 import img006 from './walletsforgallery/So09.png'

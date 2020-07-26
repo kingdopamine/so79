@@ -115,6 +115,17 @@ import smallWavesWhiteBackOrange from './designs/Small waves/White/small Fan Ora
 import smallWavesWhiteBackYellow from './designs/Small waves/White/small Fan Yel ZR White.png';
 import smallWavesWhiteBackBlue from './designs/Small waves/White/small Fan Blu ZR White.png';
 
+import japaneseDragonBackRed from './designs/Japanese Dragon/Dragon RedZip Right.jpg';
+import japaneseDragonBackOrange from './designs/Japanese Dragon/Dragon OranZip Right.jpg';
+import japaneseDragonBackYellow from './designs/Japanese Dragon/Dragon YellZip Right.jpg';
+import japaneseDragonBackBlue from './designs/Japanese Dragon/Dragon BlueZip Right.jpg';
+import japaneseDragonFrontRed from './designs/Japanese Dragon/Dragon RedZip Left.jpg';
+import japaneseDragonFrontOrange from './designs/Japanese Dragon/Dragon OranZip Left.jpg';
+import japaneseDragonFrontYellow from './designs/Japanese Dragon/Dragon YellZip Left.jpg';
+import japaneseDragonFrontBlue from './designs/Japanese Dragon/Dragon BlueZip Left.jpg';
+
+
+
 import greenTexture from './designs/Monogram/Green denim texture.png'
 import goldTexture from './designs/Monogram/Gold denim texture.png'
 import silverTexture from './designs/Monogram/Silver denim texture.png'
@@ -621,6 +632,10 @@ class Design extends React.Component{
                         this.setState({cardholderFront:smallWavesWhiteFrontRed})
                     };
                 };
+
+                if(this.state.designStyle==='japaneseDragon'){
+                    this.setState({cardholderFront:japaneseDragonFrontRed})
+                }
             };
     
     
@@ -676,6 +691,10 @@ class Design extends React.Component{
                         this.setState({cardholderFront:smallWavesWhiteFrontOrange})
                     };
                 };
+
+                if(this.state.designStyle==='japaneseDragon'){
+                    this.setState({cardholderFront:japaneseDragonFrontOrange})
+                }
             };
     
     
@@ -731,6 +750,10 @@ class Design extends React.Component{
                         this.setState({cardholderFront:smallWavesWhiteFrontYellow})
                     };
                 };
+
+                if(this.state.designStyle==='japaneseDragon'){
+                    this.setState({cardholderFront:japaneseDragonFrontYellow})
+                }
             };
     
     
@@ -786,6 +809,10 @@ class Design extends React.Component{
                         this.setState({cardholderFront:smallWavesWhiteFrontBlue})
                     };
                 };
+
+                if(this.state.designStyle==='japaneseDragon'){
+                    this.setState({cardholderFront:japaneseDragonFrontBlue})
+                }
             };
         },50)
         
@@ -815,6 +842,7 @@ class Design extends React.Component{
                     if(this.state.logoChoice2==='solidRed'){
                         this.setState({cardholderBack:solidRedLogoBackRed})
                     };
+                    
                 }
 
 
@@ -847,6 +875,10 @@ class Design extends React.Component{
                         this.setState({cardholderBack:smallWavesWhiteBackRed})
                     };
                 };
+                
+                if(this.state.designStyle2==='japaneseDragon'){
+                    this.setState({cardholderBack:japaneseDragonBackRed})
+                }
             };
     
     
@@ -902,6 +934,10 @@ class Design extends React.Component{
                         this.setState({cardholderBack:smallWavesWhiteBackOrange})
                     };
                 };
+                
+                if(this.state.designStyle2==='japaneseDragon'){
+                    this.setState({cardholderBack:japaneseDragonBackOrange})
+                }
             };
     
     
@@ -957,6 +993,10 @@ class Design extends React.Component{
                         this.setState({cardholderBack:smallWavesWhiteBackYellow})
                     };
                 };
+                
+                if(this.state.designStyle2==='japaneseDragon'){
+                    this.setState({cardholderBack:japaneseDragonBackYellow})
+                }
             };
     
     
@@ -1013,6 +1053,10 @@ class Design extends React.Component{
                         this.setState({cardholderBack:smallWavesWhiteBackBlue})
                     };
                 };
+                
+                if(this.state.designStyle2==='japaneseDragon'){
+                    this.setState({cardholderBack:japaneseDragonBackBlue})
+                }
             };
         },50)
         
@@ -1157,10 +1201,7 @@ class Design extends React.Component{
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
-                                    <ul onClick={this.animals} id="backText">Animals</ul>
-                                </ul>
-                                <ul className={this.state.designFDisplay} >
-                                    <ul onClick={this.drip} id="backText">Drip</ul>
+                                    <ul onClick={()=>{this.setState({designStyle:"japaneseDragon", monoF:false, monogramVisibleFront:'menusectionhidden', }); this.displayer(); setTimeout(()=>{this.setState({cardholderFrontDisplay:''})},125100)}}>Japanese Dragon</ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
                                     <ul onClick={this.monogramToggle}>Monogram</ul>
@@ -1217,10 +1258,7 @@ class Design extends React.Component{
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
-                                    <ul onClick={this.animals} id="backText">Animals</ul>
-                                </ul>
-                                <ul className={this.state.designBDisplay} >
-                                    <ul onClick={this.drip} id="backText">Drip</ul>
+                                    <ul onClick={()=>{this.setState({designStyle2:"japaneseDragon", monoB:false, monogramVisibleBack:'menusectionhidden'}); this.displayerBack(); setTimeout(()=>{this.setState({cardholderBackDisplay:''})},125)}}>Japanese Dragon</ul>
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={this.monogramToggle} >Monogram</ul>
