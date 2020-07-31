@@ -1151,9 +1151,9 @@ class Design extends React.Component{
                     <div id="leftMenu">
                         <div onClick={this.sizeToggle} className="boldMenuItems" id={this.state.sizemenu}>SIZE</div>
                         <ul className={this.state.sizeDisplay} id="sizemenuexpanded">
-                            <li onClick={()=>{this.setState({zipColour:'small'}); this.displayer(); this.displayerBack(); this.walletSizeFront(); this.walletSizeBack()}}>Sml. <p id="sizeFont">(aprx. 13 x 10cm)</p></li>
-                            <li id="backText">Med. <p id="sizeFont">(aprx. 20 x 15cm)</p></li><br/>
-                            <li id="backText">Lrg. <p id="sizeFont">(aprx. 26 x 20cm)</p></li>
+                            <li onClick={()=>{this.setState({zipColour:'small'}); this.displayer(); this.displayerBack(); this.walletSizeFront(); this.walletSizeBack()}}>S -  13 x 10cm</li>
+                            <li id="backText">M -  22 x 14cm</li><br/>
+                            <li id="backText">L -  31 x 23cm</li>
                         </ul>
                         <div className="boldMenuItems" id={this.state.fabricmenu}>FABRIC CHOICE</div>
                         <div onClick={this.zipToggle} className="boldMenuItems" id={this.state.zipmenu}>ZIP COLOUR</div>
@@ -1201,7 +1201,7 @@ class Design extends React.Component{
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
-                                    <ul onClick={()=>{this.setState({designStyle:"japaneseDragon", monoF:false, monogramVisibleFront:'menusectionhidden'}); this.displayer(); setTimeout(()=>{this.setState({cardholderFrontDisplay:''})},125)}}>Japanese Dragon</ul>
+                                    <ul onClick={()=>{this.setState({designStyle:"japaneseDragon", monoF:false, monogramVisibleFront:'menusectionhidden'}); this.displayer(); setTimeout(()=>{this.setState({cardholderFrontDisplay:''})},125)}}>Dragon</ul>
                                 </ul>
                                 <ul className={this.state.designFDisplay} >
                                     <ul onClick={this.monogramToggle}>Monogram</ul>
@@ -1258,7 +1258,7 @@ class Design extends React.Component{
                                     </ul>    
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
-                                    <ul onClick={()=>{this.setState({designStyle2:"japaneseDragon", monoB:false, monogramVisibleBack:'menusectionhidden'}); this.displayerBack(); setTimeout(()=>{this.setState({cardholderBackDisplay:''})},125)}}>Japanese Dragon</ul>
+                                    <ul onClick={()=>{this.setState({designStyle2:"japaneseDragon", monoB:false, monogramVisibleBack:'menusectionhidden'}); this.displayerBack(); setTimeout(()=>{this.setState({cardholderBackDisplay:''})},125)}}>Dragon</ul>
                                 </ul>
                                 <ul className={this.state.designBDisplay} >
                                     <ul onClick={this.monogramToggle} >Monogram</ul>
