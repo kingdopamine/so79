@@ -15,10 +15,7 @@ import foreground from '../Navigation/Recrafted with Logo.png'
 class Homepage extends React.Component {
   
     
-  componentDidMount(){
-    
-    return this.props.navHide
-  }  
+  
 
   render(){
     

@@ -47,7 +47,7 @@ class App extends React.Component {
       setTimeout(()=>{
         if(this.state.navDisplay==="main-menu-style"){
           localStorage.clear()
-          this.setState({navDisplay:"menuOff",igicon:"menuHidden",bagicon:"menuHidden",basketAmount:"menuHidden"})
+          /*this.setState({navDisplay:"menuOff",igicon:"menuHidden",bagicon:"menuHidden",basketAmount:"menuHidden"})*/
         } 
         
       })

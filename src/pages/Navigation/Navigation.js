@@ -15,19 +15,19 @@ class Navigation extends React.Component{
                 SO79Collection:this.props.SO79 
             }
         }
-        this.mainMenuToggle=this.mainMenuToggle.bind(this)
+       // this.mainMenuToggle=this.mainMenuToggle.bind(this)
         this.cartToggle=this.cartToggle.bind(this)
 
         
     }
 
-    mainMenuToggle(){
+    /*mainMenuToggle(){
         if(this.state.mainmenu==="menuOff"){
             this.setState({mainmenu:"main-menu-list"})
         } else {
             this.setState({mainmenu:"menuOff"})
         }
-    }
+    }*/
 
     cartToggle(){
         if(this.state.cart==="cartHide"){
