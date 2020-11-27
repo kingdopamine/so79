@@ -62,7 +62,7 @@ class Navigation extends React.Component{
                     </ul>
                 </div>
                 <div id="basketIG">
-                    <i class="fab fa-instagram" id={this.props.igicon}></i>
+                <a href="https://instagram.com/sourceof79" target="blank"><i class="fab fa-instagram" id={this.props.igicon}></i></a>
                     <a href="/checkout"><i class="fas fa-shopping-bag" id={this.props.bagicon} onMouseEnter={this.cartToggle}></i></a>
                     <p id={this.props.basketAmount}>{this.props.totalItems}</p>
                     <div id={this.state.cart} onMouseLeave={this.cartToggle}>

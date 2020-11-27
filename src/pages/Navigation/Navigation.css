@@ -74,6 +74,7 @@
     position: absolute;
     margin-left: 92.5vw;
     margin-top: 10px;
+    z-index: 2;
 }
 
 #basketIG a{
