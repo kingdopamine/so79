@@ -15,19 +15,19 @@ class Navigation extends React.Component{
                 SO79Collection:this.props.SO79 
             }
         }
-       // this.mainMenuToggle=this.mainMenuToggle.bind(this)
+       this.mainMenuToggle=this.mainMenuToggle.bind(this)
         this.cartToggle=this.cartToggle.bind(this)
 
         
     }
 
-    /*mainMenuToggle(){
+    mainMenuToggle(){
         if(this.state.mainmenu==="menuOff"){
             this.setState({mainmenu:"main-menu-list"})
         } else {
             this.setState({mainmenu:"menuOff"})
         }
-    }*/
+    }
 
     cartToggle(){
         if(this.state.cart==="cartHide"){
@@ -36,12 +36,15 @@ class Navigation extends React.Component{
             this.setState({cart:"cartHide"})
         }
     }
+
+    //<p id="main-menu-so79" onMouseEnter={()=>{this.setState({mainmenu:"main-menu-list"})}} onMouseLeave={()=>{this.setState({mainmenu:"menuOff"})}}>
+
     render(){
         return(
             <div>
                 <a href='/'><img src={foreground} id='homebutton' alt='homebutton'/></a> 
                 <div className={this.props.menuShow}>
-                    <p id="main-menu-so79" onMouseEnter={()=>{this.setState({mainmenu:"main-menu-list"})}} onMouseLeave={()=>{this.setState({mainmenu:"menuOff"})}}>
+                    <p id="main-menu-so79" onClick={()=>{this.mainMenuToggle()}}>
                         <i class="fas fa-bars" id="main-menu" ></i >SOURCE OF 79
                     </p>
                     <ul className={this.state.mainmenu} >
