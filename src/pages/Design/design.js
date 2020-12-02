@@ -5,12 +5,16 @@ import './design.css';
 import plainFrontRed from './designs/Plain/Red zip Plain L.jpg'
 import plainFrontOrange from './designs/Plain/Orange zip Plain L.jpg'
 import plainFrontYellow from './designs/Plain/Yellow zip Plain L.jpg'
+import plainFrontGreen from './designs/Plain/Green zip Plain L.jpg'
 import plainFrontBlue from './designs/Plain/Blue zip Plain L.jpg'
+import plainFrontPurple from './designs/Plain/Purple zip Plain L.jpg'
 
 import plainBackRed from './designs/Plain/Red zip Plain R.jpg'
 import plainBackOrange from './designs/Plain/Orange zip Plain R.jpg'
 import plainBackYellow from './designs/Plain/Yellow zip Plain R.jpg'
+import plainBackGreen from './designs/Plain/Green zip Plain R.jpg'
 import plainBackBlue from './designs/Plain/Blue zip Plain R.jpg'
+import plainBackPurple from './designs/Plain/Purple zip Plain R.jpg'
 
 import goldOutlineLogoFrontRed from './designs/Logo/Gold Outline/GoldOutlineLogoRedL.png'
 import goldOutlineLogoFrontOrange from './designs/Logo/Gold Outline/GoldOutlineLogoOrangeL.png'
@@ -50,70 +54,102 @@ import solidRedLogoBackBlue from './designs/Logo/Solid Red/SolidRedLogoBlueR.png
 import largeWavesGoldFrontRed from './designs/Large waves/Gold/large Fan Red ZL Gold.png';
 import largeWavesGoldFrontOrange from './designs/Large waves/Gold/large Fan Orange ZL Gold.png';
 import largeWavesGoldFrontYellow from './designs/Large waves/Gold/large Fan Yel ZL Gold.png';
+import largeWavesGoldFrontGreen from './designs/Large waves/Gold/large Fan Green ZL Gold.png';
 import largeWavesGoldFrontBlue from './designs/Large waves/Gold/large Fan Blue ZL Gold.png';
+import largeWavesGoldFrontPurple from './designs/Large waves/Gold/large Fan Purple ZL Gold.png';
 import largeWavesGreenFrontRed from './designs/Large waves/Green/large Fan RED ZL 2Tone.png';
 import largeWavesGreenFrontOrange from './designs/Large waves/Green/large Fan Orange ZL 2Tone.png';
 import largeWavesGreenFrontYellow from './designs/Large waves/Green/large Fan Yel ZL 2Tone.png';
+import largeWavesGreenFrontGreen from './designs/Large waves/Green/large Fan Green ZL 2Tone.png';
 import largeWavesGreenFrontBlue from './designs/Large waves/Green/large Fan Blu ZL 2Tone.png';
+import largeWavesGreenFrontPurple from './designs/Large waves/Green/large Fan Purple ZL 2Tone.png';
 import largeWavesSilverFrontRed from './designs/Large waves/Silver/large Fan Red ZL Silver.png';
 import largeWavesSilverFrontOrange from './designs/Large waves/Silver/large Fan Orange ZL Silver.png';
 import largeWavesSilverFrontYellow from './designs/Large waves/Silver/large Fan Yel ZL Silver.png';
+import largeWavesSilverFrontGreen from './designs/Large waves/Silver/large Fan Green ZL Silver.png';
 import largeWavesSilverFrontBlue from './designs/Large waves/Silver/large Fan Blu ZLb Silver.png';
+import largeWavesSilverFrontPurple from './designs/Large waves/Silver/large Fan Purple ZL Silver.png';
 import largeWavesWhiteFrontRed from './designs/Large waves/White/large Fan Red ZL White .png';
 import largeWavesWhiteFrontOrange from './designs/Large waves/White/large Fan Orange ZL White .png';
 import largeWavesWhiteFrontYellow from './designs/Large waves/White/large Fan Yel ZL White.png';
+import largeWavesWhiteFrontGreen from './designs/Large waves/White/large Fan Green ZL White .png';
 import largeWavesWhiteFrontBlue from './designs/Large waves/White/large Fan Blu ZL White .png';
+import largeWavesWhiteFrontPurple from './designs/Large waves/White/large Fan Purple ZL White .png';
 
 import largeWavesGoldBackRed from './designs/Large waves/Gold/large Fan Red ZR Gold.png';
 import largeWavesGoldBackOrange from './designs/Large waves/Gold/large Fan Orange ZR Gold.png';
 import largeWavesGoldBackYellow from './designs/Large waves/Gold/large Fan Yel ZR Gold.png';
+import largeWavesGoldBackGreen from './designs/Large waves/Gold/large Fan Green ZR Gold.png';
 import largeWavesGoldBackBlue from './designs/Large waves/Gold/large Fan Blue ZR Gold.png';
+import largeWavesGoldBackPurple from './designs/Large waves/Gold/large Fan Purple ZR Gold.png';
 import largeWavesGreenBackRed from './designs/Large waves/Green/large Fan RED ZR 2Tone.png';
 import largeWavesGreenBackOrange from './designs/Large waves/Green/large Fan Orange ZR 2Tone.png';
 import largeWavesGreenBackYellow from './designs/Large waves/Green/large Fan Yel ZR 2Tone.png';
+import largeWavesGreenBackGreen from './designs/Large waves/Green/large Fan Green ZR 2Tone.png';
 import largeWavesGreenBackBlue from './designs/Large waves/Green/large Fan Blu ZR 2Tone.png';
+import largeWavesGreenBackPurple from './designs/Large waves/Green/large Fan Purple ZR 2Tone.png';
 import largeWavesSilverBackRed from './designs/Large waves/Silver/large Fan Red ZR Silver.png';
 import largeWavesSilverBackOrange from './designs/Large waves/Silver/large Fan Orange ZR Silver.png';
 import largeWavesSilverBackYellow from './designs/Large waves/Silver/large Fan Yel ZR Silver.png';
+import largeWavesSilverBackGreen from './designs/Large waves/Silver/large Fan Green ZR Silver.png';
 import largeWavesSilverBackBlue from './designs/Large waves/Silver/large Fan Blu ZRb Silver.png';
+import largeWavesSilverBackPurple from './designs/Large waves/Silver/large Fan Purple ZR Silver.png';
 import largeWavesWhiteBackRed from './designs/Large waves/White/large Fan Red ZR White .png';
 import largeWavesWhiteBackOrange from './designs/Large waves/White/large Fan Orange ZR White .png';
 import largeWavesWhiteBackYellow from './designs/Large waves/White/large Fan Yel ZR White .png';
+import largeWavesWhiteBackGreen from './designs/Large waves/White/large Fan Green ZR White .png';
 import largeWavesWhiteBackBlue from './designs/Large waves/White/large Fan Blu ZR White .png';
+import largeWavesWhiteBackPurple from './designs/Large waves/White/large Fan Purple ZR White .png';
 
 import smallWavesGoldFrontRed from './designs/Small waves/Gold/small Fan Red ZL 2 Gold.png';
 import smallWavesGoldFrontOrange from './designs/Small waves/Gold/small Fan Orange ZL Gold.png';
 import smallWavesGoldFrontYellow from './designs/Small waves/Gold/small Fan Yel ZL Gold.png';
+import smallWavesGoldFrontGreen from './designs/Small waves/Gold/small Fan Green ZL Gold.png';
 import smallWavesGoldFrontBlue from './designs/Small waves/Gold/small Fan Blu ZL Gold.png';
+import smallWavesGoldFrontPurple from './designs/Small waves/Gold/small Fan Purple ZL Gold.png';
 import smallWavesGreenFrontRed from './designs/Small waves/Green/small Fan Red ZL Green2tone.png';
 import smallWavesGreenFrontOrange from './designs/Small waves/Green/small Fan Orange ZL Green2tone.png';
 import smallWavesGreenFrontYellow from './designs/Small waves/Green/small Fan Yel ZL Green2tone.png';
+//import smallWavesGreenFrontGreen from './designs/Small waves/Green/small Fan Green ZL Green2tone.png';
 import smallWavesGreenFrontBlue from './designs/Small waves/Green/small Fan Blu ZL Green.png';
+//import smallWavesGreenFrontPurple from './designs/Small waves/Green/small Fan Purple ZL Green.png';
 import smallWavesSilverFrontRed from './designs/Small waves/Silver/small Fan Red ZL Silver.png';
 import smallWavesSilverFrontOrange from './designs/Small waves/Silver/small Fan Orange ZL Silver.png';
 import smallWavesSilverFrontYellow from './designs/Small waves/Silver/small Fan Yel ZL Silver.png';
-import smallWavesSilverFrontBlue from './designs/Small waves/Silver/small Fan Blue ZL Gold.png';
+import smallWavesSilverFrontGreen from './designs/Small waves/Silver/small Fan Green ZL Silver.png';
+import smallWavesSilverFrontBlue from './designs/Small waves/Silver/small Fan Blue ZL Silver.png';
+import smallWavesSilverFrontPurple from './designs/Small waves/Silver/small Fan Purple ZL Silver.png';
 import smallWavesWhiteFrontRed from './designs/Small waves/White/small Fan Red ZL White.png';
 import smallWavesWhiteFrontOrange from './designs/Small waves/White/small Fan Orange ZL White.png';
 import smallWavesWhiteFrontYellow from './designs/Small waves/White/small Fan Yel ZL White.png';
+import smallWavesWhiteFrontGreen from './designs/Small waves/White/small Fan Green ZL White.png';
 import smallWavesWhiteFrontBlue from './designs/Small waves/White/small Fan Blu ZL White.png';
+import smallWavesWhiteFrontPurple from './designs/Small waves/White/small Fan Purple ZL White.png';
 
 import smallWavesGoldBackRed from './designs/Small waves/Gold/small Fan Red ZR 2 Gold.png';
 import smallWavesGoldBackOrange from './designs/Small waves/Gold/small Fan Orange ZR Gold.png';
 import smallWavesGoldBackYellow from './designs/Small waves/Gold/small Fan Yel ZR Gold.png';
+import smallWavesGoldBackGreen from './designs/Small waves/Gold/small Fan Green ZR Gold.png';
 import smallWavesGoldBackBlue from './designs/Small waves/Gold/small Fan Blu ZR Gold.png';
+import smallWavesGoldBackPurple from './designs/Small waves/Gold/small Fan Purple ZR Gold.png';
 import smallWavesGreenBackRed from './designs/Small waves/Green/small Fan Red ZR Green2tone.png';
 import smallWavesGreenBackOrange from './designs/Small waves/Green/small Fan Orange ZR Green2tone.png';
 import smallWavesGreenBackYellow from './designs/Small waves/Green/small Fan Yel ZR Green2tone.png';
+//import smallWavesGreenBackGreen from './designs/Small waves/Green/small Fan Green ZR Green2tone.png';
 import smallWavesGreenBackBlue from './designs/Small waves/Green/small Fan Blu ZR Green.png';
+//import smallWavesGreenBackPurple from './designs/Small waves/Green/small Fan Purple ZR Green.png';
 import smallWavesSilverBackRed from './designs/Small waves/Silver/small Fan RedZR Silver.png';
 import smallWavesSilverBackOrange from './designs/Small waves/Silver/small Fan Orange ZR Silver.png';
 import smallWavesSilverBackYellow from './designs/Small waves/Silver/small Fan Yel ZR Silver.png';
+import smallWavesSilverBackGreen from './designs/Small waves/Silver/small Fan Green ZR Silver.png';
 import smallWavesSilverBackBlue from './designs/Small waves/Silver/small Fan Blue ZR Silver.png';
+import smallWavesSilverBackPurple from './designs/Small waves/Silver/small Fan Purple ZR Silver.png';
 import smallWavesWhiteBackRed from './designs/Small waves/White/Small Fan Red ZR White.png';
 import smallWavesWhiteBackOrange from './designs/Small waves/White/small Fan Orange ZR White.png';
 import smallWavesWhiteBackYellow from './designs/Small waves/White/small Fan Yel ZR White.png';
+import smallWavesWhiteBackGreen from './designs/Small waves/White/small Fan Green ZR White.png';
 import smallWavesWhiteBackBlue from './designs/Small waves/White/small Fan Blu ZR White.png';
+import smallWavesWhiteBackPurple from './designs/Small waves/White/small Fan Purple ZR White.png';
 
 import japaneseDragonBackRed from './designs/Japanese Dragon/Dragon RedZip Right.jpg';
 import japaneseDragonBackOrange from './designs/Japanese Dragon/Dragon OranZip Right.jpg';
@@ -755,6 +791,65 @@ class Design extends React.Component{
                     this.setState({cardholderFront:japaneseDragonFrontYellow})
                 }
             };
+
+
+            if(this.state.zipColour==='green'){
+                if(this.state.designStyle==='plain'){
+                    this.setState({cardholderFront:plainFrontGreen})
+                }
+
+                /*if(this.state.designStyle==='logo'){
+                    if(this.state.logoChoice==='goldOutline'){
+                        this.setState({cardholderFront:goldOutlineLogoFrontYellow})
+                    };
+
+                    if(this.state.logoChoice==='solidGold'){
+                        this.setState({cardholderFront:solidGoldLogoFrontYellow})
+                    };
+
+                    if(this.state.logoChoice==='ecru'){
+                        this.setState({cardholderFront:ecruLogoFrontYellow})
+                    };
+
+                    if(this.state.logoChoice==='solidRed'){
+                        this.setState({cardholderFront:solidRedLogoFrontYellow})
+                    };
+                }*/
+
+                if(this.state.designStyle==='largeWaves'){
+                    if(this.state.lWavesChoice==="gold"){
+                        this.setState({cardholderFront:largeWavesGoldFrontGreen})
+                    };
+                    if(this.state.lWavesChoice==="silver"){
+                        this.setState({cardholderFront:largeWavesSilverFrontGreen})
+                    };
+                    if(this.state.lWavesChoice==="green"){
+                        this.setState({cardholderFront:largeWavesGreenFrontGreen})
+                    };
+                    if(this.state.lWavesChoice==="white"){
+                        this.setState({cardholderFront:largeWavesWhiteFrontGreen})
+                    };
+                };
+    
+                if(this.state.designStyle==='smallWaves'){
+                    if(this.state.sWavesChoice==="gold"){
+                        this.setState({cardholderFront:smallWavesGoldFrontGreen})
+                    };
+                    if(this.state.sWavesChoice==="silver"){
+                        this.setState({cardholderFront:smallWavesSilverFrontGreen})
+                    };
+                    /*if(this.state.sWavesChoice==="green"){
+                        this.setState({cardholderFront:smallWavesGreenFrontGreen})
+                    };*/
+                    if(this.state.sWavesChoice==="white"){
+                        this.setState({cardholderFront:smallWavesWhiteFrontGreen})
+                    };
+                };
+
+                /*if(this.state.designStyle==='japaneseDragon'){
+                    this.setState({cardholderFront:japaneseDragonFrontGreen})
+                }*/
+            };
     
     
             if(this.state.zipColour==='blue'){
@@ -813,6 +908,65 @@ class Design extends React.Component{
                 if(this.state.designStyle==='japaneseDragon'){
                     this.setState({cardholderFront:japaneseDragonFrontBlue})
                 }
+            };
+
+
+            if(this.state.zipColour==='purple'){
+                if(this.state.designStyle==='plain'){
+                    this.setState({cardholderFront:plainFrontPurple})
+                }
+
+                /*if(this.state.designStyle==='logo'){
+                    if(this.state.logoChoice==='goldOutline'){
+                        this.setState({cardholderFront:goldOutlineLogoFrontPurple})
+                    };
+
+                    if(this.state.logoChoice==='solidGold'){
+                        this.setState({cardholderFront:solidGoldLogoFrontPurple})
+                    };
+
+                    if(this.state.logoChoice==='ecru'){
+                        this.setState({cardholderFront:ecruLogoFrontPurple})
+                    };
+
+                    if(this.state.logoChoice==='solidRed'){
+                        this.setState({cardholderFront:solidRedLogoFrontPurple})
+                    };
+                }*/
+
+                if(this.state.designStyle==='largeWaves'){
+                    if(this.state.lWavesChoice==="gold"){
+                        this.setState({cardholderFront:largeWavesGoldFrontPurple})
+                    };
+                    if(this.state.lWavesChoice==="silver"){
+                        this.setState({cardholderFront:largeWavesSilverFrontPurple})
+                    };
+                    if(this.state.lWavesChoice==="green"){
+                        this.setState({cardholderFront:largeWavesGreenFrontPurple})
+                    };
+                    if(this.state.lWavesChoice==="white"){
+                        this.setState({cardholderFront:largeWavesWhiteFrontPurple})
+                    };
+                };
+    
+                if(this.state.designStyle==='smallWaves'){
+                    if(this.state.sWavesChoice==="gold"){
+                        this.setState({cardholderFront:smallWavesGoldFrontPurple})
+                    };
+                    if(this.state.sWavesChoice==="silver"){
+                        this.setState({cardholderFront:smallWavesSilverFrontPurple})
+                    };
+                    /*if(this.state.sWavesChoice==="green"){
+                        this.setState({cardholderFront:smallWavesGreenFrontPurple})
+                    };*/
+                    if(this.state.sWavesChoice==="white"){
+                        this.setState({cardholderFront:smallWavesWhiteFrontPurple})
+                    };
+                };
+
+                /*if(this.state.designStyle==='japaneseDragon'){
+                    this.setState({cardholderFront:japaneseDragonFrontPurple})
+                }*/
             };
         },50)
         
@@ -998,6 +1152,65 @@ class Design extends React.Component{
                     this.setState({cardholderBack:japaneseDragonBackYellow})
                 }
             };
+
+
+            if(this.state.zipColour==='green'){
+                if(this.state.designStyle2==='plain'){
+                    this.setState({cardholderBack:plainBackGreen})
+                }
+
+                /*if(this.state.designStyle2==='logo'){
+                    if(this.state.logoChoice2==='goldOutline'){
+                        this.setState({cardholderBack:goldOutlineLogoBackGreen})
+                    };
+
+                    if(this.state.logoChoice2==='solidGold'){
+                        this.setState({cardholderBack:solidGoldLogoBackGreen})
+                    };
+
+                    if(this.state.logoChoice2==='ecru'){
+                        this.setState({cardholderBack:ecruLogoBackGreen})
+                    };
+
+                    if(this.state.logoChoice2==='solidRed'){
+                        this.setState({cardholderBack:solidRedLogoBackGreen})
+                    };
+                }*/
+
+                if(this.state.designStyle2==='largeWaves'){
+                    if(this.state.lWavesChoice2==="gold"){
+                        this.setState({cardholderBack:largeWavesGoldBackGreen})
+                    };
+                    if(this.state.lWavesChoice2==="silver"){
+                        this.setState({cardholderBack:largeWavesSilverBackGreen})
+                    };
+                    if(this.state.lWavesChoice2==="green"){
+                        this.setState({cardholderBack:largeWavesGreenBackGreen})
+                    };
+                    if(this.state.lWavesChoice2==="white"){
+                        this.setState({cardholderBack:largeWavesWhiteBackGreen})
+                    };
+                };
+    
+                if(this.state.designStyle2==='smallWaves'){
+                    if(this.state.sWavesChoice2==="gold"){
+                        this.setState({cardholderBack:smallWavesGoldBackGreen})
+                    };
+                    if(this.state.sWavesChoice2==="silver"){
+                        this.setState({cardholderBack:smallWavesSilverBackGreen})
+                    };
+                    /*if(this.state.sWavesChoice2==="green"){
+                        this.setState({cardholderBack:smallWavesGreenBackGreen})
+                    };*/
+                    if(this.state.sWavesChoice2==="white"){
+                        this.setState({cardholderBack:smallWavesWhiteBackGreen})
+                    };
+                };
+                
+                /*if(this.state.designStyle2==='japaneseDragon'){
+                    this.setState({cardholderBack:japaneseDragonBackGreen})
+                }*/
+            };
     
     
             if(this.state.zipColour==='blue'){
@@ -1057,6 +1270,65 @@ class Design extends React.Component{
                 if(this.state.designStyle2==='japaneseDragon'){
                     this.setState({cardholderBack:japaneseDragonBackBlue})
                 }
+            };
+
+
+            if(this.state.zipColour==='purple'){
+                if(this.state.designStyle2==='plain'){
+                    this.setState({cardholderBack:plainBackPurple})
+                }
+
+                /*if(this.state.designStyle2==='logo'){
+                    if(this.state.logoChoice2==='goldOutline'){
+                        this.setState({cardholderBack:goldOutlineLogoBackPurple})
+                    };
+
+                    if(this.state.logoChoice2==='solidGold'){
+                        this.setState({cardholderBack:solidGoldLogoBackPurple})
+                    };
+
+                    if(this.state.logoChoice2==='ecru'){
+                        this.setState({cardholderBack:ecruLogoBackPurple})
+                    };
+
+                    if(this.state.logoChoice2==='solidRed'){
+                        this.setState({cardholderBack:solidRedLogoBackPurple})
+                    };
+                }*/
+
+                if(this.state.designStyle2==='largeWaves'){
+                    if(this.state.lWavesChoice2==="gold"){
+                        this.setState({cardholderBack:largeWavesGoldBackPurple})
+                    };
+                    if(this.state.lWavesChoice2==="silver"){
+                        this.setState({cardholderBack:largeWavesSilverBackPurple})
+                    };
+                    if(this.state.lWavesChoice2==="green"){
+                        this.setState({cardholderBack:largeWavesGreenBackPurple})
+                    };
+                    if(this.state.lWavesChoice2==="white"){
+                        this.setState({cardholderBack:largeWavesWhiteBackPurple})
+                    };
+                };
+    
+                if(this.state.designStyle2==='smallWaves'){
+                    if(this.state.sWavesChoice2==="gold"){
+                        this.setState({cardholderBack:smallWavesGoldBackPurple})
+                    };
+                    if(this.state.sWavesChoice2==="silver"){
+                        this.setState({cardholderBack:smallWavesSilverBackPurple})
+                    };
+                    /*if(this.state.sWavesChoice2==="green"){
+                        this.setState({cardholderBack:smallWavesGreenBackPurple})
+                    };*/
+                    if(this.state.sWavesChoice2==="white"){
+                        this.setState({cardholderBack:smallWavesWhiteBackPurple})
+                    };
+                };
+                
+                /*if(this.state.designStyle2==='japaneseDragon'){
+                    this.setState({cardholderBack:japaneseDragonBackPurple})
+                }*/
             };
         },50)
         
@@ -1161,9 +1433,9 @@ class Design extends React.Component{
                             <li onClick={()=>{this.setState({zipColour:'red'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Red <p id="swatchColorRed">testte</p></li>
                             <li onClick={()=>{this.setState({zipColour:'orange'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Orange <p id="swatchColorOrange">testte</p></li>
                             <li onClick={()=>{this.setState({zipColour:'yellow'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Yellow <p id="swatchColorYellow">testte</p></li>
-                            <li id="backText">Green <p id="swatchColorGreen">testte</p></li>
+                            <li onClick={()=>{this.setState({zipColour:'green'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Green <p id="swatchColorGreen">testte</p></li>
                             <li onClick={()=>{this.setState({zipColour:'blue'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Blue <p id="swatchColorBlue">testte</p></li>
-                            <li id="backText">Purple <p id="swatchColorPurple">testte</p></li><br/>
+                            <li onClick={()=>{this.setState({zipColour:'purple'}); this.displayer(); this.displayerBack(); this.monogramZipColourFront(); this.monogramZipColourBack()}}>Purple <p id="swatchColorPurple">testte</p></li>
                             <li id="backText">Grey <p id="swatchColorGrey">testte</p></li>
                         </ul>
                     </div>
