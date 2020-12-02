@@ -1350,9 +1350,17 @@ class Design extends React.Component{
             if(this.state.zipColour==='yellow'){
                 this.setState({monogramFront:plainFrontYellow});
             };
+
+            if(this.state.zipColour==='green'){
+                this.setState({monogramFront:plainFrontGreen});
+            };
     
             if(this.state.zipColour==='blue'){
                 this.setState({monogramFront:plainFrontBlue});
+            };
+
+            if(this.state.zipColour==='purple'){
+                this.setState({monogramFront:plainFrontPurple});
             };
         },)
         
@@ -1373,9 +1381,17 @@ class Design extends React.Component{
             if(this.state.zipColour==='yellow'){
                 this.setState({monogramBack:plainBackYellow});
             };
+
+            if(this.state.zipColour==='green'){
+                this.setState({monogramBack:plainBackGreen});
+            };
     
             if(this.state.zipColour==='blue'){
                 this.setState({monogramBack:plainBackBlue});
+            };
+
+            if(this.state.zipColour==='yellow'){
+                this.setState({monogramBack:plainBackPurple});
             };
         },)
         
